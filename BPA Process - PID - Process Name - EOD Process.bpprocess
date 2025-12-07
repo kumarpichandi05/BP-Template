@@ -1,0 +1,71 @@
+﻿<process name="PID - Process Name - EOD Process" version="1.0" bpversion="7.4.0.14902" narrative="" byrefcollection="true" processrunningmessage="" disableversioning="false" preferredid="ae39fa4c-b01d-43bd-8836-663bb9a6eb98">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="8e0a34cb-bf24-4b99-b944-ca03a75eea5e" type="Normal" published="False">
+    <name>Generate EOD Report</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="d196f8ce-f7f4-4c20-9385-4953865e24cc" name="Start" type="Start">
+    <display x="15" y="-165" />
+    <onsuccess>01e1769c-dd1f-4706-9f2c-5e1abf4fe7a2</onsuccess>
+  </stage>
+  <stage stageid="08fe448c-f239-4cac-b18d-074cac707249" name="End" type="End">
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="df8660b2-1599-47de-ada0-092493cfc01d" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="7a8d585d-6410-4c41-896c-63da1db0b9ff" name="EOD Process - Global Recover" type="Recover">
+    <loginhibit />
+    <display x="510" y="-75" />
+    <onsuccess>71978b4e-23ed-4d4a-bb45-5479c0d2498d</onsuccess>
+  </stage>
+  <stage stageid="71978b4e-23ed-4d4a-bb45-5479c0d2498d" name="Exception" type="Exception">
+    <display x="510" y="45" />
+    <exception localized="yes" type="" detail="" usecurrent="yes" />
+  </stage>
+  <stage stageid="01e1769c-dd1f-4706-9f2c-5e1abf4fe7a2" name="Note1" type="Note">
+    <narrative>Check for EOD Report Cut Off</narrative>
+    <display x="15" y="-90" w="90" h="60" />
+    <onsuccess>2a186c60-c998-451b-bdc1-f54d8a26bc8e</onsuccess>
+  </stage>
+  <stage stageid="6de569c1-622e-4d93-ac8c-72546b4026b5" name="Generate EOD Report" type="SubSheetInfo">
+    <subsheetid>8e0a34cb-bf24-4b99-b944-ca03a75eea5e</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="7e593b36-8252-4a22-ad58-426bdc702c5b" name="Start" type="Start">
+    <subsheetid>8e0a34cb-bf24-4b99-b944-ca03a75eea5e</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>e4b06f33-ffef-4be5-bdda-cf3c1af1ced1</onsuccess>
+  </stage>
+  <stage stageid="e4b06f33-ffef-4be5-bdda-cf3c1af1ced1" name="End" type="End">
+    <subsheetid>8e0a34cb-bf24-4b99-b944-ca03a75eea5e</subsheetid>
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="2a186c60-c998-451b-bdc1-f54d8a26bc8e" name="If CutOff ?" type="Decision">
+    <display x="15" y="-30" />
+    <decision expression="" />
+    <ontrue>89f35bab-8129-4d2f-9bc5-b169b2df73d8</ontrue>
+    <onfalse>08fe448c-f239-4cac-b18d-074cac707249</onfalse>
+  </stage>
+  <stage stageid="89f35bab-8129-4d2f-9bc5-b169b2df73d8" name="Generate EOD Report" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="120" y="-30" />
+    <onsuccess>d3d002de-2005-4db6-9683-8d32aaad2321</onsuccess>
+    <processid>8e0a34cb-bf24-4b99-b944-ca03a75eea5e</processid>
+  </stage>
+  <stage stageid="d3d002de-2005-4db6-9683-8d32aaad2321" name="Anchor1" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="120" y="90" w="10" h="10" />
+    <onsuccess>08fe448c-f239-4cac-b18d-074cac707249</onsuccess>
+  </stage>
+</process>

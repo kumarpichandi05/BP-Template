@@ -1,0 +1,109 @@
+﻿<process name="PID - Process Name - Sub Process Name" version="1.0" bpversion="7.4.0.14902" narrative="" byrefcollection="true" processrunningmessage="" disableversioning="false" preferredid="12cd9253-18da-467a-9159-ca1159f70288">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="c5a70e8f-e6c7-46cd-82f5-c40025dcde15" type="Normal" published="False">
+    <name>Step1</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="94f107ec-a08e-4717-b4b4-818d4c27a042" type="Normal" published="False">
+    <name>Step2</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="07876808-c191-47f4-927c-c880fc72c850" type="Normal" published="False">
+    <name>Step N</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="bacefec9-a556-4af7-a444-6d32f4fce065" name="Start" type="Start">
+    <display x="15" y="-150" />
+    <onsuccess>ae4794b9-61bb-44df-b41f-d228c0afa252</onsuccess>
+  </stage>
+  <stage stageid="a0267c5f-f1eb-4dc6-9134-66312da57397" name="End" type="End">
+    <display x="15" y="120" />
+  </stage>
+  <stage stageid="1fde1f1c-2cdf-4ad6-bcb5-661db8b50609" name="Stage1" type="ProcessInfo">
+    <display x="-285" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="efa21bde-928a-403f-984b-ab980991f4f8" name="Sub Process - Global Recover" type="Recover">
+    <loginhibit />
+    <display x="345" y="-135" />
+    <onsuccess>e343e139-2a10-49ee-9d23-5c02c0c79d14</onsuccess>
+  </stage>
+  <stage stageid="e343e139-2a10-49ee-9d23-5c02c0c79d14" name="Exception" type="Exception">
+    <display x="345" y="-15" />
+    <exception localized="yes" type="" detail="" usecurrent="yes" />
+  </stage>
+  <stage stageid="17bdf15c-962a-415a-bd00-b6f81c22d679" name="Step1" type="SubSheetInfo">
+    <subsheetid>c5a70e8f-e6c7-46cd-82f5-c40025dcde15</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="1fe824e0-a9ab-423c-9d71-925d6c45cc9a" name="Start" type="Start">
+    <subsheetid>c5a70e8f-e6c7-46cd-82f5-c40025dcde15</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>9f294a35-4477-4c63-bd47-58d4748197a9</onsuccess>
+  </stage>
+  <stage stageid="9f294a35-4477-4c63-bd47-58d4748197a9" name="End" type="End">
+    <subsheetid>c5a70e8f-e6c7-46cd-82f5-c40025dcde15</subsheetid>
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="6234d49f-a5c8-440c-8b21-b0a2df8ad9d8" name="Step2" type="SubSheetInfo">
+    <subsheetid>94f107ec-a08e-4717-b4b4-818d4c27a042</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="d2b98a2b-ef10-4966-9f45-2b720017c044" name="Start" type="Start">
+    <subsheetid>94f107ec-a08e-4717-b4b4-818d4c27a042</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>8be6d441-8ba1-4eb6-9b07-e713163c7d30</onsuccess>
+  </stage>
+  <stage stageid="8be6d441-8ba1-4eb6-9b07-e713163c7d30" name="End" type="End">
+    <subsheetid>94f107ec-a08e-4717-b4b4-818d4c27a042</subsheetid>
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="ae4794b9-61bb-44df-b41f-d228c0afa252" name="Step1" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-90" />
+    <onsuccess>b2501677-4c88-4d1e-b6a1-325ba4528234</onsuccess>
+    <processid>c5a70e8f-e6c7-46cd-82f5-c40025dcde15</processid>
+  </stage>
+  <stage stageid="b2501677-4c88-4d1e-b6a1-325ba4528234" name="Step2" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-15" />
+    <onsuccess>01914677-483d-4f73-9887-115edd42af2d</onsuccess>
+    <processid>94f107ec-a08e-4717-b4b4-818d4c27a042</processid>
+  </stage>
+  <stage stageid="6546b0d9-9830-42a3-a460-04a04737589d" name="Step N" type="SubSheetInfo">
+    <subsheetid>07876808-c191-47f4-927c-c880fc72c850</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="fd6ff78a-85c1-4d79-add6-5c51afa7e374" name="Start" type="Start">
+    <subsheetid>07876808-c191-47f4-927c-c880fc72c850</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>4ab44c0f-bf98-434a-8f8c-6cd2be68ba9f</onsuccess>
+  </stage>
+  <stage stageid="4ab44c0f-bf98-434a-8f8c-6cd2be68ba9f" name="End" type="End">
+    <subsheetid>07876808-c191-47f4-927c-c880fc72c850</subsheetid>
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="01914677-483d-4f73-9887-115edd42af2d" name="Step N" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="60" />
+    <onsuccess>a0267c5f-f1eb-4dc6-9134-66312da57397</onsuccess>
+    <processid>07876808-c191-47f4-927c-c880fc72c850</processid>
+  </stage>
+</process>

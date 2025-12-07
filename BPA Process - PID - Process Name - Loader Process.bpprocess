@@ -1,0 +1,152 @@
+﻿<process name="PID - Process Name - Loader Process" version="1.0" bpversion="7.4.0.14902" narrative="" byrefcollection="true" processrunningmessage="" disableversioning="false" preferredid="1d2769a3-2d23-4dc0-ae5a-c9ce173fb1c9">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="b62cfccc-f25b-42b0-aa36-09415186b9f9" type="Normal" published="False">
+    <name>Read Email</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.5625</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="496be92c-9bb9-468a-a078-42e669bdd771" type="Normal" published="False">
+    <name>Read File from Shared Drive</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>-185</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="befcbe65-b925-4613-9e77-b75ddce35580" type="Normal" published="False">
+    <name>Read Work Item from Application</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="b502cceb-bb19-40ea-ad77-16136823a5a5" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>078cc3ce-92eb-47f7-8c36-54e74709cd89</onsuccess>
+  </stage>
+  <stage stageid="574c927f-34ca-4dce-bb71-8111eacd9897" name="End" type="End">
+    <display x="15" y="225" />
+  </stage>
+  <stage stageid="f0f6e102-e841-4cce-a8b6-c3220789cbdf" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="e362b2cf-d557-45c9-9fba-ecb598272bc8" name="Loader Process - Global Recover" type="Recover">
+    <loginhibit />
+    <display x="300" y="-120" w="120" h="30" />
+    <onsuccess>e65c1530-5382-48b3-8f72-0b0fc8ef8159</onsuccess>
+  </stage>
+  <stage stageid="e65c1530-5382-48b3-8f72-0b0fc8ef8159" name="Exception" type="Exception">
+    <display x="300" y="0" />
+    <exception localized="yes" type="" detail="" usecurrent="yes" />
+  </stage>
+  <stage stageid="8aedeeba-e52c-4a55-986f-48ecee45a4dd" name="Read Email" type="SubSheetInfo">
+    <subsheetid>b62cfccc-f25b-42b0-aa36-09415186b9f9</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="39334028-5ac1-4450-9b1b-0fbdf63f235a" name="Start" type="Start">
+    <subsheetid>b62cfccc-f25b-42b0-aa36-09415186b9f9</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>c2bcfad4-2a4c-4411-92cb-64bcaaa125ee</onsuccess>
+  </stage>
+  <stage stageid="c2bcfad4-2a4c-4411-92cb-64bcaaa125ee" name="End" type="End">
+    <subsheetid>b62cfccc-f25b-42b0-aa36-09415186b9f9</subsheetid>
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="b8967927-b482-497e-9970-1fc004a760fd" name="Read File from Shared Drive" type="SubSheetInfo">
+    <subsheetid>496be92c-9bb9-468a-a078-42e669bdd771</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="7e85912b-8e5d-43a5-b2b7-064ed7360605" name="Start" type="Start">
+    <subsheetid>496be92c-9bb9-468a-a078-42e669bdd771</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>91c35495-57c0-4a30-a90e-25a811d04c84</onsuccess>
+  </stage>
+  <stage stageid="91c35495-57c0-4a30-a90e-25a811d04c84" name="End" type="End">
+    <subsheetid>496be92c-9bb9-468a-a078-42e669bdd771</subsheetid>
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="7b0bb9d1-4866-4c6c-873f-4eb05e8f37bf" name="Read Work Item from Application" type="SubSheetInfo">
+    <subsheetid>befcbe65-b925-4613-9e77-b75ddce35580</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="36bbcdd9-f064-469d-9f4b-d6b5ca791595" name="Start" type="Start">
+    <subsheetid>befcbe65-b925-4613-9e77-b75ddce35580</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>3b63d5ce-6680-49a0-baff-d00fc8810122</onsuccess>
+  </stage>
+  <stage stageid="3b63d5ce-6680-49a0-baff-d00fc8810122" name="End" type="End">
+    <subsheetid>befcbe65-b925-4613-9e77-b75ddce35580</subsheetid>
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="a77a76ce-cf2a-4e39-b2a3-b049e429f2ac" name="Recover" type="Recover">
+    <subsheetid>b62cfccc-f25b-42b0-aa36-09415186b9f9</subsheetid>
+    <loginhibit />
+    <display x="195" y="-30" />
+    <onsuccess>1e308d5d-acce-41c1-8c04-e4915c442f01</onsuccess>
+  </stage>
+  <stage stageid="1e308d5d-acce-41c1-8c04-e4915c442f01" name="Business Exception" type="Exception">
+    <subsheetid>b62cfccc-f25b-42b0-aa36-09415186b9f9</subsheetid>
+    <display x="390" y="-30" />
+    <exception localized="yes" type="Business Exception" detail="&quot;&lt;Exception Catgeory&gt;: &lt;Customer or Predefined exception details&gt;&quot;" />
+  </stage>
+  <stage stageid="73ecbef3-6dcb-4ab0-81e4-97c0c4fc4c1c" name="Recover" type="Recover">
+    <subsheetid>496be92c-9bb9-468a-a078-42e669bdd771</subsheetid>
+    <loginhibit />
+    <display x="180" y="-30" />
+    <onsuccess>5108096d-8960-4737-8fe8-77e614712729</onsuccess>
+  </stage>
+  <stage stageid="5108096d-8960-4737-8fe8-77e614712729" name="Business Exception" type="Exception">
+    <subsheetid>496be92c-9bb9-468a-a078-42e669bdd771</subsheetid>
+    <display x="375" y="-30" />
+    <exception localized="yes" type="Business Exception" detail="&quot;&lt;Exception Catgeory&gt;: &lt;Customer or Predefined exception details&gt;&quot;" />
+  </stage>
+  <stage stageid="4101c9f6-744f-4aac-86ee-22e75097c18e" name="Recover" type="Recover">
+    <subsheetid>befcbe65-b925-4613-9e77-b75ddce35580</subsheetid>
+    <loginhibit />
+    <display x="210" y="-30" />
+    <onsuccess>069894d0-1349-498e-aba7-3aed8a16daa7</onsuccess>
+  </stage>
+  <stage stageid="069894d0-1349-498e-aba7-3aed8a16daa7" name="Business Exception" type="Exception">
+    <subsheetid>befcbe65-b925-4613-9e77-b75ddce35580</subsheetid>
+    <display x="405" y="-30" />
+    <exception localized="yes" type="Business Exception" detail="&quot;&lt;Exception Catgeory&gt;: &lt;Customer or Predefined exception details&gt;&quot;" />
+  </stage>
+  <stage stageid="078cc3ce-92eb-47f7-8c36-54e74709cd89" name="Read Email" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <onsuccess>d176256d-160d-4f93-b1c8-4cec0f7a8199</onsuccess>
+    <processid>b62cfccc-f25b-42b0-aa36-09415186b9f9</processid>
+  </stage>
+  <stage stageid="1a34b297-0748-42bf-840d-91d7079a9a70" name="Read File from Shared Drive" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="75" />
+    <onsuccess>35cc90ae-d9d7-4696-bc2a-0c6a12834867</onsuccess>
+    <processid>496be92c-9bb9-468a-a078-42e669bdd771</processid>
+  </stage>
+  <stage stageid="f1c484c5-5446-4261-ae33-547e6e705429" name="Read Work Item from Application" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="165" />
+    <onsuccess>574c927f-34ca-4dce-bb71-8111eacd9897</onsuccess>
+    <processid>befcbe65-b925-4613-9e77-b75ddce35580</processid>
+  </stage>
+  <stage stageid="d176256d-160d-4f93-b1c8-4cec0f7a8199" name="Note1" type="Note">
+    <narrative>OR</narrative>
+    <display x="15" y="15" />
+    <onsuccess>1a34b297-0748-42bf-840d-91d7079a9a70</onsuccess>
+  </stage>
+  <stage stageid="35cc90ae-d9d7-4696-bc2a-0c6a12834867" name="Note1" type="Note">
+    <narrative>OR</narrative>
+    <display x="15" y="120" />
+    <onsuccess>f1c484c5-5446-4261-ae33-547e6e705429</onsuccess>
+  </stage>
+</process>
