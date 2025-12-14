@@ -1,0 +1,1424 @@
+﻿<process name="Utility - UIA WebAutomation" version="1.0" bpversion="7.4.1.15931" narrative="" byrefcollection="true" processrunningmessage="" disableversioning="false" type="object" runmode="Exclusive" preferredid="c677345e-8655-4af0-a2a0-5858170f6758">
+  <appdef>
+    <element name="Utility - Dynamic Reusable WebElement">
+      <id>9851d3d7-33ef-4cbe-8409-a6d7b8252de8</id>
+      <element name="Write">
+        <id>6f98ee9b-9189-4c4d-9474-e3b623613ac8</id>
+        <type>UIAEdit</type>
+        <basetype>UIAEdit</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="uX" isUserVisible="True">
+            <ProcessValue datatype="number" value="1005" />
+          </attribute>
+          <attribute name="uY" isUserVisible="True">
+            <ProcessValue datatype="number" value="469" />
+          </attribute>
+          <attribute name="uWidth" isUserVisible="True">
+            <ProcessValue datatype="number" value="635" />
+          </attribute>
+          <attribute name="uHeight" isUserVisible="True">
+            <ProcessValue datatype="number" value="65" />
+          </attribute>
+          <attribute name="uClassName" isUserVisible="True">
+            <ProcessValue datatype="text" value="form-text required form-control" />
+          </attribute>
+          <attribute name="uAutomationId" comparisontype="dynamic" inuse="True" isUserVisible="True">
+            <ProcessValue datatype="text" value="edit-name" />
+          </attribute>
+          <attribute name="uControlType" isUserVisible="True">
+            <ProcessValue datatype="text" value="Edit" />
+          </attribute>
+          <attribute name="uLocalizedControlType" isUserVisible="True">
+            <ProcessValue datatype="text" value="edit" />
+          </attribute>
+          <attribute name="uIsPassword" isUserVisible="True">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uIsRequiredForForm" isUserVisible="True">
+            <ProcessValue datatype="flag" value="True" />
+          </attribute>
+          <attribute name="uName" isUserVisible="True">
+            <ProcessValue datatype="text" value="User ID" />
+          </attribute>
+          <attribute name="uOrientation" isUserVisible="True">
+            <ProcessValue datatype="text" value="None" />
+          </attribute>
+          <attribute name="uItemStatus" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uItemType" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uOffscreen" isUserVisible="True">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uTopLevelWindowId" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uLabeledBy" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uEnabled" isUserVisible="True">
+            <ProcessValue datatype="text" value="True" />
+          </attribute>
+          <attribute name="uAcceleratorKey" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uAccessKey" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uHasKeyboardFocus" isUserVisible="True">
+            <ProcessValue datatype="text" value="True" />
+          </attribute>
+          <attribute name="uHelpText" isUserVisible="True">
+            <ProcessValue datatype="text" value="Enter your username or email address" />
+          </attribute>
+          <attribute name="uProcessId" isUserVisible="True">
+            <ProcessValue datatype="text" value="5216" />
+          </attribute>
+          <attribute name="puControlType" isUserVisible="True">
+            <ProcessValue datatype="text" value="Group" />
+          </attribute>
+          <attribute name="puLocalizedControlType" isUserVisible="True">
+            <ProcessValue datatype="text" value="main" />
+          </attribute>
+          <attribute name="puClassName" isUserVisible="True">
+            <ProcessValue datatype="text" value="main-container container js-quickedit-main-content" />
+          </attribute>
+          <attribute name="puName" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="puAutomationId" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="matchindex" isUserVisible="True">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+        </attributes>
+      </element>
+      <element name="Read">
+        <id>90f95f27-5775-4a08-9b71-aca5b19c2bd5</id>
+        <type>UIAElement</type>
+        <basetype>UIAEdit</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="uX" isUserVisible="True">
+            <ProcessValue datatype="number" value="1005" />
+          </attribute>
+          <attribute name="uY" isUserVisible="True">
+            <ProcessValue datatype="number" value="408" />
+          </attribute>
+          <attribute name="uWidth" isUserVisible="True">
+            <ProcessValue datatype="number" value="106" />
+          </attribute>
+          <attribute name="uHeight" isUserVisible="True">
+            <ProcessValue datatype="number" value="44" />
+          </attribute>
+          <attribute name="uClassName" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uAutomationId" comparisontype="dynamic" inuse="True" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uControlType" isUserVisible="True">
+            <ProcessValue datatype="text" value="Text" />
+          </attribute>
+          <attribute name="uLocalizedControlType" isUserVisible="True">
+            <ProcessValue datatype="text" value="text" />
+          </attribute>
+          <attribute name="uIsPassword" isUserVisible="True">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uIsRequiredForForm" isUserVisible="True">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uName" isUserVisible="True">
+            <ProcessValue datatype="text" value="User ID" />
+          </attribute>
+          <attribute name="uOrientation" isUserVisible="True">
+            <ProcessValue datatype="text" value="None" />
+          </attribute>
+          <attribute name="uItemStatus" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uItemType" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uOffscreen" isUserVisible="True">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uTopLevelWindowId" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uLabeledBy" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uEnabled" isUserVisible="True">
+            <ProcessValue datatype="text" value="True" />
+          </attribute>
+          <attribute name="uAcceleratorKey" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uAccessKey" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uHasKeyboardFocus" isUserVisible="True">
+            <ProcessValue datatype="text" value="False" />
+          </attribute>
+          <attribute name="uHelpText" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uProcessId" isUserVisible="True">
+            <ProcessValue datatype="text" value="5216" />
+          </attribute>
+          <attribute name="puControlType" isUserVisible="True">
+            <ProcessValue datatype="text" value="Group" />
+          </attribute>
+          <attribute name="puLocalizedControlType" isUserVisible="True">
+            <ProcessValue datatype="text" value="main" />
+          </attribute>
+          <attribute name="puClassName" isUserVisible="True">
+            <ProcessValue datatype="text" value="main-container container js-quickedit-main-content" />
+          </attribute>
+          <attribute name="puName" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="puAutomationId" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="matchindex" isUserVisible="True">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+        </attributes>
+      </element>
+      <element name="Navigate">
+        <id>985dd638-9088-49c5-bb8b-4c4893418e32</id>
+        <type>UIAButton</type>
+        <basetype>UIAButton</basetype>
+        <datatype>text</datatype>
+        <diagnose>False</diagnose>
+        <attributes>
+          <attribute name="uX" isUserVisible="True">
+            <ProcessValue datatype="number" value="1005" />
+          </attribute>
+          <attribute name="uY" isUserVisible="True">
+            <ProcessValue datatype="number" value="520" />
+          </attribute>
+          <attribute name="uWidth" isUserVisible="True">
+            <ProcessValue datatype="number" value="240" />
+          </attribute>
+          <attribute name="uHeight" isUserVisible="True">
+            <ProcessValue datatype="number" value="64" />
+          </attribute>
+          <attribute name="uClassName" isUserVisible="True">
+            <ProcessValue datatype="text" value="btn btn-success btn-lg button js-form-submit form-submit" />
+          </attribute>
+          <attribute name="uAutomationId" comparisontype="dynamic" inuse="True" isUserVisible="True">
+            <ProcessValue datatype="text" value="edit-submit" />
+          </attribute>
+          <attribute name="uControlType" isUserVisible="True">
+            <ProcessValue datatype="text" value="Button" />
+          </attribute>
+          <attribute name="uLocalizedControlType" isUserVisible="True">
+            <ProcessValue datatype="text" value="button" />
+          </attribute>
+          <attribute name="uIsPassword" isUserVisible="True">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uIsRequiredForForm" isUserVisible="True">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uName" isUserVisible="True">
+            <ProcessValue datatype="text" value="Login" />
+          </attribute>
+          <attribute name="uOrientation" isUserVisible="True">
+            <ProcessValue datatype="text" value="None" />
+          </attribute>
+          <attribute name="uItemStatus" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uItemType" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uOffscreen" isUserVisible="True">
+            <ProcessValue datatype="flag" value="False" />
+          </attribute>
+          <attribute name="uTopLevelWindowId" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uLabeledBy" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uEnabled" isUserVisible="True">
+            <ProcessValue datatype="text" value="True" />
+          </attribute>
+          <attribute name="uAcceleratorKey" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uAccessKey" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uHasKeyboardFocus" isUserVisible="True">
+            <ProcessValue datatype="text" value="False" />
+          </attribute>
+          <attribute name="uHelpText" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="uProcessId" isUserVisible="True">
+            <ProcessValue datatype="text" value="5216" />
+          </attribute>
+          <attribute name="puControlType" isUserVisible="True">
+            <ProcessValue datatype="text" value="Group" />
+          </attribute>
+          <attribute name="puLocalizedControlType" isUserVisible="True">
+            <ProcessValue datatype="text" value="main" />
+          </attribute>
+          <attribute name="puClassName" isUserVisible="True">
+            <ProcessValue datatype="text" value="main-container container js-quickedit-main-content" />
+          </attribute>
+          <attribute name="puName" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="puAutomationId" isUserVisible="True">
+            <ProcessValue datatype="text" value="" />
+          </attribute>
+          <attribute name="matchindex" isUserVisible="True">
+            <ProcessValue datatype="number" value="1" />
+          </attribute>
+        </attributes>
+      </element>
+      <type>Application</type>
+      <basetype>Application</basetype>
+      <datatype>unknown</datatype>
+      <diagnose>False</diagnose>
+    </element>
+    <apptypeinfo>
+      <id>BrowserLaunch</id>
+      <parameters>
+        <parameter>
+          <name>Path</name>
+          <value>C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe</value>
+        </parameter>
+        <parameter>
+          <name>CommandLineParams</name>
+          <value>
+          </value>
+        </parameter>
+        <parameter>
+          <name>prelaunchbrowser</name>
+          <value>False</value>
+        </parameter>
+        <parameter>
+          <name>ProcessMode</name>
+          <value>Internal</value>
+        </parameter>
+        <parameter>
+          <name>ExternalProcessTimeout</name>
+          <value>0</value>
+        </parameter>
+      </parameters>
+    </apptypeinfo>
+  </appdef>
+  <view>
+    <camerax>289</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="624867db-32f5-4a9c-8275-2a5b9a3be2b9" type="CleanUp" published="True">
+    <name>Clean Up</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="fec47fe9-cf63-4c93-bf6c-64b1bc57e9ea" type="Normal" published="True">
+    <name>Launch</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="b27993a3-9045-4034-b09e-fef6ebda3aeb" type="Normal" published="True">
+    <name>Attach</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>42</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="53983984-7e0c-488e-ba75-a0ed628c7a15" type="Normal" published="True">
+    <name>Get Logged In Status</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>210</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="69ab3bc3-4390-44a7-a93c-028c5a987ba9" type="Normal" published="True">
+    <name>Terminate</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>42</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="f775a4da-bd39-473d-a652-36fbe13eee66" type="Normal" published="True">
+    <name>Detach</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="3ddaf75b-b5cd-4f1e-8cbc-84ef26b9e4ae" type="Normal" published="True">
+    <name>UIA - Read by AutomationID</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="0317b9ca-93d6-43ea-a2df-bc75aaa480bd" type="Normal" published="True">
+    <name>UIA - Write by AutomationID</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="2e96dac5-3e02-4c12-b76a-e8e6c266bec2" type="Normal" published="True">
+    <name>UIA - Write Password by AutomationID</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="6ba3795a-4639-42ba-af8e-7392d9831672" type="Normal" published="True">
+    <name>UIA - Click by AutomationID</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="e3d96806-f16d-4632-ac1c-71c92a75ef1a" name="Start" type="Start">
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>0adb3a5f-9f20-4401-8fa6-dbe118992c36</onsuccess>
+  </stage>
+  <stage stageid="0adb3a5f-9f20-4401-8fa6-dbe118992c36" name="End" type="End">
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="202959c6-545d-45e9-a0d0-37fcc30cc5e4" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+    <references>
+      <reference>System.dll</reference>
+      <reference>System.Data.dll</reference>
+      <reference>System.Xml.dll</reference>
+      <reference>System.Drawing.dll</reference>
+    </references>
+    <imports>
+      <import>System</import>
+      <import>System.Drawing</import>
+      <import>System.Data</import>
+    </imports>
+    <language>visualbasic</language>
+    <pythondllpath>
+    </pythondllpath>
+    <pythonenvpath>
+    </pythonenvpath>
+    <globalcode><![CDATA[]]></globalcode>
+    <code><![CDATA[]]></code>
+  </stage>
+  <stage stageid="1f1c076c-c936-4e62-b6fe-0fda9b105b71" name="Clean Up" type="SubSheetInfo">
+    <subsheetid>624867db-32f5-4a9c-8275-2a5b9a3be2b9</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="043e5ef9-0d9b-4674-83b8-8d2836a3c78e" name="Start" type="Start">
+    <subsheetid>624867db-32f5-4a9c-8275-2a5b9a3be2b9</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>3c16fc6f-2f42-49c8-8a61-80f87b03d3dd</onsuccess>
+  </stage>
+  <stage stageid="3c16fc6f-2f42-49c8-8a61-80f87b03d3dd" name="End" type="End">
+    <subsheetid>624867db-32f5-4a9c-8275-2a5b9a3be2b9</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="5d2225f2-d601-4d4c-86c4-6dccf3bf2e5a" name="Launch" type="SubSheetInfo">
+    <subsheetid>fec47fe9-cf63-4c93-bf6c-64b1bc57e9ea</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="73db154e-7040-4777-967d-936f6633f8a6" name="Start" type="Start">
+    <subsheetid>fec47fe9-cf63-4c93-bf6c-64b1bc57e9ea</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="text" name="URL" stage="URL" />
+    </inputs>
+    <onsuccess>3a83a6fb-4fa6-464e-b978-aae365aec30b</onsuccess>
+  </stage>
+  <stage stageid="ecb2a000-aaf9-4c16-aaa8-f17172d1eb3e" name="End" type="End">
+    <subsheetid>fec47fe9-cf63-4c93-bf6c-64b1bc57e9ea</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="7f964043-b559-495d-b88a-83ec1561fecd" name="Clean Up" type="Note">
+    <subsheetid>624867db-32f5-4a9c-8275-2a5b9a3be2b9</subsheetid>
+    <narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="6babc285-2701-4ce4-9e4a-b8358078265f" name="Initialise" type="Note">
+    <narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="3a83a6fb-4fa6-464e-b978-aae365aec30b" name="Launch" type="Navigate">
+    <subsheetid>fec47fe9-cf63-4c93-bf6c-64b1bc57e9ea</subsheetid>
+    <loginhibit />
+    <display x="15" y="-15" />
+    <onsuccess>ecb2a000-aaf9-4c16-aaa8-f17172d1eb3e</onsuccess>
+    <step>
+      <element id="9851d3d7-33ef-4cbe-8409-a6d7b8252de8" />
+      <action>
+        <id>Launch</id>
+        <arguments>
+          <argument>
+            <id>Path</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>CommandLineParams</id>
+            <value>[URL]</value>
+          </argument>
+          <argument>
+            <id>prelaunchbrowser</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>ProcessMode</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+        <outputs>
+          <output>
+            <id>trackingid</id>
+            <value>
+            </value>
+          </output>
+        </outputs>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="3d90ad05-296d-410f-a7bd-49769b1cccdf" name="URL" type="Data">
+    <subsheetid>fec47fe9-cf63-4c93-bf6c-64b1bc57e9ea</subsheetid>
+    <narrative>"https://practice.expandtesting.com/login"
+"https://portal.blueprism.com/user/login"</narrative>
+    <display x="-165" y="15" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="fe96fb60-5ba3-4744-bc2a-8a8829c0604c" name="Attach" type="SubSheetInfo">
+    <subsheetid>b27993a3-9045-4034-b09e-fef6ebda3aeb</subsheetid>
+    <narrative>Attempts to attach to the application and returns a flag indicating success</narrative>
+    <display x="-195" y="-105" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="47b35468-8414-4b73-8e79-3645996a4471" name="Start" type="Start">
+    <subsheetid>b27993a3-9045-4034-b09e-fef6ebda3aeb</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="Attached" stage="Attached" />
+      <input type="collection" name="Window Titles" stage="Window Titles" />
+    </inputs>
+    <onsuccess>57dcc976-f8b3-49bd-bb76-5b6efa8e7db3</onsuccess>
+  </stage>
+  <stage stageid="42cfa9dd-4d84-4817-a44f-79d84592a65a" name="End" type="End">
+    <subsheetid>b27993a3-9045-4034-b09e-fef6ebda3aeb</subsheetid>
+    <loginhibit />
+    <display x="15" y="195" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="flag" name="Attached" stage="Attached" />
+    </outputs>
+  </stage>
+  <stage stageid="3a69adb2-a573-479f-87cb-5e26686b1ddb" name="Window Titles" type="Collection">
+    <subsheetid>b27993a3-9045-4034-b09e-fef6ebda3aeb</subsheetid>
+    <loginhibit />
+    <display x="-195" y="45" w="150" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="Window Title" type="text" />
+    </collectioninfo>
+  </stage>
+  <stage stageid="57dcc976-f8b3-49bd-bb76-5b6efa8e7db3" name="Read Attached" type="Read">
+    <subsheetid>b27993a3-9045-4034-b09e-fef6ebda3aeb</subsheetid>
+    <loginhibit />
+    <display x="15" y="-45" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>78787f92-1462-4d68-ac2d-cba02094a774</onsuccess>
+    <step stage="Attached">
+      <element id="9851d3d7-33ef-4cbe-8409-a6d7b8252de8" />
+      <action>
+        <id>WebIsConnected</id>
+        <arguments>
+          <argument>
+            <id>trackingid</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="48de11ce-7b3c-4b70-bcd7-57b8289a02d6" name="Attached" type="Data">
+    <subsheetid>b27993a3-9045-4034-b09e-fef6ebda3aeb</subsheetid>
+    <display x="-195" y="-15" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="78787f92-1462-4d68-ac2d-cba02094a774" name="Attached?" type="Decision">
+    <subsheetid>b27993a3-9045-4034-b09e-fef6ebda3aeb</subsheetid>
+    <loginhibit />
+    <display x="15" y="30" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <decision expression="[Attached]" />
+    <ontrue>fc1848d2-0137-4bd1-a463-0adcc776a122</ontrue>
+    <onfalse>5c421233-40bd-4deb-bd11-82009b80f8cb</onfalse>
+  </stage>
+  <stage stageid="5c421233-40bd-4deb-bd11-82009b80f8cb" name="Attach" type="Navigate">
+    <subsheetid>b27993a3-9045-4034-b09e-fef6ebda3aeb</subsheetid>
+    <loginhibit />
+    <display x="135" y="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>7ff457ae-2e50-4493-a4d4-7fd0747f5a96</onsuccess>
+    <step>
+      <element id="9851d3d7-33ef-4cbe-8409-a6d7b8252de8" />
+      <action>
+        <id>AttachApplication</id>
+        <arguments>
+          <argument>
+            <id>WindowTitlesCollection</id>
+            <value>[Window Titles]</value>
+          </argument>
+          <argument>
+            <id>WindowTitle</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>ProcessName</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>ChildIndex</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>ProcessID</id>
+            <value>
+            </value>
+          </argument>
+          <argument>
+            <id>Username</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+        <outputs>
+          <output>
+            <id>trackingid</id>
+            <value>
+            </value>
+          </output>
+        </outputs>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="7ff457ae-2e50-4493-a4d4-7fd0747f5a96" name="Attached" type="Calculation">
+    <subsheetid>b27993a3-9045-4034-b09e-fef6ebda3aeb</subsheetid>
+    <loginhibit />
+    <display x="135" y="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>862c6974-72f4-4e56-a617-40220bd7257e</onsuccess>
+    <calculation expression="True" stage="Attached" />
+  </stage>
+  <stage stageid="8d0d2ba6-6e04-4988-a6b5-81f4de870f62" name="Recover" type="Recover">
+    <subsheetid>b27993a3-9045-4034-b09e-fef6ebda3aeb</subsheetid>
+    <display x="225" y="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>149ac354-745c-4365-9d27-6a60c948de5e</onsuccess>
+  </stage>
+  <stage stageid="149ac354-745c-4365-9d27-6a60c948de5e" name="Resume" type="Resume">
+    <subsheetid>b27993a3-9045-4034-b09e-fef6ebda3aeb</subsheetid>
+    <display x="225" y="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>e6e493bd-0fb7-4dc5-bd46-f935495e610c</onsuccess>
+  </stage>
+  <stage stageid="6b1b007c-4e1d-4d86-8456-3c5e6abf6e87" name="Block1" type="Block">
+    <subsheetid>b27993a3-9045-4034-b09e-fef6ebda3aeb</subsheetid>
+    <loginhibit />
+    <display x="75" y="-15" w="210" h="75" />
+    <font family="Tahoma" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="e6e493bd-0fb7-4dc5-bd46-f935495e610c" name="Note1" type="Note">
+    <subsheetid>b27993a3-9045-4034-b09e-fef6ebda3aeb</subsheetid>
+    <loginhibit />
+    <narrative>Assume the application is not running</narrative>
+    <display x="225" y="195" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>862c6974-72f4-4e56-a617-40220bd7257e</onsuccess>
+  </stage>
+  <stage stageid="862c6974-72f4-4e56-a617-40220bd7257e" name="anchor1" type="Anchor">
+    <subsheetid>b27993a3-9045-4034-b09e-fef6ebda3aeb</subsheetid>
+    <loginhibit />
+    <display x="135" y="195" w="10" h="10" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>42cfa9dd-4d84-4817-a44f-79d84592a65a</onsuccess>
+  </stage>
+  <stage stageid="69fd990f-5e48-424a-be31-9a702116fc1d" name="Note2" type="Note">
+    <subsheetid>b27993a3-9045-4034-b09e-fef6ebda3aeb</subsheetid>
+    <narrative>** NB The attach is using the Windows Titles collection but it can be changed to use a single window title or the (executable) process name.</narrative>
+    <display x="255" y="-105" w="210" h="120" />
+    <font family="Tahoma" size="12" style="Bold" color="FF00FF" />
+    <onsuccess>5c421233-40bd-4deb-bd11-82009b80f8cb</onsuccess>
+  </stage>
+  <stage stageid="fc1848d2-0137-4bd1-a463-0adcc776a122" name="Note3" type="Note">
+    <subsheetid>b27993a3-9045-4034-b09e-fef6ebda3aeb</subsheetid>
+    <loginhibit />
+    <narrative>No need to attach</narrative>
+    <display x="15" y="120" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>42cfa9dd-4d84-4817-a44f-79d84592a65a</onsuccess>
+  </stage>
+  <stage stageid="5327ab89-13ae-4a1a-987a-b02b6cc665e8" name="Terminate" type="SubSheetInfo">
+    <subsheetid>69ab3bc3-4390-44a7-a93c-028c5a987ba9</subsheetid>
+    <narrative>Kills the application</narrative>
+    <display x="-195" y="-105" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="bc89c975-e1f8-481b-a77f-873996d2a210" name="Start" type="Start">
+    <subsheetid>69ab3bc3-4390-44a7-a93c-028c5a987ba9</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>2633e226-7140-47e4-acea-304e0f2d37bd</onsuccess>
+  </stage>
+  <stage stageid="8326f851-1257-4df6-b3ba-3f98efe243ac" name="Attached" type="Data">
+    <subsheetid>69ab3bc3-4390-44a7-a93c-028c5a987ba9</subsheetid>
+    <display x="-195" y="60" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="2633e226-7140-47e4-acea-304e0f2d37bd" name="Terminate" type="Navigate">
+    <subsheetid>69ab3bc3-4390-44a7-a93c-028c5a987ba9</subsheetid>
+    <loginhibit />
+    <display x="15" y="-30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>8ac11954-55ef-4e08-8bc3-c3dc81fa8201</onsuccess>
+    <step>
+      <element id="9851d3d7-33ef-4cbe-8409-a6d7b8252de8" />
+      <action>
+        <id>WebCloseApplication</id>
+        <arguments>
+          <argument>
+            <id>trackingid</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="8ac11954-55ef-4e08-8bc3-c3dc81fa8201" name="End1" type="End">
+    <subsheetid>69ab3bc3-4390-44a7-a93c-028c5a987ba9</subsheetid>
+    <loginhibit />
+    <display x="15" y="75" />
+  </stage>
+  <stage stageid="87788147-07af-49ce-aa62-70d0a53c00a3" name="Detach" type="SubSheetInfo">
+    <subsheetid>f775a4da-bd39-473d-a652-36fbe13eee66</subsheetid>
+    <narrative>Detaches the active web browser session.</narrative>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="7bb76d77-5e47-4d7f-a176-bc46fd742bd9" name="Start" type="Start">
+    <subsheetid>f775a4da-bd39-473d-a652-36fbe13eee66</subsheetid>
+    <loginhibit />
+    <narrative>Start of the detach process.</narrative>
+    <display x="15" y="-105" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>15ce5dd3-9245-4e77-a3db-e314cb4887be</onsuccess>
+  </stage>
+  <stage stageid="f285532e-5016-4f18-a04e-42eefefce366" name="Attached" type="Data">
+    <subsheetid>f775a4da-bd39-473d-a652-36fbe13eee66</subsheetid>
+    <display x="-195" y="60" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="15ce5dd3-9245-4e77-a3db-e314cb4887be" name="Detach Browser" type="Navigate">
+    <subsheetid>f775a4da-bd39-473d-a652-36fbe13eee66</subsheetid>
+    <loginhibit />
+    <display x="15" y="-15" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>978810d3-81f0-4215-89fd-da8639c0d3eb</onsuccess>
+    <step>
+      <element id="9851d3d7-33ef-4cbe-8409-a6d7b8252de8" />
+      <action>
+        <id>WebDetachApplication</id>
+        <arguments>
+          <argument>
+            <id>trackingid</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="978810d3-81f0-4215-89fd-da8639c0d3eb" name="End" type="End">
+    <subsheetid>f775a4da-bd39-473d-a652-36fbe13eee66</subsheetid>
+    <loginhibit />
+    <narrative>End of process.</narrative>
+    <display x="15" y="75" />
+  </stage>
+  <stage stageid="7b27f49b-ecdf-45d9-a4a6-d085bba91745" name="UIA - Read by AutomationID" type="SubSheetInfo">
+    <subsheetid>3ddaf75b-b5cd-4f1e-8cbc-84ef26b9e4ae</subsheetid>
+    <narrative>A page-level element with a unique AutomationId that automation tools can reliably locate and read.</narrative>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="af9e916f-0ab3-45ba-9e99-2df82aed444c" name="Start" type="Start">
+    <subsheetid>3ddaf75b-b5cd-4f1e-8cbc-84ef26b9e4ae</subsheetid>
+    <loginhibit />
+    <narrative>Start of the read process.</narrative>
+    <display x="-30" y="-105" />
+    <inputs>
+      <input type="text" name="ElementID" stage="ElementID" />
+      <input type="number" name="WaitTime" stage="WaitTime" />
+    </inputs>
+    <onsuccess>7bea310d-1481-4870-8acf-4e83877dfbc4</onsuccess>
+  </stage>
+  <stage stageid="9d70dfdc-8bd4-4cfc-a994-a5aa5e759d1a" name="End" type="End">
+    <subsheetid>3ddaf75b-b5cd-4f1e-8cbc-84ef26b9e4ae</subsheetid>
+    <loginhibit />
+    <narrative>End of process.</narrative>
+    <display x="30" y="120" />
+    <outputs>
+      <output type="text" name="Value from Read" stage="Value from Read" />
+    </outputs>
+  </stage>
+  <stage stageid="3951bca2-0670-428d-9947-9d9e846825f9" name="Reader" type="Read">
+    <subsheetid>3ddaf75b-b5cd-4f1e-8cbc-84ef26b9e4ae</subsheetid>
+    <loginhibit />
+    <display x="30" y="30" />
+    <onsuccess>9d70dfdc-8bd4-4cfc-a994-a5aa5e759d1a</onsuccess>
+    <step stage="Value from Read">
+      <element id="90f95f27-5775-4a08-9b71-aca5b19c2bd5">
+        <elementparameter>
+          <name>uAutomationId</name>
+          <expression>[ElementID]</expression>
+          <datatype>text</datatype>
+          <comparisontype>Equal</comparisontype>
+        </elementparameter>
+      </element>
+      <action>
+        <id>UIAGetValue</id>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="ef4c732b-547e-4821-9cae-e34c7cac9537" name="Value from Read" type="Data">
+    <subsheetid>3ddaf75b-b5cd-4f1e-8cbc-84ef26b9e4ae</subsheetid>
+    <display x="-150" y="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="33995c0e-86ae-4099-a4ff-4889d34af56c" name="ElementID" type="Data">
+    <subsheetid>3ddaf75b-b5cd-4f1e-8cbc-84ef26b9e4ae</subsheetid>
+    <display x="-210" y="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="8f594e89-dae1-4354-9ea5-83256b316c4f" name="Time Out - CheckExists" type="WaitEnd">
+    <subsheetid>3ddaf75b-b5cd-4f1e-8cbc-84ef26b9e4ae</subsheetid>
+    <loginhibit />
+    <display x="90" y="-45" w="30" h="30" />
+    <onsuccess>23c3dfe7-b2a8-4ada-be6d-f1fc6c90bc76</onsuccess>
+    <groupid>4ed4a553-656c-4dbf-a609-4285dfdbe8ca</groupid>
+  </stage>
+  <stage stageid="7bea310d-1481-4870-8acf-4e83877dfbc4" name="CheckExists" type="WaitStart">
+    <subsheetid>3ddaf75b-b5cd-4f1e-8cbc-84ef26b9e4ae</subsheetid>
+    <loginhibit />
+    <display x="-30" y="-45" w="30" h="30" />
+    <groupid>4ed4a553-656c-4dbf-a609-4285dfdbe8ca</groupid>
+    <choices>
+      <choice expression="True">
+        <name>Read Check Exists</name>
+        <distance>60</distance>
+        <ontrue>3951bca2-0670-428d-9947-9d9e846825f9</ontrue>
+        <element id="90f95f27-5775-4a08-9b71-aca5b19c2bd5">
+          <elementparameter>
+            <name>uAutomationId</name>
+            <expression>[ElementID]</expression>
+            <datatype>text</datatype>
+            <comparisontype>Equal</comparisontype>
+          </elementparameter>
+        </element>
+        <condition>
+          <id>CheckExists</id>
+        </condition>
+        <comparetype>Equal</comparetype>
+      </choice>
+    </choices>
+    <timeout>[WaitTime]</timeout>
+  </stage>
+  <stage stageid="23c3dfe7-b2a8-4ada-be6d-f1fc6c90bc76" name="System Exception" type="Exception">
+    <subsheetid>3ddaf75b-b5cd-4f1e-8cbc-84ef26b9e4ae</subsheetid>
+    <display x="165" y="-45" />
+    <exception localized="yes" type="System Exception" detail="&quot;Unable to perform read action: the specified -&quot; &amp; [ElementID] &amp;&quot;- Element ID was not found.&quot;" />
+  </stage>
+  <stage stageid="f13a36fc-4dbb-4cda-b700-585836575a90" name="UIA - Write by AutomationID" type="SubSheetInfo">
+    <subsheetid>0317b9ca-93d6-43ea-a2df-bc75aaa480bd</subsheetid>
+    <narrative>This page is used to write or input data into the web application. All fields and interactive elements are identified using stable, unique Element IDs to ensure reliable and repeatable automation using Blue Prism.</narrative>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="a0cf9c50-9f79-4f34-858f-0bb14ce3ee14" name="Start" type="Start">
+    <subsheetid>0317b9ca-93d6-43ea-a2df-bc75aaa480bd</subsheetid>
+    <loginhibit />
+    <narrative>Start of the write process.</narrative>
+    <display x="-45" y="-105" />
+    <inputs>
+      <input type="text" name="ElementID" stage="ElementID" />
+      <input type="text" name="ElementValue" stage="ElementValue" />
+      <input type="number" name="WaitTime" stage="WaitTime" />
+    </inputs>
+    <onsuccess>de694836-9f4c-4d7b-90ce-eb4034b895c6</onsuccess>
+  </stage>
+  <stage stageid="7df292e1-faf3-4384-85e0-4e9dcb12dacf" name="End" type="End">
+    <subsheetid>0317b9ca-93d6-43ea-a2df-bc75aaa480bd</subsheetid>
+    <loginhibit />
+    <narrative>End of process.</narrative>
+    <display x="30" y="120" />
+  </stage>
+  <stage stageid="e5d0290e-3a25-440e-834e-e60f931cae93" name="ElementID" type="Data">
+    <subsheetid>0317b9ca-93d6-43ea-a2df-bc75aaa480bd</subsheetid>
+    <display x="-195" y="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="2880307c-b497-474b-8928-87cc34d1132e" name="System Exception" type="Exception">
+    <subsheetid>0317b9ca-93d6-43ea-a2df-bc75aaa480bd</subsheetid>
+    <display x="210" y="-45" />
+    <exception localized="yes" type="System Exception" detail="&quot;Unable to perform write action: the specified -&quot; &amp; [ElementID] &amp;&quot;- Element ID was not found.&quot;" />
+  </stage>
+  <stage stageid="936f31c0-41e6-488c-b44d-65244dd4b531" name="Writer" type="Write">
+    <subsheetid>0317b9ca-93d6-43ea-a2df-bc75aaa480bd</subsheetid>
+    <loginhibit />
+    <display x="30" y="30" />
+    <onsuccess>7df292e1-faf3-4384-85e0-4e9dcb12dacf</onsuccess>
+    <step expr="[ElementValue]">
+      <element id="6f98ee9b-9189-4c4d-9474-e3b623613ac8">
+        <elementparameter>
+          <name>uAutomationId</name>
+          <expression>[ElementID]</expression>
+          <datatype>text</datatype>
+          <comparisontype>Equal</comparisontype>
+        </elementparameter>
+      </element>
+    </step>
+  </stage>
+  <stage stageid="9977d61b-2df3-49a8-b53c-5f3939fa0a35" name="ElementValue" type="Data">
+    <subsheetid>0317b9ca-93d6-43ea-a2df-bc75aaa480bd</subsheetid>
+    <display x="-135" y="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d593cc34-b56c-473c-a45b-26f90ba98384" name="UIA - Click by AutomationID" type="SubSheetInfo">
+    <subsheetid>6ba3795a-4639-42ba-af8e-7392d9831672</subsheetid>
+    <narrative>This page is used to perform click actions within the web application. All clickable elements are identified using stable, unique Element IDs to ensure reliable and repeatable automation using Blue Prism.</narrative>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="2c30a4e2-3038-40fa-b9af-b3b07e02aea5" name="Start" type="Start">
+    <subsheetid>6ba3795a-4639-42ba-af8e-7392d9831672</subsheetid>
+    <loginhibit />
+    <narrative>Start of the click process.</narrative>
+    <display x="-30" y="-105" />
+    <inputs>
+      <input type="text" name="ElementID" stage="ElementID" />
+      <input type="text" name="ElementValue" stage="ElementValue" />
+      <input type="number" name="WaitTime" stage="WaitTime" />
+    </inputs>
+    <onsuccess>6a627e66-678b-47dc-b0d7-00cb0112cf6f</onsuccess>
+  </stage>
+  <stage stageid="a6e1ce0f-46d4-4bbe-9484-cb1dd3980781" name="End" type="End">
+    <subsheetid>6ba3795a-4639-42ba-af8e-7392d9831672</subsheetid>
+    <loginhibit />
+    <narrative>End of process.</narrative>
+    <display x="30" y="120" />
+  </stage>
+  <stage stageid="1c841f47-8047-40ff-8b47-63a4c20817d5" name="ElementID" type="Data">
+    <subsheetid>6ba3795a-4639-42ba-af8e-7392d9831672</subsheetid>
+    <display x="-210" y="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="3e3836e5-3320-4216-aa7c-d01f06a0a9ae" name="Time Out - CheckExists" type="WaitEnd">
+    <subsheetid>6ba3795a-4639-42ba-af8e-7392d9831672</subsheetid>
+    <loginhibit />
+    <display x="90" y="-45" w="30" h="30" />
+    <onsuccess>9883eed5-3c3d-4053-9e99-5f69bf7aa27f</onsuccess>
+    <groupid>65e5ad36-1b3f-49cc-be80-4aef40631c3c</groupid>
+  </stage>
+  <stage stageid="6a627e66-678b-47dc-b0d7-00cb0112cf6f" name="CheckExists" type="WaitStart">
+    <subsheetid>6ba3795a-4639-42ba-af8e-7392d9831672</subsheetid>
+    <loginhibit />
+    <display x="-30" y="-45" w="30" h="30" />
+    <groupid>65e5ad36-1b3f-49cc-be80-4aef40631c3c</groupid>
+    <choices>
+      <choice expression="True">
+        <name>Write Check Exists</name>
+        <distance>60</distance>
+        <ontrue>65a1c7d1-1beb-4ac8-9783-a1bd16a8a3b8</ontrue>
+        <element id="6f98ee9b-9189-4c4d-9474-e3b623613ac8">
+          <elementparameter>
+            <name>uAutomationId</name>
+            <expression>[ElementID]</expression>
+            <datatype>text</datatype>
+            <comparisontype>Equal</comparisontype>
+          </elementparameter>
+        </element>
+        <condition>
+          <id>CheckExists</id>
+        </condition>
+        <comparetype>Equal</comparetype>
+      </choice>
+    </choices>
+    <timeout>[WaitTime]</timeout>
+  </stage>
+  <stage stageid="9883eed5-3c3d-4053-9e99-5f69bf7aa27f" name="System Exception" type="Exception">
+    <subsheetid>6ba3795a-4639-42ba-af8e-7392d9831672</subsheetid>
+    <display x="165" y="-45" />
+    <exception localized="yes" type="System Exception" detail="&quot;Unable to perform click action: the specified -&quot; &amp; [ElementID] &amp;&quot;- Element ID was not found.&quot;" />
+  </stage>
+  <stage stageid="65a1c7d1-1beb-4ac8-9783-a1bd16a8a3b8" name="UIAClickCentre" type="Navigate">
+    <subsheetid>6ba3795a-4639-42ba-af8e-7392d9831672</subsheetid>
+    <loginhibit />
+    <display x="30" y="30" />
+    <onsuccess>a6e1ce0f-46d4-4bbe-9484-cb1dd3980781</onsuccess>
+    <step>
+      <element id="985dd638-9088-49c5-bb8b-4c4893418e32">
+        <elementparameter>
+          <name>uAutomationId</name>
+          <expression>[ElementID]</expression>
+          <datatype>text</datatype>
+          <comparisontype>Equal</comparisontype>
+        </elementparameter>
+      </element>
+      <action>
+        <id>UIAFocus</id>
+      </action>
+    </step>
+    <step>
+      <element id="985dd638-9088-49c5-bb8b-4c4893418e32">
+        <elementparameter>
+          <name>uAutomationId</name>
+          <expression>[ElementID]</expression>
+          <datatype>text</datatype>
+          <comparisontype>Equal</comparisontype>
+        </elementparameter>
+      </element>
+      <action>
+        <id>UIAClickCentre</id>
+        <arguments>
+          <argument>
+            <id>newtext</id>
+            <value>
+            </value>
+          </argument>
+        </arguments>
+      </action>
+    </step>
+  </stage>
+  <stage stageid="f9b0e6d3-4dda-4c95-bade-320cfcbef18d" name="Get Logged In Status" type="SubSheetInfo">
+    <subsheetid>53983984-7e0c-488e-ba75-a0ed628c7a15</subsheetid>
+    <narrative>Returns a flag indicating if the application is logged in or not</narrative>
+    <display x="-195" y="-105" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="37a27954-2d5a-4981-a4f4-edcc9813c018" name="Start" type="Start">
+    <subsheetid>53983984-7e0c-488e-ba75-a0ed628c7a15</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>35d0a3d3-0382-4bab-ac52-916ddecd4fed</onsuccess>
+  </stage>
+  <stage stageid="bb201bff-9f57-416f-8583-0a8fe59a8867" name="Logged In" type="Data">
+    <subsheetid>53983984-7e0c-488e-ba75-a0ed628c7a15</subsheetid>
+    <display x="-195" y="60" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="35d0a3d3-0382-4bab-ac52-916ddecd4fed" name="Attach" type="SubSheet">
+    <subsheetid>53983984-7e0c-488e-ba75-a0ed628c7a15</subsheetid>
+    <loginhibit />
+    <display x="15" y="-30" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="flag" name="Attached" friendlyname="Attached" expr="" />
+      <input type="collection" name="Window Titles" friendlyname="Window Titles" expr="" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Attached" friendlyname="Attached" stage="" />
+    </outputs>
+    <onsuccess>026697ca-e09e-47df-9c17-7e6aa7c092a3</onsuccess>
+    <processid>b27993a3-9045-4034-b09e-fef6ebda3aeb</processid>
+  </stage>
+  <stage stageid="ccb43479-9c6c-404d-98a0-de454ff86a1f" name="Attached" type="Data">
+    <subsheetid>53983984-7e0c-488e-ba75-a0ed628c7a15</subsheetid>
+    <display x="-195" y="0" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>flag</datatype>
+    <initialvalue>True</initialvalue>
+    <private />
+  </stage>
+  <stage stageid="026697ca-e09e-47df-9c17-7e6aa7c092a3" name="Attached?" type="Decision">
+    <subsheetid>53983984-7e0c-488e-ba75-a0ed628c7a15</subsheetid>
+    <loginhibit />
+    <display x="15" y="60" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <decision expression="[Attached]" />
+    <ontrue>1db0c90d-e9cf-41b3-858c-3d690110bfa6</ontrue>
+    <onfalse>adce6241-9ee1-4ec8-8556-f35e61d1d479</onfalse>
+  </stage>
+  <stage stageid="adce6241-9ee1-4ec8-8556-f35e61d1d479" name="Not Logged In" type="Calculation">
+    <subsheetid>53983984-7e0c-488e-ba75-a0ed628c7a15</subsheetid>
+    <loginhibit />
+    <display x="165" y="60" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>1e1a7dfb-3336-49ed-8b5c-601afd2fdcd5</onsuccess>
+    <calculation expression="False" stage="Logged In" />
+  </stage>
+  <stage stageid="1e1a7dfb-3336-49ed-8b5c-601afd2fdcd5" name="End1" type="End">
+    <subsheetid>53983984-7e0c-488e-ba75-a0ed628c7a15</subsheetid>
+    <loginhibit />
+    <display x="300" y="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="flag" name="Logged In" stage="Logged In" />
+    </outputs>
+  </stage>
+  <stage stageid="01c6b9e1-2444-4133-84c6-5e5efadb9985" name="Time Out - Wait for Logged In indicators" type="WaitEnd">
+    <subsheetid>53983984-7e0c-488e-ba75-a0ed628c7a15</subsheetid>
+    <loginhibit />
+    <display x="195" y="150" w="30" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>6e266e2a-deb1-4f68-88b5-aec3b45c4540</onsuccess>
+    <groupid>6923f541-0ad1-418c-bd07-cb4f4a5cbc04</groupid>
+  </stage>
+  <stage stageid="1db0c90d-e9cf-41b3-858c-3d690110bfa6" name="Wait for Logged In indicators" type="WaitStart">
+    <subsheetid>53983984-7e0c-488e-ba75-a0ed628c7a15</subsheetid>
+    <loginhibit />
+    <display x="15" y="150" w="60" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <groupid>6923f541-0ad1-418c-bd07-cb4f4a5cbc04</groupid>
+    <choices>
+      <choice expression="True">
+        <name>Read Check Exists</name>
+        <distance>105</distance>
+        <ontrue>bac5a948-d150-44ed-9040-f6a70aa5b2e5</ontrue>
+        <element id="90f95f27-5775-4a08-9b71-aca5b19c2bd5">
+          <elementparameter>
+            <name>uAutomationId</name>
+            <expression>[Element Id Logged In]</expression>
+            <datatype>text</datatype>
+            <comparisontype>Equal</comparisontype>
+          </elementparameter>
+        </element>
+        <condition>
+          <id>CheckExists</id>
+        </condition>
+        <comparetype>Equal</comparetype>
+      </choice>
+    </choices>
+    <timeout>5</timeout>
+  </stage>
+  <stage stageid="6e266e2a-deb1-4f68-88b5-aec3b45c4540" name="System Exception" type="Exception">
+    <subsheetid>53983984-7e0c-488e-ba75-a0ed628c7a15</subsheetid>
+    <display x="300" y="150" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <exception type="System Exception" detail="&quot;Failed waiting for Logged In status indicator&quot;" />
+  </stage>
+  <stage stageid="7173d632-199b-4ee9-94a8-a360141caebc" name="Note2" type="Note">
+    <subsheetid>53983984-7e0c-488e-ba75-a0ed628c7a15</subsheetid>
+    <narrative>** Wait for elements that indicate 'logged in' and 'logged out'. NB there may be more than two indicators.</narrative>
+    <display x="-165" y="150" w="180" h="90" />
+    <font family="Tahoma" size="12" style="Bold" color="FF00FF" />
+    <onsuccess>1db0c90d-e9cf-41b3-858c-3d690110bfa6</onsuccess>
+  </stage>
+  <stage stageid="cca78233-d2a8-4f5a-a8c4-8d3a1cf5e474" name="UIA - Write Password by AutomationID" type="SubSheetInfo">
+    <subsheetid>2e96dac5-3e02-4c12-b76a-e8e6c266bec2</subsheetid>
+    <narrative>This page is used to write password into the web application. All fields and interactive elements are identified using stable, unique Element IDs to ensure reliable and repeatable automation using Blue Prism.</narrative>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="82f81a23-cc69-425c-aabd-143e90f3fa35" name="Start" type="Start">
+    <subsheetid>2e96dac5-3e02-4c12-b76a-e8e6c266bec2</subsheetid>
+    <loginhibit />
+    <narrative>Start of the write password process.</narrative>
+    <display x="-30" y="-105" />
+    <inputs>
+      <input type="text" name="ElementID" stage="ElementID" />
+      <input type="password" name="ElementPassword" stage="ElementPassword" />
+      <input type="number" name="WaitTime" stage="WaitTime" />
+    </inputs>
+    <onsuccess>88b705df-8ce1-4b3e-8cfb-7affb0b1cc1e</onsuccess>
+  </stage>
+  <stage stageid="f81bd8c9-6d45-4ca4-b6c4-fc80c58e5e80" name="End" type="End">
+    <subsheetid>2e96dac5-3e02-4c12-b76a-e8e6c266bec2</subsheetid>
+    <loginhibit />
+    <narrative>End of process.</narrative>
+    <display x="30" y="120" />
+  </stage>
+  <stage stageid="6c1fe025-9584-4545-8065-7c0a44c2ac2c" name="ElementID" type="Data">
+    <subsheetid>2e96dac5-3e02-4c12-b76a-e8e6c266bec2</subsheetid>
+    <display x="-225" y="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="435e0ff4-c5b2-45d3-ab8d-30d4fbc8c0ef" name="Time Out - CheckExists" type="WaitEnd">
+    <subsheetid>2e96dac5-3e02-4c12-b76a-e8e6c266bec2</subsheetid>
+    <loginhibit />
+    <display x="90" y="-45" w="30" h="30" />
+    <onsuccess>0f14a320-3115-44b0-bd83-42157a642eea</onsuccess>
+    <groupid>847996cf-e5bb-46a5-9915-c4fbe7e0b992</groupid>
+  </stage>
+  <stage stageid="88b705df-8ce1-4b3e-8cfb-7affb0b1cc1e" name="CheckExists" type="WaitStart">
+    <subsheetid>2e96dac5-3e02-4c12-b76a-e8e6c266bec2</subsheetid>
+    <loginhibit />
+    <display x="-30" y="-45" w="30" h="30" />
+    <groupid>847996cf-e5bb-46a5-9915-c4fbe7e0b992</groupid>
+    <choices>
+      <choice expression="True">
+        <name>Write Check Exists</name>
+        <distance>60</distance>
+        <ontrue>9948de5c-0140-48ca-b6f8-97bf3e9fa0af</ontrue>
+        <element id="6f98ee9b-9189-4c4d-9474-e3b623613ac8">
+          <elementparameter>
+            <name>uAutomationId</name>
+            <expression>[ElementID]</expression>
+            <datatype>text</datatype>
+            <comparisontype>Equal</comparisontype>
+          </elementparameter>
+        </element>
+        <condition>
+          <id>CheckExists</id>
+        </condition>
+        <comparetype>Equal</comparetype>
+      </choice>
+    </choices>
+    <timeout>[WaitTime]</timeout>
+  </stage>
+  <stage stageid="0f14a320-3115-44b0-bd83-42157a642eea" name="System Exception" type="Exception">
+    <subsheetid>2e96dac5-3e02-4c12-b76a-e8e6c266bec2</subsheetid>
+    <display x="165" y="-45" />
+    <exception localized="yes" type="System Exception" detail="&quot;Unable to perform write password action: the specified -&quot; &amp; [ElementID] &amp;&quot;- Element ID was not found.&quot;" />
+  </stage>
+  <stage stageid="9948de5c-0140-48ca-b6f8-97bf3e9fa0af" name="Writer Password" type="Write">
+    <subsheetid>2e96dac5-3e02-4c12-b76a-e8e6c266bec2</subsheetid>
+    <loginhibit />
+    <display x="30" y="30" />
+    <onsuccess>f81bd8c9-6d45-4ca4-b6c4-fc80c58e5e80</onsuccess>
+    <step expr="[ElementPassword]">
+      <element id="6f98ee9b-9189-4c4d-9474-e3b623613ac8">
+        <elementparameter>
+          <name>uAutomationId</name>
+          <expression>[ElementID]</expression>
+          <datatype>text</datatype>
+          <comparisontype>Equal</comparisontype>
+        </elementparameter>
+      </element>
+    </step>
+  </stage>
+  <stage stageid="8f2cb1e5-7db7-4e49-a499-ec32d3d08d49" name="ElementPassword" type="Data">
+    <subsheetid>2e96dac5-3e02-4c12-b76a-e8e6c266bec2</subsheetid>
+    <display x="-150" y="30" w="90" h="30" />
+    <datatype>password</datatype>
+    <initialvalueenc>
+    </initialvalueenc>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="42c224e3-1afb-4caf-8a48-ee26b1df4aba" name="ElementValue" type="Data">
+    <subsheetid>6ba3795a-4639-42ba-af8e-7392d9831672</subsheetid>
+    <display x="-150" y="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="bac5a948-d150-44ed-9040-f6a70aa5b2e5" name="UIA - Read by AutomationID" type="SubSheet">
+    <subsheetid>53983984-7e0c-488e-ba75-a0ed628c7a15</subsheetid>
+    <loginhibit />
+    <display x="120" y="210" />
+    <inputs>
+      <input type="text" name="ElementID" friendlyname="ElementID" expr="[Element Id Logged In]" />
+      <input type="number" name="WaitTime" friendlyname="WaitTime" expr="5" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Value from Read" friendlyname="Value from Read" stage="Value from Read" />
+    </outputs>
+    <onsuccess>31fef7d9-b4b7-4b5d-8697-3e4de41bba08</onsuccess>
+    <processid>3ddaf75b-b5cd-4f1e-8cbc-84ef26b9e4ae</processid>
+  </stage>
+  <stage stageid="4b3f108d-efdf-42bd-ba05-5ef982251bd6" name="End1" type="End">
+    <subsheetid>53983984-7e0c-488e-ba75-a0ed628c7a15</subsheetid>
+    <loginhibit />
+    <display x="120" y="345" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <outputs>
+      <output type="flag" name="Logged In" stage="Logged In" />
+    </outputs>
+  </stage>
+  <stage stageid="fd3ce7fc-582e-4562-a803-b7bc29421416" name="Value from Read" type="Data">
+    <subsheetid>53983984-7e0c-488e-ba75-a0ed628c7a15</subsheetid>
+    <display x="-375" y="45" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="bed29c1c-9b42-4486-9ea3-e004679958d8" name="Element Id Logged In" type="Data">
+    <subsheetid>53983984-7e0c-488e-ba75-a0ed628c7a15</subsheetid>
+    <loginhibit />
+    <display x="-375" y="0" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">edit-submit</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="31fef7d9-b4b7-4b5d-8697-3e4de41bba08" name="Not Logged In" type="Calculation">
+    <subsheetid>53983984-7e0c-488e-ba75-a0ed628c7a15</subsheetid>
+    <loginhibit />
+    <display x="120" y="270" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>4b3f108d-efdf-42bd-ba05-5ef982251bd6</onsuccess>
+    <calculation expression="False" stage="Logged In" />
+  </stage>
+  <stage stageid="8fd4ca8e-fd15-432d-a29f-6fa1a3d00c69" name="Time Out - CheckExists" type="WaitEnd">
+    <subsheetid>0317b9ca-93d6-43ea-a2df-bc75aaa480bd</subsheetid>
+    <loginhibit />
+    <display x="105" y="-45" w="30" h="30" />
+    <onsuccess>2880307c-b497-474b-8928-87cc34d1132e</onsuccess>
+    <groupid>0f2c7107-b42f-4fc1-9736-e7f88c836147</groupid>
+  </stage>
+  <stage stageid="de694836-9f4c-4d7b-90ce-eb4034b895c6" name="CheckExists" type="WaitStart">
+    <subsheetid>0317b9ca-93d6-43ea-a2df-bc75aaa480bd</subsheetid>
+    <loginhibit />
+    <display x="-45" y="-45" w="30" h="30" />
+    <groupid>0f2c7107-b42f-4fc1-9736-e7f88c836147</groupid>
+    <choices>
+      <choice expression="True">
+        <name>Write Check Exists</name>
+        <distance>75.4082</distance>
+        <ontrue>936f31c0-41e6-488c-b44d-65244dd4b531</ontrue>
+        <element id="6f98ee9b-9189-4c4d-9474-e3b623613ac8">
+          <elementparameter>
+            <name>uAutomationId</name>
+            <expression>[ElementID]</expression>
+            <datatype>text</datatype>
+            <comparisontype>Equal</comparisontype>
+          </elementparameter>
+        </element>
+        <condition>
+          <id>CheckExists</id>
+        </condition>
+        <comparetype>Equal</comparetype>
+      </choice>
+    </choices>
+    <timeout>[WaitTime]</timeout>
+  </stage>
+  <stage stageid="d98bbb02-c87a-470a-b8a7-92b63a01c362" name="WaitTime" type="Data">
+    <subsheetid>3ddaf75b-b5cd-4f1e-8cbc-84ef26b9e4ae</subsheetid>
+    <display x="-90" y="30" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="faddecdc-ca58-4401-b8cb-ee501130c000" name="WaitTime" type="Data">
+    <subsheetid>6ba3795a-4639-42ba-af8e-7392d9831672</subsheetid>
+    <display x="-90" y="30" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ea4a0249-9aad-4305-b122-105f85649768" name="WaitTime" type="Data">
+    <subsheetid>2e96dac5-3e02-4c12-b76a-e8e6c266bec2</subsheetid>
+    <display x="-75" y="30" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="51414919-d961-4984-aab7-35e92c257373" name="WaitTime" type="Data">
+    <subsheetid>0317b9ca-93d6-43ea-a2df-bc75aaa480bd</subsheetid>
+    <display x="-75" y="30" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+</process>

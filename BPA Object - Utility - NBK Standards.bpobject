@@ -1,0 +1,1226 @@
+﻿<process name="Utility - NBK Standards" version="1.0" bpversion="7.4.1.15931" narrative="" byrefcollection="true" processrunningmessage="" disableversioning="false" type="object" runmode="Exclusive" preferredid="5d2cf3b1-b7bc-41e9-b27b-27c78db299de">
+  <appdef>
+    <element name="Application Root">
+      <id>8b9ad450-5b27-43a1-aa8e-39b00ae0faa6</id>
+      <type>Application</type>
+      <basetype>Application</basetype>
+      <datatype>unknown</datatype>
+      <diagnose>False</diagnose>
+    </element>
+  </appdef>
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="333ae05c-6c61-4dde-bfce-55e3aef50870" type="CleanUp" published="True">
+    <name>Clean Up</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="42cbdcb8-7967-46bd-a189-f6c66541e065" type="Normal" published="True">
+    <name>Get Machine Name</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="92e79722-db22-463e-9ba4-bfbb337b6a6e" type="Normal" published="True">
+    <name>Create Custom Log</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="6279e614-689b-413f-98c4-8b46c9f2e4d0" type="Normal" published="True">
+    <name>Delete Files</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="6a374121-5dcf-4e86-af1f-b9374dbbdcb9" type="Normal" published="True">
+    <name>Get User Name</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="bff49792-29f0-4a41-9f14-76955b1fc8ef" type="Normal" published="True">
+    <name>CheckFolderAndFile</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="7053ed27-e667-4dc3-9cbe-4e855f85df7f" type="Normal" published="True">
+    <name>Create Folder</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="e5bf5663-5c23-4cea-95b3-c860fb9c999b" type="Normal" published="True">
+    <name>Terminate Applications</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="fca1a1e3-5342-4710-94b9-5f08a3dbdab4" type="Normal" published="True">
+    <name>Take Screenshot</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="799746ef-c57c-4fc1-8591-773792852474" type="Normal" published="True">
+    <name>Read Json Table</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="2af6258a-7a02-44a0-ae9e-c03eed5a381a" type="Normal" published="True">
+    <name>Read Json old</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="62625606-2978-47b5-8975-b292f96320eb" type="Normal" published="True">
+    <name>Read Json</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="5b3e6519-72c8-4a31-b6e1-115a36561709" name="Start" type="Start">
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>00643423-12bf-489e-bbba-62c0c9c95d7d</onsuccess>
+  </stage>
+  <stage stageid="00643423-12bf-489e-bbba-62c0c9c95d7d" name="End" type="End">
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="6bf6f030-2b2b-4cce-ae67-956fade1b92d" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+    <references>
+      <reference>System.dll</reference>
+      <reference>System.Data.dll</reference>
+      <reference>System.Xml.dll</reference>
+      <reference>System.Drawing.dll</reference>
+      <reference>Newtonsoft.Json.dll</reference>
+      <reference>System.Diagnostics.DiagnosticSource.dll</reference>
+    </references>
+    <imports>
+      <import>System</import>
+      <import>System.Drawing</import>
+      <import>System.Data</import>
+      <import>System.IO</import>
+      <import>Newtonsoft.Json</import>
+      <import>Newtonsoft.Json.Linq</import>
+      <import>System.Diagnostics</import>
+    </imports>
+    <language>csharp</language>
+    <pythondllpath>
+    </pythondllpath>
+    <pythonenvpath>
+    </pythonenvpath>
+    <globalcode><![CDATA[]]></globalcode>
+    <code><![CDATA[]]></code>
+  </stage>
+  <stage stageid="9aa4e047-473d-45d7-b486-cf568fc64b66" name="Clean Up" type="SubSheetInfo">
+    <subsheetid>333ae05c-6c61-4dde-bfce-55e3aef50870</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="1502d3d9-b6ce-42d1-b0d4-e1290841b5be" name="Start" type="Start">
+    <subsheetid>333ae05c-6c61-4dde-bfce-55e3aef50870</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>8a7d1880-a9f9-47f3-917c-0c1bbd1c3447</onsuccess>
+  </stage>
+  <stage stageid="8a7d1880-a9f9-47f3-917c-0c1bbd1c3447" name="End" type="End">
+    <subsheetid>333ae05c-6c61-4dde-bfce-55e3aef50870</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="34a09f5f-fb7f-4dce-9356-83ca2e3c3d72" name="Get Machine Name" type="SubSheetInfo">
+    <subsheetid>42cbdcb8-7967-46bd-a189-f6c66541e065</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="6dd9fb4e-b36a-4fae-a9dd-f01cc752f401" name="Start" type="Start">
+    <subsheetid>42cbdcb8-7967-46bd-a189-f6c66541e065</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>0bdb166d-3973-4947-b675-7ad688309a17</onsuccess>
+  </stage>
+  <stage stageid="efa7c755-278e-483a-9b87-48c704fae24f" name="End" type="End">
+    <subsheetid>42cbdcb8-7967-46bd-a189-f6c66541e065</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+    <outputs>
+      <output type="text" name="GetMachineName" stage="Get Machine Name" />
+    </outputs>
+  </stage>
+  <stage stageid="f9e0df6f-648d-40c5-9503-a0f03fc6a52b" name="Clean Up" type="Note">
+    <subsheetid>333ae05c-6c61-4dde-bfce-55e3aef50870</subsheetid>
+    <narrative>Clean Up Page
+
+This is an optional page where you might choose to perform some finalisation (or "cleanup") tasks as your business object is closed down.
+
+The cleanup action will be called automatically immediately after closing your business object at the end of a business process.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than before the disposal of the business object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="946afdd9-7400-471d-a4b5-ba85d8d855f8" name="Initialise" type="Note">
+    <narrative>Initialise Page
+
+This is an optional page where you might choose to perform some initialisation tasks after your business object is loaded.
+
+The initialise action will be called automatically immediately after loading your business object.
+
+You will not be able to call this action from a business process, nor will it be called at any other time than after the creation of the object.</narrative>
+    <display x="-180" y="60" w="180" h="230" />
+  </stage>
+  <stage stageid="5e1e72e5-b8c6-4e60-a38c-39377113c294" name="Get User Name" type="SubSheetInfo">
+    <subsheetid>6a374121-5dcf-4e86-af1f-b9374dbbdcb9</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="ad1ad910-a7e6-4f7d-9fb8-5bdd40783a33" name="Start" type="Start">
+    <subsheetid>6a374121-5dcf-4e86-af1f-b9374dbbdcb9</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>cfdf48c8-a95a-428d-85f2-99b831e34f91</onsuccess>
+  </stage>
+  <stage stageid="41337dc9-72f9-432e-8dbf-16cbe994f045" name="End" type="End">
+    <subsheetid>6a374121-5dcf-4e86-af1f-b9374dbbdcb9</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+    <outputs>
+      <output type="text" name="GetUserName" stage="Get User Name" />
+    </outputs>
+  </stage>
+  <stage stageid="0d19f538-17ca-4bc9-87f3-26e61a5b2f7e" name="CheckFolderAndFile" type="SubSheetInfo">
+    <subsheetid>bff49792-29f0-4a41-9f14-76955b1fc8ef</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="365f7f2c-7a56-45e1-b620-6503d9ae2a4e" name="Start" type="Start">
+    <subsheetid>bff49792-29f0-4a41-9f14-76955b1fc8ef</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="text" name="Folder Path" stage="Folder Path" />
+      <input type="text" name="File Path" stage="File Path" />
+    </inputs>
+    <onsuccess>bf049a69-da2c-47ac-82c2-b923282600b5</onsuccess>
+  </stage>
+  <stage stageid="ecedbf55-6b95-4c44-a77f-d3886ecf2b84" name="End" type="End">
+    <subsheetid>bff49792-29f0-4a41-9f14-76955b1fc8ef</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+    <outputs>
+      <output type="text" name="message" stage="message" />
+    </outputs>
+  </stage>
+  <stage stageid="a8cc58c5-6674-429c-ad78-960bfdc7f9a4" name="Take Screenshot" type="SubSheetInfo">
+    <subsheetid>fca1a1e3-5342-4710-94b9-5f08a3dbdab4</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="4c0b4f9e-8029-49e1-8e49-2f57b097a425" name="Start" type="Start">
+    <subsheetid>fca1a1e3-5342-4710-94b9-5f08a3dbdab4</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <onsuccess>777096fc-646e-4dca-a2a4-910760627149</onsuccess>
+  </stage>
+  <stage stageid="777096fc-646e-4dca-a2a4-910760627149" name="End" type="End">
+    <subsheetid>fca1a1e3-5342-4710-94b9-5f08a3dbdab4</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="43756ec2-fc58-4e33-89f4-c7cd75f7d5fc" name="Read Json Table" type="SubSheetInfo">
+    <subsheetid>799746ef-c57c-4fc1-8591-773792852474</subsheetid>
+    <narrative>Convert this JSON into a Blue Prism Collection with columns:</narrative>
+    <display x="-240" y="-105" w="240" h="90" />
+  </stage>
+  <stage stageid="eebecfeb-27b8-4787-ad38-dd77f63df628" name="Start" type="Start">
+    <subsheetid>799746ef-c57c-4fc1-8591-773792852474</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="text" name="ENV Json Text" stage="ENVJsonText" />
+      <input type="text" name="File Path JsonText " stage="FilePathJsonText " />
+      <input type="text" name="Source" stage="Source" />
+      <input type="collection" name="TemplateCollection" stage="TemplateCollection" />
+    </inputs>
+    <onsuccess>756e87c6-918b-4fd9-8582-ceccdb0c5775</onsuccess>
+  </stage>
+  <stage stageid="62dcf8e2-f0c4-4499-873f-04eaa6d5d7af" name="End" type="End">
+    <subsheetid>799746ef-c57c-4fc1-8591-773792852474</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+    <outputs>
+      <output type="collection" name="OutputCollection" stage="OutputCollection" />
+      <output type="text" name="message" stage="message" />
+    </outputs>
+  </stage>
+  <stage stageid="0bdb166d-3973-4947-b675-7ad688309a17" name="Get Machine Name" type="Code">
+    <subsheetid>42cbdcb8-7967-46bd-a189-f6c66541e065</subsheetid>
+    <loginhibit />
+    <display x="15" y="0" />
+    <outputs>
+      <output type="text" name="MachineName" stage="Get Machine Name" />
+    </outputs>
+    <onsuccess>efa7c755-278e-483a-9b87-48c704fae24f</onsuccess>
+    <code><![CDATA[MachineName = Environment.MachineName;]]></code>
+  </stage>
+  <stage stageid="06e76b98-7ebb-411a-b5ec-1029c1ba7539" name="Get Machine Name" type="Data">
+    <subsheetid>42cbdcb8-7967-46bd-a189-f6c66541e065</subsheetid>
+    <display x="-60" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="cfdf48c8-a95a-428d-85f2-99b831e34f91" name="Get User Name" type="Code">
+    <subsheetid>6a374121-5dcf-4e86-af1f-b9374dbbdcb9</subsheetid>
+    <loginhibit />
+    <display x="15" y="0" />
+    <outputs>
+      <output type="text" name="username" stage="Get User Name" />
+    </outputs>
+    <onsuccess>41337dc9-72f9-432e-8dbf-16cbe994f045</onsuccess>
+    <code><![CDATA[username = Environment.UserName;]]></code>
+  </stage>
+  <stage stageid="7fbab5c8-19a9-4b70-aae1-26ade7f98085" name="Get User Name" type="Data">
+    <subsheetid>6a374121-5dcf-4e86-af1f-b9374dbbdcb9</subsheetid>
+    <display x="-75" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a77f6a3a-69a5-463a-8e20-9215f147bfcd" name="Folder Path" type="Data">
+    <subsheetid>bff49792-29f0-4a41-9f14-76955b1fc8ef</subsheetid>
+    <display x="-165" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="afd2b0a0-6e85-4dab-b8bc-41ba1d2a5c1a" name="File Path" type="Data">
+    <subsheetid>bff49792-29f0-4a41-9f14-76955b1fc8ef</subsheetid>
+    <display x="-90" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="9cea717d-4beb-465c-8133-57c4883238a3" name="Terminate Applications" type="SubSheetInfo">
+    <subsheetid>e5bf5663-5c23-4cea-95b3-c860fb9c999b</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="eb23f8f2-8bc4-43fd-bd9b-5b6bd89b2428" name="Start" type="Start">
+    <subsheetid>e5bf5663-5c23-4cea-95b3-c860fb9c999b</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="text" name="processName" stage="processName" />
+    </inputs>
+    <onsuccess>8a2b8861-f630-4a03-aad0-7dd8778bf3da</onsuccess>
+  </stage>
+  <stage stageid="6f0d4b31-70df-4150-88d9-2ed2fe9061b8" name="End" type="End">
+    <subsheetid>e5bf5663-5c23-4cea-95b3-c860fb9c999b</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+    <outputs>
+      <output type="text" name="message" stage="message" />
+    </outputs>
+  </stage>
+  <stage stageid="bf049a69-da2c-47ac-82c2-b923282600b5" name="CheckFolderAndFileExist" type="Code">
+    <subsheetid>bff49792-29f0-4a41-9f14-76955b1fc8ef</subsheetid>
+    <loginhibit />
+    <display x="15" y="0" />
+    <inputs>
+      <input type="text" name="folderPath" expr="[Folder Path]" />
+      <input type="text" name="filePath" expr="[File Path]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="message" stage="message" />
+    </outputs>
+    <onsuccess>ecedbf55-6b95-4c44-a77f-d3886ecf2b84</onsuccess>
+    <code><![CDATA[message = "";
+
+try
+{
+    // Check if folder exists
+    if (Directory.Exists(folderPath))
+    {
+        message = "Folder exists.";
+
+        // Check if file exists inside folder
+        if (File.Exists(filePath))
+        {
+            message = "File exists inside folder.";
+        }
+        else
+        {
+            message = "File does NOT exist inside folder.";
+        }
+    }
+    else
+    {
+        message = "Folder does NOT exist.";
+    }
+}
+catch (Exception ex)
+{
+    message = "Error checking folder or file: " + ex.Message;
+}]]></code>
+  </stage>
+  <stage stageid="6c818210-2c5c-41f4-9fbe-88985317ff23" name="message" type="Data">
+    <subsheetid>bff49792-29f0-4a41-9f14-76955b1fc8ef</subsheetid>
+    <display x="120" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c7e16a18-d23d-4cbd-bf6a-28c027f5c6cf" name="Create Folder" type="SubSheetInfo">
+    <subsheetid>7053ed27-e667-4dc3-9cbe-4e855f85df7f</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="1a5ba6b5-3334-4753-b959-64ee2fc3d91d" name="Start" type="Start">
+    <subsheetid>7053ed27-e667-4dc3-9cbe-4e855f85df7f</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="text" name="folderPath" stage="folderPath" />
+    </inputs>
+    <onsuccess>49ca368c-e4cf-4fba-89e8-6f62a73e9647</onsuccess>
+  </stage>
+  <stage stageid="560424cc-54f6-42f6-a27a-08d24cff7428" name="End" type="End">
+    <subsheetid>7053ed27-e667-4dc3-9cbe-4e855f85df7f</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+    <outputs>
+      <output type="text" name="message" stage="message" />
+    </outputs>
+  </stage>
+  <stage stageid="49ca368c-e4cf-4fba-89e8-6f62a73e9647" name="Create Folder" type="Code">
+    <subsheetid>7053ed27-e667-4dc3-9cbe-4e855f85df7f</subsheetid>
+    <loginhibit />
+    <display x="15" y="0" />
+    <inputs>
+      <input type="text" name="folderPath" expr="[folderPath]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="message" stage="message" />
+    </outputs>
+    <onsuccess>560424cc-54f6-42f6-a27a-08d24cff7428</onsuccess>
+    <code><![CDATA[
+message = "";
+
+try
+{
+    if (!Directory.Exists(folderPath))
+    {
+        Directory.CreateDirectory(folderPath);
+        message = "Folder has been created successfully.";
+    }
+    else
+    {
+        message = "Folder already exists.";
+    }
+}
+catch (Exception ex)
+{
+    message = "Error creating folder: " + ex.Message;
+}]]></code>
+  </stage>
+  <stage stageid="e85a88aa-69c3-4a80-bcf2-a8b0cdabdfe0" name="folderPath" type="Data">
+    <subsheetid>7053ed27-e667-4dc3-9cbe-4e855f85df7f</subsheetid>
+    <display x="-90" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="2dea5190-06f0-4474-a6b9-be04ee187226" name="message" type="Data">
+    <subsheetid>7053ed27-e667-4dc3-9cbe-4e855f85df7f</subsheetid>
+    <display x="120" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="8a2b8861-f630-4a03-aad0-7dd8778bf3da" name="Terminate Application" type="Code">
+    <subsheetid>e5bf5663-5c23-4cea-95b3-c860fb9c999b</subsheetid>
+    <loginhibit />
+    <display x="15" y="0" />
+    <inputs>
+      <input type="text" name="processName" expr="[processName]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="message" stage="message" />
+    </outputs>
+    <onsuccess>6f0d4b31-70df-4150-88d9-2ed2fe9061b8</onsuccess>
+    <code><![CDATA[message = "";
+
+try
+{
+    Process[] processes = Process.GetProcessesByName(processName);
+
+    if (processes.Length == 0)
+    {
+        message = "No process found with name: " + processName;
+    }
+    else
+    {
+        foreach (Process p in processes)
+        {
+            p.Kill();
+            p.WaitForExit();   // ensures clean shutdown
+        }
+
+        message = "Process terminated successfully.";
+    }
+}
+catch (Exception ex)
+{
+    message = "Error terminating process: " + ex.Message;
+}]]></code>
+  </stage>
+  <stage stageid="b86cf196-1ff4-45ad-89a1-8a8e04aa9545" name="processName" type="Data">
+    <subsheetid>e5bf5663-5c23-4cea-95b3-c860fb9c999b</subsheetid>
+    <display x="-135" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="9b6cc841-62cf-4b47-a955-aee680005b71" name="message" type="Data">
+    <subsheetid>e5bf5663-5c23-4cea-95b3-c860fb9c999b</subsheetid>
+    <display x="150" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="756e87c6-918b-4fd9-8582-ceccdb0c5775" name="Get Json Value" type="Code">
+    <subsheetid>799746ef-c57c-4fc1-8591-773792852474</subsheetid>
+    <loginhibit />
+    <display x="15" y="0" />
+    <inputs>
+      <input type="text" name="ENVJsonText" expr="[ENVJsonText]" />
+      <input type="text" name="FilePathJsonText" expr="[FilePathJsonText ]" />
+      <input type="text" name="Source" expr="[Source]" />
+      <input type="collection" name="TemplateCollection" expr="[TemplateCollection]" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="OutputCollection" stage="OutputCollection" />
+      <output type="text" name="message" stage="message" />
+    </outputs>
+    <onsuccess>62dcf8e2-f0c4-4499-873f-04eaa6d5d7af</onsuccess>
+    <code><![CDATA[message = "";
+
+try
+{
+    string jsonContent;
+
+    // Determine source of JSON
+    if (Source != "ENV")
+    {
+        // Validate file path
+        if (!File.Exists(FilePathJsonText))
+        {
+            message = $"JSON file does not exist: {FilePathJsonText}";
+            OutputCollection = TemplateCollection.Clone();
+            return;
+        }
+
+        // Read JSON from file
+        jsonContent = File.ReadAllText(FilePathJsonText);
+    }
+    else
+    {
+        // JSON is passed directly as string
+        jsonContent = ENVJsonText;
+    }
+
+    // Parse JSON
+    JObject root = JObject.Parse(jsonContent);
+    JArray screens = (JArray)root["Screens"];
+
+    // Prepare output DataTable
+    DataTable dt = TemplateCollection.Clone();
+
+    // Fill DataTable from JSON
+    foreach (JObject screen in screens)
+    {
+        string screenName = (string)screen["ScreenName"];
+        JArray elements = (JArray)screen["Elements"];
+
+        foreach (JObject element in elements)
+        {
+            DataRow row = dt.NewRow();
+            row["ScreenName"] = screenName;
+            row["ElementType"] = (string)element["ElementType"];
+            row["ElementID"] = (string)element["ElementID"];
+            row["WaitTime"] = (int)element["WaitTime"];
+            dt.Rows.Add(row);
+        }
+    }
+
+    // Assign output
+    OutputCollection = dt;
+    message = "Success";
+}
+catch (Exception ex)
+{
+    message = "Error parsing JSON: " + ex.Message;
+    OutputCollection = TemplateCollection.Clone();
+}
+]]></code>
+  </stage>
+  <stage stageid="a5330cab-2066-4909-8f5a-bf32eaeb5e7c" name="OutputCollection" type="Collection">
+    <subsheetid>799746ef-c57c-4fc1-8591-773792852474</subsheetid>
+    <display x="105" y="0" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="ScreenName" type="text" />
+      <field name="ElementType" type="text" />
+      <field name="ElementID" type="text" />
+      <field name="WaitTime" type="number" />
+    </collectioninfo>
+  </stage>
+  <stage stageid="4ecf5f80-b27e-4a33-bf32-783f784a2d2b" name="Read Json old" type="SubSheetInfo">
+    <subsheetid>2af6258a-7a02-44a0-ae9e-c03eed5a381a</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="67039fc7-405d-40fb-9b01-2a4ccbfb3f64" name="Start" type="Start">
+    <subsheetid>2af6258a-7a02-44a0-ae9e-c03eed5a381a</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="text" name="ENVJsonText" stage="ENVJsonText" />
+      <input type="text" name="FilePathJsonText" stage="FilePathJsonText" />
+      <input type="text" name="Source" stage="Source" />
+      <input type="collection" name="TemplateCollection" stage="TemplateCollection" />
+    </inputs>
+    <onsuccess>ab6ec5c9-ab33-4bb9-93e2-f010d5bb7bd0</onsuccess>
+  </stage>
+  <stage stageid="a92c7a65-0f64-41b2-99ee-78efda59b8f7" name="End" type="End">
+    <subsheetid>2af6258a-7a02-44a0-ae9e-c03eed5a381a</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+    <outputs>
+      <output type="collection" name="OutputCollection" stage="OutputCollection" fromStage="OutputCollection" />
+      <output type="text" name="message" stage="message" fromStage="message" />
+    </outputs>
+  </stage>
+  <stage stageid="ab6ec5c9-ab33-4bb9-93e2-f010d5bb7bd0" name="Read Json old" type="Code">
+    <subsheetid>2af6258a-7a02-44a0-ae9e-c03eed5a381a</subsheetid>
+    <loginhibit />
+    <display x="15" y="0" />
+    <inputs>
+      <input type="text" name="ENVJsonText" expr="[ENVJsonText]" />
+      <input type="collection" name="TemplateCollection" expr="[TemplateCollection]" />
+      <input type="text" name="FilePathJsonText" expr="[FilePathJsonText]" />
+      <input type="text" name="Source" expr="[Source]" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="OutputCollection" stage="OutputCollection" />
+      <output type="text" name="message" stage="message" />
+    </outputs>
+    <onsuccess>a92c7a65-0f64-41b2-99ee-78efda59b8f7</onsuccess>
+    <code><![CDATA[message = "";
+
+try
+{
+    string jsonContent;
+
+    // ---------- Determine source ----------
+    if (Source != "ENV")
+    {
+        if (!File.Exists(FilePathJsonText))
+        {
+            message = $"JSON file does not exist: {FilePathJsonText}";
+            OutputCollection = TemplateCollection.Clone();
+            return;
+        }
+        jsonContent = File.ReadAllText(FilePathJsonText);
+    }
+    else
+    {
+        jsonContent = ENVJsonText;
+    }
+
+    // ---------- Clean and normalize JSON ----------
+    jsonContent = jsonContent.Trim();
+
+    // If multiple objects not wrapped in array, wrap them
+    if (!jsonContent.StartsWith("["))
+    {
+        // Split by "}," safely to detect multiple objects
+        string[] objects = jsonContent.Split(new string[] { "}," }, StringSplitOptions.RemoveEmptyEntries);
+        if (objects.Length > 1)
+        {
+            for (int i = 0; i < objects.Length; i++)
+            {
+                if (!objects[i].EndsWith("}"))
+                    objects[i] += "}";
+            }
+            jsonContent = "[" + string.Join(",", objects) + "]";
+        }
+    }
+
+    // ---------- Parse JSON ----------
+    JToken token = JToken.Parse(jsonContent);
+    JArray jsonArray = token.Type == JTokenType.Array ? (JArray)token : new JArray(token);
+
+    // ---------- Prepare output collection ----------
+    DataTable dt = TemplateCollection.Clone();
+
+    // ---------- Fill collection ----------
+    foreach (JObject obj in jsonArray)
+    {
+        DataRow row = dt.NewRow();
+
+        foreach (DataColumn col in dt.Columns)
+        {
+            // Case-insensitive lookup
+            if (obj.TryGetValue(col.ColumnName, StringComparison.OrdinalIgnoreCase, out JToken value))
+            {
+                row[col.ColumnName] = value.ToString();
+            }
+        }
+
+        dt.Rows.Add(row);
+    }
+
+    OutputCollection = dt;
+    message = "Success";
+}
+catch (Exception ex)
+{
+    message = "Error parsing JSON: " + ex.Message;
+    OutputCollection = TemplateCollection.Clone();
+}
+]]></code>
+  </stage>
+  <stage stageid="f981720c-bdda-4611-86b4-00650881facd" name="TemplateCollection" type="Collection">
+    <subsheetid>2af6258a-7a02-44a0-ae9e-c03eed5a381a</subsheetid>
+    <display x="90" y="-105" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="Key" type="text" />
+      <field name="Value" type="text" />
+    </collectioninfo>
+  </stage>
+  <stage stageid="2a624a4c-5ff1-4b01-afe2-add9d8f9e6e2" name="OutputCollection" type="Collection">
+    <subsheetid>2af6258a-7a02-44a0-ae9e-c03eed5a381a</subsheetid>
+    <display x="90" y="90" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="Key" type="text" />
+      <field name="Value" type="text" />
+    </collectioninfo>
+  </stage>
+  <stage stageid="fc1c1ed8-6bec-4463-8f61-6a1f609e03e0" name="message" type="Data">
+    <subsheetid>799746ef-c57c-4fc1-8591-773792852474</subsheetid>
+    <display x="180" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="73f0fa2b-67c2-460d-9982-d80ca4492646" name="message" type="Data">
+    <subsheetid>2af6258a-7a02-44a0-ae9e-c03eed5a381a</subsheetid>
+    <display x="90" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="88a3e123-97f6-4c2f-85be-6636c090f4e8" name="Create Custom Log" type="SubSheetInfo">
+    <subsheetid>92e79722-db22-463e-9ba4-bfbb337b6a6e</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="eefcab90-d142-4c90-b374-20b42a38a092" name="Start" type="Start">
+    <subsheetid>92e79722-db22-463e-9ba4-bfbb337b6a6e</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="text" name="logBaseFolder" stage="logBaseFolder" />
+      <input type="text" name="logLevel" stage="logLevel" />
+      <input type="text" name="logMessage" stage="logMessage" />
+    </inputs>
+    <onsuccess>adab2b8f-fc2c-41d1-9c1e-0021c67097c9</onsuccess>
+  </stage>
+  <stage stageid="ee4c4d7b-1613-495a-96a6-32f293f8ea9c" name="End" type="End">
+    <subsheetid>92e79722-db22-463e-9ba4-bfbb337b6a6e</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="adab2b8f-fc2c-41d1-9c1e-0021c67097c9" name="Custom Log" type="Code">
+    <subsheetid>92e79722-db22-463e-9ba4-bfbb337b6a6e</subsheetid>
+    <loginhibit />
+    <display x="15" y="0" />
+    <inputs>
+      <input type="text" name="logBaseFolder" expr="[logBaseFolder]" />
+      <input type="text" name="logLevel" expr="[logLevel]" />
+      <input type="text" name="logMessage" expr="[logMessage]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="message" stage="message" />
+      <output type="text" name="logFolder" stage="logFolder" />
+    </outputs>
+    <onsuccess>ee4c4d7b-1613-495a-96a6-32f293f8ea9c</onsuccess>
+    <code><![CDATA[message = "";
+logFolder = ""; // Output: full daily folder path
+
+try
+{
+    // --------- Validate Inputs ----------
+    if (string.IsNullOrWhiteSpace(logBaseFolder))
+    {
+        message = "Invalid base log folder path.";
+        return;
+    }
+
+    if (string.IsNullOrWhiteSpace(logMessage))
+    {
+        logMessage = "(No message provided)";
+    }
+
+    // Validate log level, default to INFO if empty/invalid
+    string[] validLevels = new string[] { "INFO", "WARN", "ERROR" };
+    if (string.IsNullOrWhiteSpace(logLevel) || Array.IndexOf(validLevels, logLevel.ToUpper()) < 0)
+    {
+        logLevel = "INFO";
+    }
+    else
+    {
+        logLevel = logLevel.ToUpper();
+    }
+
+    // --------- Create Daily Folder ----------
+    logFolder = Path.Combine(logBaseFolder, DateTime.Now.ToString("yyyy-MM-dd"));
+    if (!Directory.Exists(logFolder))
+    {
+        Directory.CreateDirectory(logFolder);
+    }
+
+    // --------- Build dynamic log file name ----------
+    // Format: BOT_Log_yyyy-MM-dd.txt
+    string logFileName = $"BOT_Log_{DateTime.Now:yyyy-MM-dd}.txt";
+    string logFilePath = Path.Combine(logFolder, logFileName);
+
+    // --------- Build log entry with timestamp and level ----------
+    string logEntry = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} | {logLevel} | {logMessage}{Environment.NewLine}";
+
+    // --------- Append log entry to file ----------
+    File.AppendAllText(logFilePath, logEntry);
+
+    message = $"Log written successfully in folder: {logFolder}, file: {logFileName}";
+}
+catch (Exception ex)
+{
+    message = "Error writing log: " + ex.Message;
+}]]></code>
+  </stage>
+  <stage stageid="0fe6f3c5-1cb8-4916-8436-2f72fb23cf9d" name="message" type="Data">
+    <subsheetid>92e79722-db22-463e-9ba4-bfbb337b6a6e</subsheetid>
+    <display x="135" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d44faa28-3211-4d7e-8f10-513fcd366ecd" name="logBaseFolder" type="Data">
+    <subsheetid>92e79722-db22-463e-9ba4-bfbb337b6a6e</subsheetid>
+    <display x="90" y="-105" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d6cff1f6-c944-473f-8cde-fa31a803d3f3" name="logFolder" type="Data">
+    <subsheetid>92e79722-db22-463e-9ba4-bfbb337b6a6e</subsheetid>
+    <display x="60" y="45" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c17aeb41-7a84-4ad6-b956-f8add390b10d" name="logMessage" type="Data">
+    <subsheetid>92e79722-db22-463e-9ba4-bfbb337b6a6e</subsheetid>
+    <display x="-60" y="-105" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="8d7a75fd-faf6-4da8-bdcd-312ed1f84dd3" name="logLevel" type="Data">
+    <subsheetid>92e79722-db22-463e-9ba4-bfbb337b6a6e</subsheetid>
+    <display x="15" y="-150" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ca6ad4f4-587b-43c7-a072-cd3138e7a298" name="Delete Files" type="SubSheetInfo">
+    <subsheetid>6279e614-689b-413f-98c4-8b46c9f2e4d0</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="4aeda329-ce50-422c-94f7-a3438cf42527" name="Start" type="Start">
+    <subsheetid>6279e614-689b-413f-98c4-8b46c9f2e4d0</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="text" name="folderPath" stage="folderPath" />
+      <input type="text" name="fileExtension" stage="fileExtension" />
+      <input type="number" name="-fileCycleDays" stage="fileCycleDays" />
+    </inputs>
+    <onsuccess>be4c4460-1de5-45a3-91e5-930419338674</onsuccess>
+  </stage>
+  <stage stageid="e4051277-87bc-42e8-beee-adca4d6630f2" name="End" type="End">
+    <subsheetid>6279e614-689b-413f-98c4-8b46c9f2e4d0</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="be4c4460-1de5-45a3-91e5-930419338674" name="Delete Files" type="Code">
+    <subsheetid>6279e614-689b-413f-98c4-8b46c9f2e4d0</subsheetid>
+    <loginhibit />
+    <display x="15" y="0" />
+    <inputs>
+      <input type="text" name="folderPath" expr="[folderPath]" />
+      <input type="text" name="fileExtension" expr="[fileExtension]" />
+      <input type="number" name="fileCycleDays" expr="[fileCycleDays]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="message" stage="message" />
+    </outputs>
+    <onsuccess>e4051277-87bc-42e8-beee-adca4d6630f2</onsuccess>
+    <code><![CDATA[message = "";
+
+try
+{
+    // --------- Validate Inputs ----------
+    if (string.IsNullOrWhiteSpace(folderPath))
+    {
+        message = "Folder path is empty.";
+        return;
+    }
+
+    if (!Directory.Exists(folderPath))
+    {
+        message = "Folder does not exist: " + folderPath;
+        return;
+    }
+
+    if (string.IsNullOrWhiteSpace(fileExtension))
+    {
+        fileExtension = "*"; // all files
+    }
+    else
+    {
+        fileExtension = fileExtension.TrimStart('.'); // remove dot if provided
+    }
+
+     // --------- Determine date threshold ----------
+    // Convert decimal input to double
+    double days = Convert.ToDouble(fileCycleDays);
+    DateTime thresholdDate = DateTime.Now.AddDays(-days); // delete files older than threshold
+
+    // --------- Get files matching extension ----------
+    string searchPattern = fileExtension == "*" ? "*.*" : "*." + fileExtension;
+    string[] files = Directory.GetFiles(folderPath, searchPattern);
+
+    int deletedCount = 0;
+
+    foreach (string file in files)
+    {
+        DateTime lastWrite = File.GetLastWriteTime(file);
+
+        if (lastWrite <= thresholdDate)
+        {
+            File.Delete(file);
+            deletedCount++;
+        }
+    }
+
+    message = $"Deleted {deletedCount} file(s) from folder: {folderPath}";
+}
+catch (Exception ex)
+{
+    message = "Error deleting files: " + ex.Message;
+}]]></code>
+  </stage>
+  <stage stageid="5cc1048d-8967-4ce7-ae63-5537417963bf" name="message" type="Data">
+    <subsheetid>6279e614-689b-413f-98c4-8b46c9f2e4d0</subsheetid>
+    <display x="90" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="fb4dd6f5-2bb4-4a2c-85d9-79ed56673a73" name="folderPath" type="Data">
+    <subsheetid>6279e614-689b-413f-98c4-8b46c9f2e4d0</subsheetid>
+    <display x="-240" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ae28cc77-f356-4c2b-8ce7-27cafaadab82" name="fileExtension" type="Data">
+    <subsheetid>6279e614-689b-413f-98c4-8b46c9f2e4d0</subsheetid>
+    <display x="-90" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="76147e4a-0374-44ba-ab75-370572add436" name="fileCycleDays" type="Data">
+    <subsheetid>6279e614-689b-413f-98c4-8b46c9f2e4d0</subsheetid>
+    <display x="-165" y="0" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="fb8b6e56-9f8b-47a3-9898-a1c4ebac49bb" name="FilePathJsonText " type="Data">
+    <subsheetid>799746ef-c57c-4fc1-8591-773792852474</subsheetid>
+    <display x="-75" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="97da8dca-e422-4ea6-8aa1-649b140f5804" name="Source" type="Data">
+    <subsheetid>799746ef-c57c-4fc1-8591-773792852474</subsheetid>
+    <display x="-60" y="-105" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="552e2cf0-b395-4ae2-b75f-19843752d3b4" name="TemplateCollection" type="Collection">
+    <subsheetid>799746ef-c57c-4fc1-8591-773792852474</subsheetid>
+    <display x="90" y="-105" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+    <collectioninfo>
+      <field name="ScreenName" type="text" />
+      <field name="ElementType" type="text" />
+      <field name="ElementID" type="text" />
+      <field name="WaitTime" type="number" />
+    </collectioninfo>
+  </stage>
+  <stage stageid="0225c1eb-767a-42be-b5e6-472eb35b1957" name="ENVJsonText" type="Data">
+    <subsheetid>799746ef-c57c-4fc1-8591-773792852474</subsheetid>
+    <display x="15" y="-150" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ccb88cca-ade7-4772-9c3d-60b63be4af02" name="Source" type="Data">
+    <subsheetid>2af6258a-7a02-44a0-ae9e-c03eed5a381a</subsheetid>
+    <display x="-255" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="fc702b0a-fcc5-4d86-9b33-d8b6e007774c" name="FilePathJsonText" type="Data">
+    <subsheetid>2af6258a-7a02-44a0-ae9e-c03eed5a381a</subsheetid>
+    <display x="-210" y="60" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="86973b85-1c1b-4999-8779-2eee76335dcf" name="ENVJsonText" type="Data">
+    <subsheetid>2af6258a-7a02-44a0-ae9e-c03eed5a381a</subsheetid>
+    <display x="-180" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="6a79f4fe-af71-44e7-b07a-7c445ccf240e" name="Read Json" type="SubSheetInfo">
+    <subsheetid>62625606-2978-47b5-8975-b292f96320eb</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="58f32b05-2c82-432e-97eb-bd9a99fc4bd4" name="Start" type="Start">
+    <subsheetid>62625606-2978-47b5-8975-b292f96320eb</subsheetid>
+    <loginhibit />
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="text" name="ENVJsonText" stage="ENVJsonText" />
+      <input type="text" name="FilePathJsonText" stage="FilePathJsonText" />
+      <input type="text" name="Source" stage="Source" />
+    </inputs>
+    <onsuccess>be4e3e72-f200-4ffb-b01f-e2e6d10f04b6</onsuccess>
+  </stage>
+  <stage stageid="52a4a8e6-7de4-4cbc-a169-252aba491938" name="End" type="End">
+    <subsheetid>62625606-2978-47b5-8975-b292f96320eb</subsheetid>
+    <loginhibit />
+    <display x="15" y="90" />
+    <outputs>
+      <output type="collection" name="OutputCollection" stage="OutputCollection" fromStage="OutputCollection" />
+      <output type="text" name="message" stage="message" fromStage="message" />
+    </outputs>
+  </stage>
+  <stage stageid="be4e3e72-f200-4ffb-b01f-e2e6d10f04b6" name="Read Json" type="Code">
+    <subsheetid>62625606-2978-47b5-8975-b292f96320eb</subsheetid>
+    <loginhibit />
+    <display x="15" y="0" />
+    <inputs>
+      <input type="text" name="ENVJsonText" expr="[ENVJsonText]" />
+      <input type="text" name="FilePathJsonText" expr="[FilePathJsonText]" />
+      <input type="text" name="Source" expr="[Source]" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="OutputCollection" stage="OutputCollection" />
+      <output type="text" name="message" stage="message" />
+    </outputs>
+    <onsuccess>52a4a8e6-7de4-4cbc-a169-252aba491938</onsuccess>
+    <code><![CDATA[message = "";
+
+try
+{
+    string jsonContent;
+
+    // ---------- Determine source ----------
+    if (Source != "ENV")
+    {
+        if (!File.Exists(FilePathJsonText))
+        {
+            message = $"JSON file does not exist: {FilePathJsonText}";
+            OutputCollection = new DataTable(); // Empty collection
+            return;
+        }
+        jsonContent = File.ReadAllText(FilePathJsonText);
+    }
+    else
+    {
+        jsonContent = ENVJsonText;
+    }
+
+    // ---------- Clean and normalize JSON ----------
+    jsonContent = jsonContent.Trim();
+
+    // Wrap single objects into an array
+    if (!jsonContent.StartsWith("["))
+    {
+        jsonContent = "[" + jsonContent + "]";
+    }
+
+    // ---------- Parse JSON ----------
+    JArray jsonArray = JArray.Parse(jsonContent);
+
+    // ---------- Create DataTable dynamically ----------
+    DataTable dt = new DataTable();
+
+    // Add columns based on all keys in all objects (to be safe)
+    foreach (JObject obj in jsonArray)
+    {
+        foreach (var prop in obj.Properties())
+        {
+            if (!dt.Columns.Contains(prop.Name))
+            {
+                dt.Columns.Add(prop.Name);
+            }
+        }
+    }
+
+    // ---------- Fill DataTable ----------
+    foreach (JObject obj in jsonArray)
+    {
+        DataRow row = dt.NewRow();
+        foreach (var prop in obj.Properties())
+        {
+            row[prop.Name] = prop.Value.ToString();
+        }
+        dt.Rows.Add(row);
+    }
+
+    // ---------- Output ----------
+    OutputCollection = dt;
+    message = "Success";
+}
+catch (Exception ex)
+{
+    message = "Error parsing JSON: " + ex.Message;
+    OutputCollection = new DataTable(); // Empty collection
+}
+]]></code>
+  </stage>
+  <stage stageid="c1dd47eb-8097-4623-8c2a-86c0c3e10529" name="message" type="Data">
+    <subsheetid>62625606-2978-47b5-8975-b292f96320eb</subsheetid>
+    <display x="90" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="363fdc95-7fe3-48ad-a12e-bb82d3eb8312" name="Source" type="Data">
+    <subsheetid>62625606-2978-47b5-8975-b292f96320eb</subsheetid>
+    <display x="-255" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d9ed1973-fb5c-4f6d-abb6-0803228ec6dd" name="FilePathJsonText" type="Data">
+    <subsheetid>62625606-2978-47b5-8975-b292f96320eb</subsheetid>
+    <display x="-210" y="60" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="fb0241d0-4a36-456d-aac4-25340ab3cf5c" name="ENVJsonText" type="Data">
+    <subsheetid>62625606-2978-47b5-8975-b292f96320eb</subsheetid>
+    <display x="-180" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e291d793-78c9-42b6-8212-624de73a54f4" name="OutputCollection" type="Collection">
+    <subsheetid>62625606-2978-47b5-8975-b292f96320eb</subsheetid>
+    <display x="-60" y="0" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+</process>

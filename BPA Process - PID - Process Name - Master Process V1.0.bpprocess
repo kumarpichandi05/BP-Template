@@ -1,0 +1,2549 @@
+﻿<process name="PID - Process Name - Master Process." version="1.0" bpversion="7.4.1.15931" narrative="" byrefcollection="true" processrunningmessage="" disableversioning="false" preferredid="4139fbcd-92bb-4800-8e46-a10bcf65ea8c">
+  <view>
+    <camerax>219</camerax>
+    <cameray>-64</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="8f814e4a-ce3a-4fd2-8a04-5f2b890ceba7" type="Normal" published="False">
+    <name>Start Up</name>
+    <view>
+      <camerax>51</camerax>
+      <cameray>291</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="9f8b6265-550a-4871-ae6a-4af0d8e467a2" type="Normal" published="False">
+    <name>Validate Environment</name>
+    <view>
+      <camerax>-288</camerax>
+      <cameray>585</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="6a9a6801-ad11-41db-a8e9-b9d93e6d7180" type="Normal" published="False">
+    <name>Start ABC</name>
+    <view>
+      <camerax>51</camerax>
+      <cameray>585</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="84e05fba-a9c2-44fe-ab58-e19f425d1abf" type="Normal" published="False">
+    <name>Start ABC - Copy</name>
+    <view>
+      <camerax>15</camerax>
+      <cameray>210</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="3b18ac3b-32c0-43e6-816a-afb76a5efa49" type="Normal" published="False">
+    <name>Notify</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="09218e60-b590-48a6-b2dd-ad5f52028f06" type="Normal" published="False">
+    <name>Send Email</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="cf13a1fa-a9be-4527-973b-e2f66f99d14b" type="Normal" published="False">
+    <name>Close Down</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>210</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="b749d60a-bded-4d36-b099-3627ed699606" type="Normal" published="False">
+    <name>Populate Queue</name>
+    <view>
+      <camerax>66</camerax>
+      <cameray>116</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="bf57723b-f31f-465f-a44d-6b23e78fd2de" type="Normal" published="False">
+    <name>Work Step 1</name>
+    <view>
+      <camerax>97</camerax>
+      <cameray>25</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="4f5f8a61-abf2-40dd-8169-d8ab45ffd78c" type="Normal" published="False">
+    <name>Work Step 2</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>36</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="47e58161-0f42-47cc-aa94-af755a8de010" type="Normal" published="False">
+    <name>Work Step 3</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>206</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="59316c11-3dca-4c1a-84b1-41d038558660" type="Normal" published="False">
+    <name>EOD Report</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="d31d1c11-61ad-4c49-91a4-44bbf0bf0725" type="Normal" published="False">
+    <name>Mark Item As Completed</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>2</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="d599353b-a78b-40f4-ab04-255791b86a1a" type="Normal" published="False">
+    <name>Mark Item As Exception</name>
+    <view>
+      <camerax>-8</camerax>
+      <cameray>223</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="5fd952f0-1be2-40e8-8afa-485524c5a5cd" type="Normal" published="False">
+    <name>Reset Global Data</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>42</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="30a66a72-d51e-464f-89e3-f40b54998601" name="Start" type="Start">
+    <display x="0" y="-240" />
+    <font family="Arial" size="14" style="Bold" color="339966" />
+    <onsuccess>832b89eb-e411-459f-ac7a-4584e360f5ef</onsuccess>
+  </stage>
+  <stage stageid="458762d9-7dd4-47c0-bbdc-55d193273d9c" name="End" type="End">
+    <display x="375" y="-225" />
+    <font family="Arial" size="15" style="Bold" color="FF0000" />
+  </stage>
+  <stage stageid="8b6eaa66-766c-4d2a-a0d1-cc6ab7e4f32d" name="Stage1" type="ProcessInfo">
+    <display x="-225" y="-180" w="270" h="120" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="62aec640-1920-44e6-8b1e-be6a9725cec8" name="Mark Item As Completed" type="SubSheetInfo">
+    <subsheetid>d31d1c11-61ad-4c49-91a4-44bbf0bf0725</subsheetid>
+    <narrative>Marks the current work queue item as complete</narrative>
+    <display x="-195" y="-105" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="1446dc69-509c-446c-8f20-b7f580423da2" name="Mark Item As Exception" type="SubSheetInfo">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <narrative>Marks the current work queue item as an exception</narrative>
+    <display x="-120" y="-195" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="bc2ffba4-5cb1-48b6-a390-3b1aadd5dab4" name="Start" type="Start">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <display x="15" y="-120" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>808cbef2-cfe3-460f-ba72-91e0e6283988</onsuccess>
+  </stage>
+  <stage stageid="b49e249e-bbb1-427e-8bd1-902ce03e3a79" name="Recover" type="Recover">
+    <display x="120" y="375" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>6fa1db8d-0510-4c35-8416-9a938e94c78d</onsuccess>
+  </stage>
+  <stage stageid="53762061-333e-4023-b99f-1de349dfc4a4" name="Resume" type="Resume">
+    <display x="120" y="525" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>ffb4d158-5875-4239-bd22-b7ca87c93bbc</onsuccess>
+  </stage>
+  <stage stageid="b9fbad6e-b3b1-4e9b-bc71-1b96d40beeb2" name="Retry Exception?" type="Decision">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <display x="15" y="30" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <decision expression="Lower([Exception Type])=&quot;system exception&quot; OR Lower([Exception Type])=&quot;internal&quot;" />
+    <ontrue>6b5864ff-c8f2-4c69-8e1b-d090c057cdc2</ontrue>
+    <onfalse>5ce83707-f042-4e73-929c-e7358ebdc456</onfalse>
+  </stage>
+  <stage stageid="a374264f-2dbf-4477-bad7-ee4ba812e5b1" name="Previous Exception?" type="Decision">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <display x="15" y="225" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <decision expression="[Previous Exception Detail]=[Exception Detail]" />
+    <ontrue>3484ce27-f1ef-4f28-926b-efaa03fc5fed</ontrue>
+    <onfalse>7105b714-612a-4e50-84b3-f789f0634902</onfalse>
+  </stage>
+  <stage stageid="a08fa84e-da3f-447e-80f1-1db9c2935d76" name="Previous Exception Detail" type="Data">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <display x="-225" y="165" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+  </stage>
+  <stage stageid="3484ce27-f1ef-4f28-926b-efaa03fc5fed" name="Count" type="Calculation">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <display x="15" y="300" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>02c69925-9f7c-41af-844f-259d82504b0a</onsuccess>
+    <calculation expression="1+ [Consecutive Exception Count]" stage="Consecutive Exception Count" />
+  </stage>
+  <stage stageid="279f2417-29f4-4931-9039-5d9693cd6b93" name="Consecutive Exception Count" type="Data">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <display x="-225" y="195" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+  </stage>
+  <stage stageid="02c69925-9f7c-41af-844f-259d82504b0a" name="Limit?" type="Decision">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <display x="15" y="375" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <decision expression="[Consecutive Exception Count]&gt;=[Consecutive Exception Limit]" />
+    <ontrue>4dda9efd-3cd9-4714-b293-fe6aa9cd269c</ontrue>
+    <onfalse>7360eced-01c7-4dc8-a7ef-817d130f1cc5</onfalse>
+  </stage>
+  <stage stageid="aefca01e-0501-4f8e-ba6c-a5aa4896e4ea" name="TERMINATE" type="Exception">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <display x="15" y="570" w="120" h="60" />
+    <font family="Tahoma" size="10" style="Bold" color="FF0000" />
+    <exception type="" detail="[Consecutive Exception Limit] &amp; &quot; consecutive incidents of &quot; &amp; [Exception Type] &amp; &quot;: &quot; &amp; [Exception Detail]" />
+  </stage>
+  <stage stageid="36455e9b-9b0b-4078-b5b2-338e1aab1f84" name="Consecutive Exception Limit" type="Data">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <display x="-225" y="225" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>3</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="64a4e876-5092-4568-829b-73faed844a31" name="End2" type="End">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <display x="285" y="375" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="9de6523c-e14d-4937-b854-1b0930857c02" name="Reset Consecutive Exception Indicators" type="MultipleCalculation">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <display x="285" y="225" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>64a4e876-5092-4568-829b-73faed844a31</onsuccess>
+    <steps>
+      <calculation expression="[Exception Detail]" stage="Previous Exception Detail" />
+      <calculation expression="0" stage="Consecutive Exception Count" />
+    </steps>
+  </stage>
+  <stage stageid="4dda9efd-3cd9-4714-b293-fe6aa9cd269c" name="Stop the process because consecutive exceptions are occuring" type="Note">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <narrative>The consecutive exception limit has been reached, so throw a new exception to terminate the process.</narrative>
+    <display x="15" y="480" w="120" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>aefca01e-0501-4f8e-ba6c-a5aa4896e4ea</onsuccess>
+  </stage>
+  <stage stageid="6047b42e-0003-4ddb-8ba3-d3607d6ce770" name="Start" type="Start">
+    <subsheetid>d31d1c11-61ad-4c49-91a4-44bbf0bf0725</subsheetid>
+    <display x="15" y="-105" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>126538a7-7404-4369-8cdd-056490ecc46c</onsuccess>
+  </stage>
+  <stage stageid="86bb4f43-18d4-43dd-9bf5-b8902e21521c" name="Mark Completed" type="Action">
+    <subsheetid>d31d1c11-61ad-4c49-91a4-44bbf0bf0725</subsheetid>
+    <narrative>Marks the item as completed, by updating the Completed timestamp and setting Locked to null. The item must be 'owned' by the calling process - i.e. it must have been retrieved using Get Next Item.</narrative>
+    <display x="15" y="0" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Item ID" narrative="The ID of the item to mark" expr="[Item ID]" />
+    </inputs>
+    <onsuccess>8f6d0bfa-2d98-469e-997c-88b0c126d4d7</onsuccess>
+    <resource object="Blueprism.Automate.clsWorkQueuesActions" action="Mark Completed" />
+  </stage>
+  <stage stageid="126538a7-7404-4369-8cdd-056490ecc46c" name="Set Status" type="Action">
+    <subsheetid>d31d1c11-61ad-4c49-91a4-44bbf0bf0725</subsheetid>
+    <narrative>Updates the status field for the item. The status field can be used to flag what has been done in a process so far. If a process encounters an exception, this information can be used to skip to the parts of the process not yet done for the item next time it is worked. The item must be 'owned' by the calling process - i.e. it must have been retrieved using Get Next Item.
+
+This action will also reset the Attempts column to zero, because if the status updated the process should have successfully done something.</narrative>
+    <display x="15" y="-45" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Item ID" narrative="The ID of the item to mark" expr="[Item ID]" />
+      <input type="text" name="Status" narrative="The new status - 255 characters maximum." expr="&quot;Completed&quot;" />
+    </inputs>
+    <onsuccess>86bb4f43-18d4-43dd-9bf5-b8902e21521c</onsuccess>
+    <resource object="Blueprism.Automate.clsWorkQueuesActions" action="Update Status" />
+  </stage>
+  <stage stageid="09fc131c-2803-4daf-b8cf-351f28b78783" name="New Item ID" type="Data">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <display x="-225" y="105" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="10cdebf6-ced7-425b-91dd-2b0b764b5ee0" name="Got Item?" type="Decision">
+    <display x="120" y="60" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <decision expression="[Item ID]&lt;&gt;&quot;&quot;" />
+    <ontrue>f52977fa-5395-47ee-a08b-35f92f89554c</ontrue>
+    <onfalse>7cfa842f-7ad3-4458-943f-6d7007300925</onfalse>
+  </stage>
+  <stage stageid="6322bec5-84f1-4af9-9af5-5406339262c4" name="Work Step 1" type="SubSheetInfo">
+    <subsheetid>bf57723b-f31f-465f-a44d-6b23e78fd2de</subsheetid>
+    <display x="-105" y="-90" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="f52977fa-5395-47ee-a08b-35f92f89554c" name="Work Step 1" type="SubSheet">
+    <display x="120" y="165" w="90" h="60" />
+    <font family="Tahoma" size="15" style="Bold" color="333399" />
+    <onsuccess>ddcca36f-4cf9-489e-abf7-6135db964332</onsuccess>
+    <processid>bf57723b-f31f-465f-a44d-6b23e78fd2de</processid>
+  </stage>
+  <stage stageid="97b3d7cc-18e6-4683-a321-c7c736d2d8b0" name="Start Up" type="SubSheetInfo">
+    <subsheetid>8f814e4a-ce3a-4fd2-8a04-5f2b890ceba7</subsheetid>
+    <narrative>Prepares any variables according to the Run Mode, starts the applications and fills the queue.</narrative>
+    <display x="-195" y="195" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="58267ed1-deb3-498d-bdf8-42959ffc8bac" name="Close Down" type="SubSheetInfo">
+    <subsheetid>cf13a1fa-a9be-4527-973b-e2f66f99d14b</subsheetid>
+    <narrative>Closes down the applications and maintains the work queue.</narrative>
+    <display x="-210" y="-240" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="ebd3e811-a42f-4f89-b4da-5a793c6cd798" name="Start" type="Start">
+    <subsheetid>cf13a1fa-a9be-4527-973b-e2f66f99d14b</subsheetid>
+    <display x="15" y="-165" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>6bad5160-382e-453b-bb17-bf6c89f68c89</onsuccess>
+  </stage>
+  <stage stageid="832b89eb-e411-459f-ac7a-4584e360f5ef" name="Start Up" type="SubSheet">
+    <display x="0" y="-180" w="90" h="60" />
+    <font family="Tahoma" size="15" style="Bold" color="0000FF" />
+    <onsuccess>784ef9b2-feca-4623-91ea-56582a2597f8</onsuccess>
+    <processid>8f814e4a-ce3a-4fd2-8a04-5f2b890ceba7</processid>
+  </stage>
+  <stage stageid="22b42ab0-feae-42b2-a098-9871956bb826" name="Close Down" type="SubSheet">
+    <display x="375" y="-105" w="90" h="60" />
+    <font family="Tahoma" size="15" style="Bold" color="0000FF" />
+    <onsuccess>458762d9-7dd4-47c0-bbdc-55d193273d9c</onsuccess>
+    <processid>cf13a1fa-a9be-4527-973b-e2f66f99d14b</processid>
+  </stage>
+  <stage stageid="c820952e-9e6d-4733-8604-b1360d80ecde" name="Sub Processes" type="Block">
+    <display x="45" y="105" w="135" h="315" />
+    <font family="Tahoma" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="1ef745eb-5713-4876-9937-47ac6d74b94b" name="anchor8" type="Anchor">
+    <display x="375" y="315" w="10" h="10" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>bef8f1ff-727a-4e0a-b29e-ed73fb6f0147</onsuccess>
+  </stage>
+  <stage stageid="ae4ae986-9e90-407c-bdc5-098a2eaf7d1c" name="Work Step 2" type="SubSheetInfo">
+    <subsheetid>4f5f8a61-abf2-40dd-8169-d8ab45ffd78c</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="e1b17a89-74f4-4c4e-9fc1-dcd90c44c837" name="Start" type="Start">
+    <subsheetid>4f5f8a61-abf2-40dd-8169-d8ab45ffd78c</subsheetid>
+    <display x="15" y="-105" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>6faae558-7525-43e2-90da-c518509c143e</onsuccess>
+  </stage>
+  <stage stageid="6dace494-d4a8-4d6a-8169-cfd699f9f583" name="Work Step 3" type="SubSheetInfo">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <display x="-240" y="-75" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="ddcca36f-4cf9-489e-abf7-6135db964332" name="Work Step 2" type="SubSheet">
+    <display x="120" y="240" w="90" h="60" />
+    <font family="Tahoma" size="15" style="Bold" color="333399" />
+    <onsuccess>731b1d6d-580d-4e96-9d99-20280f13ae57</onsuccess>
+    <processid>4f5f8a61-abf2-40dd-8169-d8ab45ffd78c</processid>
+  </stage>
+  <stage stageid="731b1d6d-580d-4e96-9d99-20280f13ae57" name="Work Step 3" type="SubSheet">
+    <display x="120" y="315" w="90" h="60" />
+    <font family="Tahoma" size="15" style="Bold" color="333399" />
+    <onsuccess>e3035b4a-aba4-4fa5-932e-cbaab6a81b7b</onsuccess>
+    <processid>47e58161-0f42-47cc-aa94-af755a8de010</processid>
+  </stage>
+  <stage stageid="4fc18802-6f3f-497d-84f9-d4647d4fe33a" name="Reset Global Data" type="SubSheetInfo">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <narrative>This page is only used to reset global data items</narrative>
+    <display x="-165" y="-105" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="077ec244-9c84-4210-b6a5-e54b1b6000f0" name="Start" type="Start">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <display x="15" y="-105" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>0dee5c1d-8e68-49ec-a0ae-94125067ae6a</onsuccess>
+  </stage>
+  <stage stageid="0dee5c1d-8e68-49ec-a0ae-94125067ae6a" name="End" type="End">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <display x="15" y="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="bef8f1ff-727a-4e0a-b29e-ed73fb6f0147" name="Reset Global Data" type="SubSheet">
+    <display x="375" y="225" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>0341efdc-206a-43f9-8369-583aa2642c07</onsuccess>
+    <processid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</processid>
+  </stage>
+  <stage stageid="ffb4d158-5875-4239-bd22-b7ca87c93bbc" name="Mark Item As Exception" type="SubSheet">
+    <display x="270" y="525" w="90" h="60" />
+    <font family="Tahoma" size="15" style="Bold" color="FF0000" />
+    <onsuccess>8f17792f-057d-4155-804d-35098307f65b</onsuccess>
+    <processid>d599353b-a78b-40f4-ab04-255791b86a1a</processid>
+  </stage>
+  <stage stageid="e3035b4a-aba4-4fa5-932e-cbaab6a81b7b" name="Mark Item As Completed" type="SubSheet">
+    <display x="270" y="315" w="90" h="60" />
+    <font family="Tahoma" size="15" style="Bold" color="339966" />
+    <onsuccess>1ef745eb-5713-4876-9937-47ac6d74b94b</onsuccess>
+    <processid>d31d1c11-61ad-4c49-91a4-44bbf0bf0725</processid>
+  </stage>
+  <stage stageid="8f6d0bfa-2d98-469e-997c-88b0c126d4d7" name="Reset Consecutive Exception Indicators" type="MultipleCalculation">
+    <subsheetid>d31d1c11-61ad-4c49-91a4-44bbf0bf0725</subsheetid>
+    <display x="15" y="60" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>7f3bfe56-9180-4254-8d9c-ee9ab331b39a</onsuccess>
+    <steps>
+      <calculation expression="&quot;&quot;" stage="Previous Exception Detail" />
+      <calculation expression="0" stage="Consecutive Exception Count" />
+    </steps>
+  </stage>
+  <stage stageid="7f3bfe56-9180-4254-8d9c-ee9ab331b39a" name="End3" type="End">
+    <subsheetid>d31d1c11-61ad-4c49-91a4-44bbf0bf0725</subsheetid>
+    <display x="15" y="120" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="46407e01-19d6-439f-b64b-e6a18e1ae3db" name="Stop?" type="Decision">
+    <display x="375" y="60" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Bold" color="FF0000" />
+    <decision expression="IsStopRequested() OR [Stop After Items]=0 OR LocalTime()&gt;[Stop After Time]" />
+    <ontrue>22b42ab0-feae-42b2-a098-9871956bb826</ontrue>
+    <onfalse>b9deef81-8e13-43ef-b6e4-c7554776c97d</onfalse>
+  </stage>
+  <stage stageid="5ce83707-f042-4e73-929c-e7358ebdc456" name="Tag Item" type="Action">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <narrative>Adds a tag to a work queue item</narrative>
+    <display x="105" y="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Item ID" narrative="The ID of the queue item to add the tag to" expr="[Item ID]" />
+      <input type="text" name="Tag" narrative="The tag to add to the item. Note that this cannot start with a '+' (plus) or '-' (minus) character, and cannot contain ';' (semi-colon) characters" expr="&quot;Business Exception&quot;" />
+    </inputs>
+    <onsuccess>daa36ca6-f942-4ebc-86fc-8ba76b19cb4d</onsuccess>
+    <resource object="Blueprism.Automate.clsWorkQueuesActions" action="Tag Item" />
+  </stage>
+  <stage stageid="efc0fbd8-171a-4662-9e00-495d03bd8db7" name="Note4" type="Note">
+    <narrative>Add more steps as required</narrative>
+    <display x="-15" y="315" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Bold" color="FF00FF" />
+    <onsuccess>731b1d6d-580d-4e96-9d99-20280f13ae57</onsuccess>
+  </stage>
+  <stage stageid="0341efdc-206a-43f9-8369-583aa2642c07" name="Count Items" type="Calculation">
+    <display x="375" y="135" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>46407e01-19d6-439f-b64b-e6a18e1ae3db</onsuccess>
+    <calculation expression="[Stop After Items]-1" stage="Stop After Items" />
+  </stage>
+  <stage stageid="131b5818-75e5-49ed-9fd5-4d8a51ce52f1" name="Item ID" type="Data">
+    <display x="-165" y="345" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="2d0552e3-8ed7-4090-b123-2fbe46f2918e" name="Item Data" type="Collection">
+    <display x="-165" y="300" w="150" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <alwaysinit />
+  </stage>
+  <stage stageid="ab543cd9-eb36-48bb-869d-f0e87751767b" name="Item Status" type="Data">
+    <display x="-165" y="375" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="3615f299-65d4-4b0b-ba12-72bd84993bf8" name="Item Attempts" type="Data">
+    <display x="-165" y="405" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="85fbb578-f410-4f72-8ca9-58513939bc51" name="Get Next Item" type="Action">
+    <narrative>This action gets the next item to be worked from the queue, returning its details and locking it so no other case can work it.
+
+Items with higher priorities (lower numerical value) are processed first. Where the priority is the same, the next item is the one that has been in the queue the longest,  is not already locked, and is not already completed.
+
+The Item ID returned is used to make further calls to update the work status for that item. It may be empty, in which case there are no items available. This can mean either a) the queue is empty, or b) the queue is not running. This mechanism can be used to cleanly stop all processes working a particular queue at the end of the next case. Items that have a 'deferred' time set will not be returned unless that time has been reached.</narrative>
+    <display x="0" y="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Queue Name" narrative="The name of the queue" expr="[Queue Name]" />
+      <input type="text" name="Key Filter" narrative="Optionally, a key value to filter by. Only items with this key value will be considered." expr="" />
+      <input type="text" name="Tag Filter" narrative="Optionally, a tag mask to filter by. This can consist of any number of tag searches - each term can be separated by a semi-colon and they are all applied to the search (ie. they are AND'ed terms not OR'ed terms). For example, &quot;Account: Joint; -Balance: Overdrawn; Card: *Visa*&quot; will include any items which match all the terms, ie. every item must have an 'Account: Joint' tag applied, no item can have a 'Balance: Overdrawn' tag applied, every item must have a tag applied which starts with 'Card: ' and then contains the text 'Visa'." expr="" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Item ID" narrative="The ID of the item retrieved - empty if there are none available." stage="Item ID" />
+      <output type="collection" name="Data" narrative="The data associated with the item - a single collection row." stage="Item Data" />
+      <output type="text" name="Status" narrative="The status of the item." stage="Item Status" />
+      <output type="number" name="Attempts" narrative="The number of attempts already made to work this item." stage="Item Attempts" />
+    </outputs>
+    <onsuccess>10cdebf6-ced7-425b-91dd-2b0b764b5ee0</onsuccess>
+    <resource object="Blueprism.Automate.clsWorkQueuesActions" action="Get Next Item" />
+  </stage>
+  <stage stageid="e7450b45-6166-42c1-b727-c904883265b5" name="Reset Consecutive Exception Indicators" type="MultipleCalculation">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <display x="450" y="30" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>f06041aa-ea81-4ef5-b916-b46c6a06f168</onsuccess>
+    <steps>
+      <calculation expression="&quot;&quot;" stage="Previous Exception Detail" />
+      <calculation expression="0" stage="Consecutive Exception Count" />
+    </steps>
+  </stage>
+  <stage stageid="30dbe472-0855-41c7-8529-de7b2534c0d4" name="Recover" type="Recover">
+    <subsheetid>cf13a1fa-a9be-4527-973b-e2f66f99d14b</subsheetid>
+    <display x="120" y="-75" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>587a44d0-cd80-4e8c-8f61-316503d8c9de</onsuccess>
+  </stage>
+  <stage stageid="4a3be3ea-fcd3-49fe-bced-219cca2a20f1" name="Resume" type="Resume">
+    <subsheetid>cf13a1fa-a9be-4527-973b-e2f66f99d14b</subsheetid>
+    <display x="120" y="45" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>4c04f5e3-4f3f-4b53-b500-fd3db5324895</onsuccess>
+  </stage>
+  <stage stageid="b060de01-54c4-4d73-90c7-464e72595ef3" name="Close App 1" type="Block">
+    <subsheetid>cf13a1fa-a9be-4527-973b-e2f66f99d14b</subsheetid>
+    <display x="-75" y="-120" w="285" h="120" />
+    <font family="Tahoma" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="d08c5e70-1fd1-416b-9fdc-df51ccc54906" name="Exception Type" type="Data">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <display x="-165" y="30" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="7ec266b2-b0c3-4dca-9e5b-f4cc61966dfa" name="Exception Detail" type="Data">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <display x="-165" y="75" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b9deef81-8e13-43ef-b6e4-c7554776c97d" name="Get Next Item" type="Action">
+    <narrative>This action gets the next item to be worked from the queue, returning its details and locking it so no other case can work it.
+
+Items with higher priorities (lower numerical value) are processed first. Where the priority is the same, the next item is the one that has been in the queue the longest,  is not already locked, and is not already completed.
+
+The Item ID returned is used to make further calls to update the work status for that item. It may be empty, in which case there are no items available. This can mean either a) the queue is empty, or b) the queue is not running. This mechanism can be used to cleanly stop all processes working a particular queue at the end of the next case. Items that have a 'deferred' time set will not be returned unless that time has been reached.</narrative>
+    <display x="240" y="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Queue Name" narrative="The name of the queue" expr="[Queue Name]" />
+      <input type="text" name="Key Filter" narrative="Optionally, a key value to filter by. Only items with this key value will be considered." expr="" />
+      <input type="text" name="Tag Filter" narrative="Optionally, a tag mask to filter by. This can consist of any number of tag searches - each term can be separated by a semi-colon and they are all applied to the search (ie. they are AND'ed terms not OR'ed terms). For example, &quot;Account: Joint; -Balance: Overdrawn; Card: *Visa*&quot; will include any items which match all the terms, ie. every item must have an 'Account: Joint' tag applied, no item can have a 'Balance: Overdrawn' tag applied, every item must have a tag applied which starts with 'Card: ' and then contains the text 'Visa'." expr="" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Item ID" narrative="The ID of the item retrieved - empty if there are none available." stage="Item ID" />
+      <output type="collection" name="Data" narrative="The data associated with the item - a single collection row." stage="Item Data" />
+      <output type="text" name="Status" narrative="The status of the item." stage="Item Status" />
+      <output type="number" name="Attempts" narrative="The number of attempts already made to work this item." stage="Item Attempts" />
+    </outputs>
+    <onsuccess>10cdebf6-ced7-425b-91dd-2b0b764b5ee0</onsuccess>
+    <resource object="Blueprism.Automate.clsWorkQueuesActions" action="Get Next Item" />
+  </stage>
+  <stage stageid="8f17792f-057d-4155-804d-35098307f65b" name="anchor14" type="Anchor">
+    <display x="375" y="525" w="10" h="10" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>1ef745eb-5713-4876-9937-47ac6d74b94b</onsuccess>
+  </stage>
+  <stage stageid="7cfa842f-7ad3-4458-943f-6d7007300925" name="Note9" type="Note">
+    <narrative>No more items available</narrative>
+    <display x="120" y="-105" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>36c30473-b855-4440-a10e-3777b8d8c327</onsuccess>
+  </stage>
+  <stage stageid="d64ced1f-6499-41a5-b006-5b03a3bd4ed0" name="Stop After Time" type="Data">
+    <narrative>Used by the process to decide whether to keep working or close itself down. This value can be modified from Control Room to bring a session to an early finish.</narrative>
+    <display x="-165" y="165" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Bold" color="FF0000" />
+    <datatype>time</datatype>
+    <initialvalue>17:25:00</initialvalue>
+    <exposure>Session</exposure>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="aff8912c-98ae-4bb9-84d5-a2eab0253c71" name="Stop After Items" type="Data">
+    <narrative>Used by the process to decide whether to keep working or close itself down. This value can be modified from Control Room to bring a session to an early finish.</narrative>
+    <display x="-165" y="195" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Bold" color="FF0000" />
+    <datatype>number</datatype>
+    <initialvalue>9999999999</initialvalue>
+    <exposure>Session</exposure>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="eb957176-69ca-436f-b5b8-a0af1c12f549" name="Stopping Control Settings" type="Block">
+    <display x="-255" y="120" w="180" h="105" />
+    <font family="Tahoma" size="10" style="Regular" color="FF0000" />
+  </stage>
+  <stage stageid="d303b2cb-0441-445a-8463-956e2863a1d4" name="Queue Name" type="Data">
+    <display x="-165" y="75" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Bold" color="0000FF" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">Testing Queue</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="f9d7ca2d-a983-471c-bc79-408b2230269a" name="Process Settings" type="Block">
+    <display x="-255" y="30" w="180" h="75" />
+    <font family="Tahoma" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="c46d4291-41ed-4f54-9fce-f5b76838fb18" name="Retry Limit" type="Data">
+    <subsheetid>bf57723b-f31f-465f-a44d-6b23e78fd2de</subsheetid>
+    <loginhibit />
+    <display x="-135" y="45" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>3</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e7d7779b-4ada-4ae1-9722-512eb475bfcd" name="Retry Count" type="Data">
+    <subsheetid>bf57723b-f31f-465f-a44d-6b23e78fd2de</subsheetid>
+    <loginhibit />
+    <display x="-135" y="75" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="6fa1db8d-0510-4c35-8416-9a938e94c78d" name="Exception Data" type="MultipleCalculation">
+    <display x="120" y="465" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>53762061-333e-4023-b99f-1de349dfc4a4</onsuccess>
+    <steps>
+      <calculation expression="ExceptionType()" stage="Exception Type" />
+      <calculation expression="ExceptionDetail()" stage="Exception Detail" />
+    </steps>
+  </stage>
+  <stage stageid="7105b714-612a-4e50-84b3-f789f0634902" name="Note5" type="Note">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <loginhibit />
+    <narrative>This exception is different from the previous one.</narrative>
+    <display x="150" y="225" w="120" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>9de6523c-e14d-4937-b854-1b0930857c02</onsuccess>
+  </stage>
+  <stage stageid="7360eced-01c7-4dc8-a7ef-817d130f1cc5" name="Note5" type="Note">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <loginhibit />
+    <narrative>This exception is the same as the previous one but the consecutive exception limit has not yet been reached.</narrative>
+    <display x="150" y="375" w="120" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>64a4e876-5092-4568-829b-73faed844a31</onsuccess>
+  </stage>
+  <stage stageid="daa36ca6-f942-4ebc-86fc-8ba76b19cb4d" name="Note5" type="Note">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <loginhibit />
+    <narrative>Don't retry this type of exception, just mark the queue item and carry on.</narrative>
+    <display x="225" y="30" w="120" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>a97071fe-23f0-44d4-a04a-1516826f8ace</onsuccess>
+  </stage>
+  <stage stageid="52e45164-64b2-41fd-b6da-09c88ec7cdf7" name="Mark Exception" type="Action">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <narrative>Marks the item as an exception, optionally retrying it by cloning the item and returning the ID of the clone. The item must be 'owned' by the calling process - i.e. it must have been retrieved using Get Next Item.</narrative>
+    <display x="15" y="150" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Item ID" narrative="The ID of the item to mark" expr="[Item ID]" />
+      <input type="text" name="Exception Reason" narrative="A description of the reason for the exception" expr="[Exception Detail]" />
+      <input type="flag" name="Retry" narrative="Whether or not to retry the item, up to the maximum number of attempts specified for the queue. Optional - if not specified, the item will be retried" expr="True" />
+      <input type="flag" name="Keep Locked" narrative="Whether or not the clone of the item should remain locked after the exception has been registered and the item is retried. Optional - default is False" expr="False" />
+    </inputs>
+    <outputs>
+      <output type="text" name="New Item ID" narrative="The Item ID of the newly cloned item. This item will be locked if 'Keep Locked' is True. This will be empty if no item was cloned (ie. the item was not retried." stage="New Item ID" />
+    </outputs>
+    <onsuccess>a374264f-2dbf-4477-bad7-ee4ba812e5b1</onsuccess>
+    <resource object="Blueprism.Automate.clsWorkQueuesActions" action="Mark Exception" />
+  </stage>
+  <stage stageid="a97071fe-23f0-44d4-a04a-1516826f8ace" name="Mark Exception" type="Action">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <narrative>Marks the item as an exception, optionally retrying it by cloning the item and returning the ID of the clone. The item must be 'owned' by the calling process - i.e. it must have been retrieved using Get Next Item.</narrative>
+    <display x="345" y="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Item ID" narrative="The ID of the item to mark" expr="[Item ID]" />
+      <input type="text" name="Exception Reason" narrative="A description of the reason for the exception" expr="[Exception Detail]" />
+      <input type="flag" name="Retry" narrative="Whether or not to retry the item, up to the maximum number of attempts specified for the queue. Optional - if not specified, the item will be retried" expr="False" />
+      <input type="flag" name="Keep Locked" narrative="Whether or not the clone of the item should remain locked after the exception has been registered and the item is retried. Optional - default is False" expr="False" />
+    </inputs>
+    <outputs>
+      <output type="text" name="New Item ID" narrative="The Item ID of the newly cloned item. This item will be locked if 'Keep Locked' is True. This will be empty if no item was cloned (ie. the item was not retried." stage="New Item ID" />
+    </outputs>
+    <onsuccess>e7450b45-6166-42c1-b727-c904883265b5</onsuccess>
+    <resource object="Blueprism.Automate.clsWorkQueuesActions" action="Mark Exception" />
+  </stage>
+  <stage stageid="f06041aa-ea81-4ef5-b916-b46c6a06f168" name="End1" type="End">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <display x="555" y="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="6b5864ff-c8f2-4c69-8e1b-d090c057cdc2" name="Tag Item" type="Action">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <narrative>Adds a tag to a work queue item</narrative>
+    <display x="15" y="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Item ID" narrative="The ID of the queue item to add the tag to" expr="[Item ID]" />
+      <input type="text" name="Tag" narrative="The tag to add to the item. Note that this cannot start with a '+' (plus) or '-' (minus) character, and cannot contain ';' (semi-colon) characters" expr="&quot;System Exception&quot;" />
+    </inputs>
+    <onsuccess>52e45164-64b2-41fd-b6da-09c88ec7cdf7</onsuccess>
+    <resource object="Blueprism.Automate.clsWorkQueuesActions" action="Tag Item" />
+  </stage>
+  <stage stageid="587a44d0-cd80-4e8c-8f61-316503d8c9de" name="Note2" type="Note">
+    <subsheetid>cf13a1fa-a9be-4527-973b-e2f66f99d14b</subsheetid>
+    <narrative>Can't log out so just terminate</narrative>
+    <display x="120" y="-30" w="90" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>4a3be3ea-fcd3-49fe-bced-219cca2a20f1</onsuccess>
+  </stage>
+  <stage stageid="bf5bb99a-218a-453d-b8c2-71f6914837e6" name="Recover" type="Recover">
+    <subsheetid>4f5f8a61-abf2-40dd-8169-d8ab45ffd78c</subsheetid>
+    <loginhibit />
+    <display x="225" y="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>29675fe2-5476-4818-8eaa-515e299d5514</onsuccess>
+  </stage>
+  <stage stageid="f6a34c9d-fb55-46e6-a044-b03bfb665aaf" name="Resume" type="Resume">
+    <subsheetid>4f5f8a61-abf2-40dd-8169-d8ab45ffd78c</subsheetid>
+    <loginhibit />
+    <display x="225" y="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>44afa3a3-955b-49b9-899c-42f93edf2cb4</onsuccess>
+  </stage>
+  <stage stageid="6d17105a-27e9-4ac6-8d57-801cf94fefe2" name="Retry Limit" type="Data">
+    <subsheetid>4f5f8a61-abf2-40dd-8169-d8ab45ffd78c</subsheetid>
+    <loginhibit />
+    <display x="-195" y="30" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>3</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c16b3a3f-92d4-4cde-a139-24194f2d7952" name="Retry Count" type="Data">
+    <subsheetid>4f5f8a61-abf2-40dd-8169-d8ab45ffd78c</subsheetid>
+    <loginhibit />
+    <display x="-195" y="60" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d1dab767-7e24-4489-b8af-b205a82efab1" name="Count" type="Calculation">
+    <subsheetid>4f5f8a61-abf2-40dd-8169-d8ab45ffd78c</subsheetid>
+    <loginhibit />
+    <display x="315" y="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>f6a34c9d-fb55-46e6-a044-b03bfb665aaf</onsuccess>
+    <calculation expression="[Retry Count]+1" stage="Retry Count" />
+  </stage>
+  <stage stageid="29675fe2-5476-4818-8eaa-515e299d5514" name="Retry?" type="Decision">
+    <subsheetid>4f5f8a61-abf2-40dd-8169-d8ab45ffd78c</subsheetid>
+    <loginhibit />
+    <display x="315" y="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <decision expression="[Retry Count]&lt;[Retry Limit] AND (Lower(ExceptionType())=&quot;system exception&quot; OR Lower(ExceptionType())=&quot;internal&quot;)" />
+    <ontrue>d1dab767-7e24-4489-b8af-b205a82efab1</ontrue>
+    <onfalse>2e103f13-b04d-46ed-a85d-d1027ad5683c</onfalse>
+  </stage>
+  <stage stageid="2e103f13-b04d-46ed-a85d-d1027ad5683c" name="Throw" type="Exception">
+    <subsheetid>4f5f8a61-abf2-40dd-8169-d8ab45ffd78c</subsheetid>
+    <loginhibit />
+    <display x="405" y="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <exception localized="yes" type="" detail="" usecurrent="yes" />
+  </stage>
+  <stage stageid="dec11bde-c37d-4dee-8a31-ea7866717fb5" name="Note3" type="Note">
+    <subsheetid>4f5f8a61-abf2-40dd-8169-d8ab45ffd78c</subsheetid>
+    <loginhibit />
+    <narrative>Step 1a</narrative>
+    <display x="15" y="30" w="120" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>fe9783cf-ab48-4c6a-a7af-1b86eaad7e2e</onsuccess>
+  </stage>
+  <stage stageid="b67b99bf-a0a7-4aa0-90d6-49259c958dc1" name="Step 2 Block" type="Block">
+    <subsheetid>4f5f8a61-abf2-40dd-8169-d8ab45ffd78c</subsheetid>
+    <loginhibit />
+    <display x="-60" y="-15" w="330" h="135" />
+    <font family="Tahoma" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="fe9783cf-ab48-4c6a-a7af-1b86eaad7e2e" name="Note3" type="Note">
+    <subsheetid>4f5f8a61-abf2-40dd-8169-d8ab45ffd78c</subsheetid>
+    <loginhibit />
+    <narrative>Step 1b</narrative>
+    <display x="15" y="75" w="120" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>2a57682c-6684-4dc5-8c02-b55f6eab2189</onsuccess>
+  </stage>
+  <stage stageid="6faae558-7525-43e2-90da-c518509c143e" name="anchor5" type="Anchor">
+    <subsheetid>4f5f8a61-abf2-40dd-8169-d8ab45ffd78c</subsheetid>
+    <display x="15" y="-60" w="10" h="10" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>dec11bde-c37d-4dee-8a31-ea7866717fb5</onsuccess>
+  </stage>
+  <stage stageid="2a57682c-6684-4dc5-8c02-b55f6eab2189" name="End6" type="End">
+    <subsheetid>4f5f8a61-abf2-40dd-8169-d8ab45ffd78c</subsheetid>
+    <display x="15" y="150" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="808cbef2-cfe3-460f-ba72-91e0e6283988" name="System Unavailable?" type="Decision">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <display x="15" y="-45" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <decision expression="Lower([Exception Type])=&quot;system unavailable exception&quot; OR Lower([Exception Type])=&quot;login system exception&quot;" />
+    <ontrue>5669721f-c338-4600-9152-9d0d75cbce7e</ontrue>
+    <onfalse>b9fbad6e-b3b1-4e9b-bc71-1b96d40beeb2</onfalse>
+  </stage>
+  <stage stageid="5669721f-c338-4600-9152-9d0d75cbce7e" name="Release Item" type="Action">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <narrative>Marks the item as deferred. It is unlocked, but it will not be made available for processing again until the specified time.
+
+The attempts count for the item is reset to zero.</narrative>
+    <display x="-120" y="-45" w="90" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Item ID" narrative="The ID of the item to defer" expr="[Item ID]" />
+      <input type="datetime" name="Until" narrative="When to resume processing the case" expr="Now()" />
+    </inputs>
+    <onsuccess>8500ffb8-f46a-46cf-9ec9-3637f23f10ff</onsuccess>
+    <resource object="Blueprism.Automate.clsWorkQueuesActions" action="Defer" />
+  </stage>
+  <stage stageid="8500ffb8-f46a-46cf-9ec9-3637f23f10ff" name="TERMINATE" type="Exception">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <display x="-120" y="30" w="120" h="60" />
+    <font family="Tahoma" size="10" style="Bold" color="FF0000" />
+    <exception type="" detail="[Consecutive Exception Limit] &amp; &quot; consecutive incidents of &quot; &amp; [Exception Type] &amp; &quot;: &quot; &amp; [Exception Detail]" />
+  </stage>
+  <stage stageid="44afa3a3-955b-49b9-899c-42f93edf2cb4" name="Note3" type="Note">
+    <subsheetid>4f5f8a61-abf2-40dd-8169-d8ab45ffd78c</subsheetid>
+    <loginhibit />
+    <narrative>Navigate back ready for step 1a - maybe restart application (Close and Start pages)</narrative>
+    <display x="225" y="-60" w="180" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>6faae558-7525-43e2-90da-c518509c143e</onsuccess>
+  </stage>
+  <stage stageid="de2c89a2-171e-4bd8-b1cf-34b1f4040f68" name="Start" type="Start">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <display x="15" y="-90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>0e3603ba-c6df-4913-8285-9495d11ebb4e</onsuccess>
+  </stage>
+  <stage stageid="8ff3b78a-04ad-4b33-9fb0-691f386100eb" name="End" type="End">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <display x="15" y="465" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="9c12213f-6354-4383-8bfe-6655c796003a" name="Recover" type="Recover">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <display x="210" y="105" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>b66fb959-d6e0-4e20-97af-d487c34a5f57</onsuccess>
+  </stage>
+  <stage stageid="cc1e305a-7451-4690-9d78-5c73fd1f0cab" name="Resume" type="Resume">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <display x="210" y="45" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>b37e60ed-bf14-4986-9df8-47b2cc3e70c1</onsuccess>
+  </stage>
+  <stage stageid="ffdfc19f-b656-4eb8-870d-f179be1f3891" name="Retry Limit" type="Data">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <display x="-225" y="45" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>3</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b7db49cd-d54b-483a-bf59-413986011ce4" name="Retry Count" type="Data">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <display x="-225" y="75" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e5a02c93-4eb7-4e2d-8c27-7a81317ddfc8" name="Count" type="Calculation">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <display x="300" y="45" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>cc1e305a-7451-4690-9d78-5c73fd1f0cab</onsuccess>
+    <calculation expression="[Retry Count]+1" stage="Retry Count" />
+  </stage>
+  <stage stageid="b66fb959-d6e0-4e20-97af-d487c34a5f57" name="Retry?" type="Decision">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <display x="300" y="105" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <decision expression="[Retry Count]&lt;[Retry Limit] AND (Lower(ExceptionType())=&quot;system exception&quot; OR Lower(ExceptionType())=&quot;internal&quot;)" />
+    <ontrue>e5a02c93-4eb7-4e2d-8c27-7a81317ddfc8</ontrue>
+    <onfalse>e51ce76c-2cae-464d-b16f-584d9451de18</onfalse>
+  </stage>
+  <stage stageid="e51ce76c-2cae-464d-b16f-584d9451de18" name="Throw" type="Exception">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <display x="390" y="105" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <exception localized="yes" type="" detail="" usecurrent="yes" />
+  </stage>
+  <stage stageid="530ff2a6-b8e2-45c2-b78c-afc29f62eabd" name="Note3" type="Note">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <narrative>Step 1a</narrative>
+    <display x="15" y="45" w="120" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>ea76f578-fef9-4f65-9bcf-f45fc023bc2a</onsuccess>
+  </stage>
+  <stage stageid="f8d7521b-c3f3-45f5-86fa-05a6a6ad519e" name="Step 3a Block" type="Block">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <display x="-60" y="15" w="315" h="120" />
+    <font family="Tahoma" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="ce7c1455-907d-4b10-a1ca-427dc82e34f2" name="Reset Retry Count" type="Calculation">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <display x="15" y="165" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>a81fe61d-5a49-4c72-8a11-2b175514eff9</onsuccess>
+    <calculation expression="0" stage="Retry Count" />
+  </stage>
+  <stage stageid="72079c10-d395-400e-9abb-1143d1d656ce" name="Recover" type="Recover">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <display x="210" y="360" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>fa1e2c79-3cee-4646-b4a1-3f51eaf7f490</onsuccess>
+  </stage>
+  <stage stageid="89a4a8b3-b966-446f-acd6-423413c449bc" name="Resume" type="Resume">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <display x="210" y="300" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>e16ace84-f928-4810-91bb-470944ff2f02</onsuccess>
+  </stage>
+  <stage stageid="bf7b736b-6a7f-4695-b33e-dae2bf79fcb7" name="Count" type="Calculation">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <display x="300" y="300" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>89a4a8b3-b966-446f-acd6-423413c449bc</onsuccess>
+    <calculation expression="[Retry Count]+1" stage="Retry Count" />
+  </stage>
+  <stage stageid="fa1e2c79-3cee-4646-b4a1-3f51eaf7f490" name="Retry?" type="Decision">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <display x="300" y="360" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <decision expression="[Retry Count]&lt;[Retry Limit] AND (Lower(ExceptionType())=&quot;system exception&quot; OR Lower(ExceptionType())=&quot;internal&quot;)" />
+    <ontrue>bf7b736b-6a7f-4695-b33e-dae2bf79fcb7</ontrue>
+    <onfalse>3420e10e-9e67-4325-94ef-9f99edfd06e9</onfalse>
+  </stage>
+  <stage stageid="3420e10e-9e67-4325-94ef-9f99edfd06e9" name="Throw" type="Exception">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <display x="390" y="360" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <exception localized="yes" type="" detail="" usecurrent="yes" />
+  </stage>
+  <stage stageid="07b5eb9d-f68d-4d6d-b7ac-ffeb5aa153bd" name="Step 3c Block" type="Block">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <display x="-60" y="255" w="315" h="165" />
+    <font family="Tahoma" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="ea76f578-fef9-4f65-9bcf-f45fc023bc2a" name="Note3" type="Note">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <narrative>Step 1b</narrative>
+    <display x="15" y="90" w="120" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>ce7c1455-907d-4b10-a1ca-427dc82e34f2</onsuccess>
+  </stage>
+  <stage stageid="eaf7aa03-5890-4730-b0bd-c50673333edb" name="Note3" type="Note">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <narrative>Step 1c</narrative>
+    <display x="15" y="300" w="120" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>0cb4311b-acaa-4d7e-af3c-6855ac4e3096</onsuccess>
+  </stage>
+  <stage stageid="0cb4311b-acaa-4d7e-af3c-6855ac4e3096" name="Note3" type="Note">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <narrative>Step 1d</narrative>
+    <display x="15" y="345" w="120" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>74f2415f-deb3-4b16-936f-da0337a769e0</onsuccess>
+  </stage>
+  <stage stageid="74f2415f-deb3-4b16-936f-da0337a769e0" name="Note3" type="Note">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <narrative>Step 1e</narrative>
+    <display x="15" y="390" w="120" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>8ff3b78a-04ad-4b33-9fb0-691f386100eb</onsuccess>
+  </stage>
+  <stage stageid="b37e60ed-bf14-4986-9df8-47b2cc3e70c1" name="Note3" type="Note">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <narrative>Navigate back ready for step 1a  - maybe restart application (Close and Start pages)</narrative>
+    <display x="210" y="-45" w="180" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>0e3603ba-c6df-4913-8285-9495d11ebb4e</onsuccess>
+  </stage>
+  <stage stageid="0e3603ba-c6df-4913-8285-9495d11ebb4e" name="anchor5" type="Anchor">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <display x="15" y="-45" w="10" h="10" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>530ff2a6-b8e2-45c2-b78c-afc29f62eabd</onsuccess>
+  </stage>
+  <stage stageid="a81fe61d-5a49-4c72-8a11-2b175514eff9" name="anchor6" type="Anchor">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <display x="15" y="210" w="10" h="10" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>eaf7aa03-5890-4730-b0bd-c50673333edb</onsuccess>
+  </stage>
+  <stage stageid="e16ace84-f928-4810-91bb-470944ff2f02" name="Note3" type="Note">
+    <subsheetid>47e58161-0f42-47cc-aa94-af755a8de010</subsheetid>
+    <loginhibit />
+    <narrative>Navigate back ready for step 1c - maybe restart application (Close and Start pages), maybe additional navigation required</narrative>
+    <display x="210" y="210" w="180" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>a81fe61d-5a49-4c72-8a11-2b175514eff9</onsuccess>
+  </stage>
+  <stage stageid="655536e7-b3fd-4080-9f98-2fe98e6dbbfb" name="Start" type="Start">
+    <subsheetid>bf57723b-f31f-465f-a44d-6b23e78fd2de</subsheetid>
+    <display x="60" y="-90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>0aebd4a9-50d3-4389-982d-14e4d0f344d1</onsuccess>
+  </stage>
+  <stage stageid="309d561b-7459-41fc-bdc8-048a46336106" name="Recover" type="Recover">
+    <subsheetid>bf57723b-f31f-465f-a44d-6b23e78fd2de</subsheetid>
+    <loginhibit />
+    <display x="255" y="105" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>8943e5dc-119d-4aef-9e2d-61bc9b4ad225</onsuccess>
+  </stage>
+  <stage stageid="e43623c9-38bf-47db-b5f0-db158e681de8" name="Resume" type="Resume">
+    <subsheetid>bf57723b-f31f-465f-a44d-6b23e78fd2de</subsheetid>
+    <loginhibit />
+    <display x="255" y="45" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>8d4036c4-fb6d-4b8e-b512-9a713fbc0c0c</onsuccess>
+  </stage>
+  <stage stageid="2848a429-d5d1-4546-9a1b-16ef0f3c3a0c" name="Count" type="Calculation">
+    <subsheetid>bf57723b-f31f-465f-a44d-6b23e78fd2de</subsheetid>
+    <loginhibit />
+    <display x="345" y="45" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>e43623c9-38bf-47db-b5f0-db158e681de8</onsuccess>
+    <calculation expression="[Retry Count]+1" stage="Retry Count" />
+  </stage>
+  <stage stageid="8943e5dc-119d-4aef-9e2d-61bc9b4ad225" name="Retry?" type="Decision">
+    <subsheetid>bf57723b-f31f-465f-a44d-6b23e78fd2de</subsheetid>
+    <loginhibit />
+    <display x="345" y="105" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <decision expression="[Retry Count]&lt;[Retry Limit] AND (Lower(ExceptionType())=&quot;system exception&quot; OR Lower(ExceptionType())=&quot;internal&quot;)" />
+    <ontrue>2848a429-d5d1-4546-9a1b-16ef0f3c3a0c</ontrue>
+    <onfalse>f12f8dc4-9c47-4f0b-be74-736b78b0bc2d</onfalse>
+  </stage>
+  <stage stageid="f12f8dc4-9c47-4f0b-be74-736b78b0bc2d" name="Throw" type="Exception">
+    <subsheetid>bf57723b-f31f-465f-a44d-6b23e78fd2de</subsheetid>
+    <loginhibit />
+    <display x="435" y="105" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <exception localized="yes" type="" detail="" usecurrent="yes" />
+  </stage>
+  <stage stageid="97b3f0e6-9371-4bab-a12d-c39f8dbf2a41" name="Note3" type="Note">
+    <subsheetid>bf57723b-f31f-465f-a44d-6b23e78fd2de</subsheetid>
+    <loginhibit />
+    <narrative>Step 1a</narrative>
+    <display x="60" y="45" w="120" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>91a71005-8abc-4f43-9615-fec34ccf57df</onsuccess>
+  </stage>
+  <stage stageid="ee64c95b-60b1-4479-ad29-9e474ce55feb" name="Step 1 Block" type="Block">
+    <subsheetid>bf57723b-f31f-465f-a44d-6b23e78fd2de</subsheetid>
+    <loginhibit />
+    <display x="-15" y="0" w="315" h="135" />
+    <font family="Tahoma" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="91a71005-8abc-4f43-9615-fec34ccf57df" name="Note3" type="Note">
+    <subsheetid>bf57723b-f31f-465f-a44d-6b23e78fd2de</subsheetid>
+    <loginhibit />
+    <narrative>Step 1b</narrative>
+    <display x="60" y="90" w="120" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>dd1ff1be-5f88-4cf7-9047-232b3cde232a</onsuccess>
+  </stage>
+  <stage stageid="0aebd4a9-50d3-4389-982d-14e4d0f344d1" name="anchor5" type="Anchor">
+    <subsheetid>bf57723b-f31f-465f-a44d-6b23e78fd2de</subsheetid>
+    <display x="60" y="-45" w="10" h="10" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>97b3f0e6-9371-4bab-a12d-c39f8dbf2a41</onsuccess>
+  </stage>
+  <stage stageid="dd1ff1be-5f88-4cf7-9047-232b3cde232a" name="End6" type="End">
+    <subsheetid>bf57723b-f31f-465f-a44d-6b23e78fd2de</subsheetid>
+    <display x="60" y="165" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="8d4036c4-fb6d-4b8e-b512-9a713fbc0c0c" name="Note3" type="Note">
+    <subsheetid>bf57723b-f31f-465f-a44d-6b23e78fd2de</subsheetid>
+    <loginhibit />
+    <narrative>Navigate back ready for step 1a - maybe restart application (Close and Start pages)</narrative>
+    <display x="255" y="-45" w="180" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>0aebd4a9-50d3-4389-982d-14e4d0f344d1</onsuccess>
+  </stage>
+  <stage stageid="ce1f11b6-9a7a-41aa-9e43-0a058afb3c8c" name="Note4" type="Note">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <narrative>System not working or can not log in</narrative>
+    <display x="-105" y="-105" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Bold" color="FF00FF" />
+    <onsuccess>808cbef2-cfe3-460f-ba72-91e0e6283988</onsuccess>
+  </stage>
+  <stage stageid="8ffb59ed-f576-43df-89b7-8e91fa563bd0" name="Note4" type="Note">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <narrative>Check for concurrent exceptions, a system change may have occured</narrative>
+    <display x="150" y="135" w="120" h="60" />
+    <font family="Tahoma" size="10" style="Bold" color="FF00FF" />
+    <onsuccess>a374264f-2dbf-4477-bad7-ee4ba812e5b1</onsuccess>
+  </stage>
+  <stage stageid="23e8a233-85ce-49a2-8a49-032f65ee413b" name="Note4" type="Note">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <narrative>Tag exception category for Blue Prism Performance reports</narrative>
+    <display x="150" y="-60" w="120" h="60" />
+    <font family="Tahoma" size="10" style="Bold" color="FF00FF" />
+    <onsuccess>5ce83707-f042-4e73-929c-e7358ebdc456</onsuccess>
+  </stage>
+  <stage stageid="9092535a-fa8e-415b-bbf1-919c06b8f6e5" name="End4" type="End">
+    <subsheetid>cf13a1fa-a9be-4527-973b-e2f66f99d14b</subsheetid>
+    <display x="15" y="210" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="0b73e13d-4605-495a-88f9-22456673ef57" name="Start" type="Start">
+    <subsheetid>8f814e4a-ce3a-4fd2-8a04-5f2b890ceba7</subsheetid>
+    <display x="15" y="210" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>0999aaa5-2c2f-4547-9744-56596e6c6d2f</onsuccess>
+  </stage>
+  <stage stageid="09852af0-9db5-40f9-ba71-5a625f97b94d" name="End6" type="End">
+    <subsheetid>8f814e4a-ce3a-4fd2-8a04-5f2b890ceba7</subsheetid>
+    <display x="15" y="420" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="6bad5160-382e-453b-bb17-bf6c89f68c89" name="Note3" type="Note">
+    <subsheetid>cf13a1fa-a9be-4527-973b-e2f66f99d14b</subsheetid>
+    <loginhibit />
+    <narrative>Step 1 - Log Out</narrative>
+    <display x="15" y="-75" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>4c04f5e3-4f3f-4b53-b500-fd3db5324895</onsuccess>
+  </stage>
+  <stage stageid="4c04f5e3-4f3f-4b53-b500-fd3db5324895" name="Note3" type="Note">
+    <subsheetid>cf13a1fa-a9be-4527-973b-e2f66f99d14b</subsheetid>
+    <loginhibit />
+    <narrative>Step 2 - Terminate</narrative>
+    <display x="15" y="45" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>9092535a-fa8e-415b-bbf1-919c06b8f6e5</onsuccess>
+  </stage>
+  <stage stageid="a9123fda-6d02-4484-aaf0-14b9b85d6b97" name="Populate Queue" type="SubSheetInfo">
+    <subsheetid>b749d60a-bded-4d36-b099-3627ed699606</subsheetid>
+    <display x="-210" y="-150" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="275b91ea-8c22-44f7-804b-201f234f19b9" name="Start" type="Start">
+    <subsheetid>b749d60a-bded-4d36-b099-3627ed699606</subsheetid>
+    <display x="15" y="-105" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>a62fb73d-4ede-4f55-a9c2-91f7d8be5718</onsuccess>
+  </stage>
+  <stage stageid="dc7df0cb-5182-477f-8c1e-181fcc08d09b" name="End" type="End">
+    <subsheetid>b749d60a-bded-4d36-b099-3627ed699606</subsheetid>
+    <display x="15" y="360" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="1db94fff-eca8-49a2-9404-2b6ba6688410" name="Populate Queue" type="SubSheet">
+    <display x="0" y="-15" w="90" h="60" />
+    <font family="Tahoma" size="15" style="Bold" color="993300" />
+    <onsuccess>85fbb578-f410-4f72-8ca9-58513939bc51</onsuccess>
+    <processid>b749d60a-bded-4d36-b099-3627ed699606</processid>
+  </stage>
+  <stage stageid="11073630-4ac6-44d3-8da8-6df02ab46e53" name="Note1" type="Note">
+    <subsheetid>b749d60a-bded-4d36-b099-3627ed699606</subsheetid>
+    <narrative>Logic Here to populate your queue from input source:
+Worklist system
+Excel or CSV Files
+Email
+Database Table
+Other</narrative>
+    <display x="15" y="120" w="150" h="150" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>0f5af99e-d83b-421b-921e-2eca9f5e73ae</onsuccess>
+  </stage>
+  <stage stageid="fee70eb7-dda6-4069-bfec-62e1ea4809d8" name="Lock Token" type="Data">
+    <subsheetid>b749d60a-bded-4d36-b099-3627ed699606</subsheetid>
+    <display x="-180" y="15" w="120" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a62fb73d-4ede-4f55-a9c2-91f7d8be5718" name="Aquire Lock" type="Action">
+    <subsheetid>b749d60a-bded-4d36-b099-3627ed699606</subsheetid>
+    <narrative>Acquires the lock associated with the given name. If this session already holds the required lock, it will be re-acquired with a new token</narrative>
+    <display x="15" y="-60" w="90" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Name" narrative="The name of the required lock. Mandatory parameter." expr="[Lock Name]" />
+      <input type="timespan" name="Timeout" narrative="The maximum amount of time to await the lock. Default is to wait forever" expr="MakeTimeSpan(0, 0, 0, 0)" />
+      <input type="text" name="Preferred Token" narrative="The preferred token to use for the lock. Default behaviour is to generate a new unique token." expr="[Lock Token]" />
+      <input type="text" name="Comment" narrative="The comments to set on the lock" expr="&quot;Acquire Lock&quot;" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Token" narrative="The token registered against the lock. This will be empty if the lock could not be acquired" stage="Lock Token" />
+    </outputs>
+    <onsuccess>ea479a64-b2ee-4352-b497-669bf791346a</onsuccess>
+    <resource object="BluePrism.AutomateAppCore.clsEnvironmentLockingBusinessObject" action="Acquire Lock" />
+  </stage>
+  <stage stageid="318bacb1-b302-4f7b-b4e2-8cb1dd422e25" name="Lock Name" type="Data">
+    <subsheetid>b749d60a-bded-4d36-b099-3627ed699606</subsheetid>
+    <display x="-180" y="-15" w="120" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">Default Lock Name (To change)</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="1fe7d33e-bda4-42f2-8389-528c1ad42f60" name="Populate Queue Settings" type="Block">
+    <subsheetid>b749d60a-bded-4d36-b099-3627ed699606</subsheetid>
+    <display x="-255" y="-60" w="150" h="135" />
+    <font family="Tahoma" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="ea479a64-b2ee-4352-b497-669bf791346a" name="Got Lock?" type="Decision">
+    <subsheetid>b749d60a-bded-4d36-b099-3627ed699606</subsheetid>
+    <display x="15" y="-15" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <decision expression="[Lock Token] &lt;&gt; &quot;&quot;" />
+    <ontrue>11073630-4ac6-44d3-8da8-6df02ab46e53</ontrue>
+    <onfalse>30e6e9dd-dca0-47d6-b758-8260a5269a57</onfalse>
+  </stage>
+  <stage stageid="949d4522-7e6e-4e78-b4c0-6b5a82cc49ad" name="End5" type="End">
+    <subsheetid>b749d60a-bded-4d36-b099-3627ed699606</subsheetid>
+    <display x="225" y="-15" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="30e6e9dd-dca0-47d6-b758-8260a5269a57" name="Note6" type="Note">
+    <subsheetid>b749d60a-bded-4d36-b099-3627ed699606</subsheetid>
+    <narrative>Another session is loading work</narrative>
+    <display x="120" y="-15" w="90" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>949d4522-7e6e-4e78-b4c0-6b5a82cc49ad</onsuccess>
+  </stage>
+  <stage stageid="0bfa9daa-527c-47fb-8383-6cf663d9ee6c" name="Load Work Block" type="Block">
+    <subsheetid>b749d60a-bded-4d36-b099-3627ed699606</subsheetid>
+    <display x="-90" y="15" w="300" h="240" />
+    <font family="Tahoma" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="bf23b5fb-a7eb-4f0b-a81c-45b0a4470209" name="Recover" type="Recover">
+    <subsheetid>b749d60a-bded-4d36-b099-3627ed699606</subsheetid>
+    <display x="150" y="120" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>2741e925-6743-4547-b72c-65c3a5ee6be4</onsuccess>
+  </stage>
+  <stage stageid="2741e925-6743-4547-b72c-65c3a5ee6be4" name="Release Lock" type="Action">
+    <subsheetid>b749d60a-bded-4d36-b099-3627ed699606</subsheetid>
+    <narrative>Releases the lock(s) associated with the given name and token</narrative>
+    <display x="255" y="120" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Name" narrative="The name of the specific lock to be released. Default behaviour is to release all locks with the given token." expr="[Lock Name]" />
+      <input type="text" name="Token" narrative="The token associated with the lock(s) to be released. Mandatory parameter." expr="[Lock Token]" />
+      <input type="text" name="Comment" narrative="The comments to set on the lock(s)" expr="&quot;Release Lock&quot;" />
+      <input type="flag" name="All Sessions" narrative="True to release locks matching the specified constraints across all sessions; False to only release locks acquired in the current session. Default is False" expr="True" />
+    </inputs>
+    <onsuccess>3088063b-55f9-4d06-944f-ea1edf0e1882</onsuccess>
+    <resource object="BluePrism.AutomateAppCore.clsEnvironmentLockingBusinessObject" action="Release Lock" />
+  </stage>
+  <stage stageid="3088063b-55f9-4d06-944f-ea1edf0e1882" name="Throw" type="Exception">
+    <subsheetid>b749d60a-bded-4d36-b099-3627ed699606</subsheetid>
+    <display x="330" y="120" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <exception localized="yes" type="" detail="" usecurrent="yes" />
+  </stage>
+  <stage stageid="798a2609-c9b8-49fb-900d-19a17a2a1c74" name="Release Lock" type="Action">
+    <subsheetid>b749d60a-bded-4d36-b099-3627ed699606</subsheetid>
+    <narrative>Releases the lock(s) associated with the given name and token</narrative>
+    <display x="15" y="300" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Name" narrative="The name of the specific lock to be released. Default behaviour is to release all locks with the given token." expr="[Lock Name]" />
+      <input type="text" name="Token" narrative="The token associated with the lock(s) to be released. Mandatory parameter." expr="[Lock Token]" />
+      <input type="text" name="Comment" narrative="The comments to set on the lock(s)" expr="&quot;Release lock&quot;" />
+      <input type="flag" name="All Sessions" narrative="True to release locks matching the specified constraints across all sessions; False to only release locks acquired in the current session. Default is False" expr="True" />
+    </inputs>
+    <onsuccess>dc7df0cb-5182-477f-8c1e-181fcc08d09b</onsuccess>
+    <resource object="BluePrism.AutomateAppCore.clsEnvironmentLockingBusinessObject" action="Release Lock" />
+  </stage>
+  <stage stageid="5f872aba-4131-40dd-9fce-eaa8082ad659" name="Note4" type="Note">
+    <narrative>Basic Populate Queue logic.  See Template 2 for other examples</narrative>
+    <display x="-150" y="-15" w="150" h="60" />
+    <font family="Tahoma" size="10" style="Bold" color="FF00FF" />
+    <onsuccess>1db94fff-eca8-49a2-9404-2b6ba6688410</onsuccess>
+  </stage>
+  <stage stageid="67bc274c-cb79-4591-9086-fb3e53c1c9d4" name="Note3" type="Note">
+    <subsheetid>b749d60a-bded-4d36-b099-3627ed699606</subsheetid>
+    <loginhibit />
+    <narrative>Go to  Process Examples - Adding work to a queue for ideas of how this might be done</narrative>
+    <display x="-180" y="165" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Bold" color="FF00FF" />
+    <onsuccess>11073630-4ac6-44d3-8da8-6df02ab46e53</onsuccess>
+  </stage>
+  <stage stageid="393e5c0f-7d23-4433-9ad0-a7efc47a783f" name="Note4" type="Note">
+    <subsheetid>bf57723b-f31f-465f-a44d-6b23e78fd2de</subsheetid>
+    <narrative>You will need to clean up the application and navigate ready to perform the first action again</narrative>
+    <display x="300" y="-135" w="180" h="60" />
+    <font family="Tahoma" size="10" style="Bold" color="FF00FF" />
+    <onsuccess>8d4036c4-fb6d-4b8e-b512-9a713fbc0c0c</onsuccess>
+  </stage>
+  <stage stageid="60ff9c2a-74c0-43ce-8d08-313ffc4fa0e8" name="Note4" type="Note">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <narrative>You can take the opportunity when traversing this page to confirm that the target applications are on the correct screen ready for processing the next case.</narrative>
+    <display x="120" y="-45" w="150" h="60" />
+    <font family="Tahoma" size="10" style="Bold" color="FF00FF" />
+  </stage>
+  <stage stageid="ac95564f-20e4-4325-a844-ced15edc3dc2" name="Note4" type="Note">
+    <subsheetid>d599353b-a78b-40f4-ab04-255791b86a1a</subsheetid>
+    <narrative>The case will only retry if the WQ has been configured to enable retries.</narrative>
+    <display x="-90" y="120" w="120" h="60" />
+    <font family="Tahoma" size="10" style="Bold" color="FF00FF" />
+  </stage>
+  <stage stageid="04f73ea2-3873-42fb-bc09-7dd2e286d26e" name="Validate Environment" type="SubSheetInfo">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <display x="-465" y="-225" w="150" h="90" />
+  </stage>
+  <stage stageid="4ffd0c43-74e1-4349-8695-8bf1d7478668" name="Start" type="Start">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <display x="-90" y="-240" />
+    <onsuccess>0386e550-e0a5-49e6-bf64-46d6c072f982</onsuccess>
+  </stage>
+  <stage stageid="7f062a5b-d1b7-42cb-bd3e-b1ac384fc94b" name="End" type="End">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <display x="-90" y="705" />
+  </stage>
+  <stage stageid="b4f7a182-401d-409c-b1e4-8a1a98ec95d0" name="Terminate" type="Exception">
+    <display x="645" y="180" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <exception localized="yes" type="" detail="" usecurrent="yes" />
+  </stage>
+  <stage stageid="151489a2-6d70-422c-b6f8-9baf91ad06e2" name="Global Recover" type="Recover">
+    <display x="645" y="-135" w="90" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>19cb79c5-41da-4990-a1de-2498184d3b0e</onsuccess>
+  </stage>
+  <stage stageid="19cb79c5-41da-4990-a1de-2498184d3b0e" name="Exception Data" type="MultipleCalculation">
+    <display x="645" y="-75" w="120" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>68efb5e8-c691-49e0-94f7-115483df9d91</onsuccess>
+    <steps>
+      <calculation expression="ExceptionType()" stage="Exception Type" />
+      <calculation expression="ExceptionDetail()" stage="Exception Detail" />
+    </steps>
+  </stage>
+  <stage stageid="419b39b0-d1f5-4771-8757-3f21ffdbdd55" name="Notify" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="645" y="90" w="90" h="60" />
+    <font family="Segoe UI" size="15" style="Bold" color="00FF00" />
+    <inputs>
+      <input type="text" name="Business Exception" friendlyname="Business Exception" expr="[Exception Type]" />
+    </inputs>
+    <onsuccess>b4f7a182-401d-409c-b1e4-8a1a98ec95d0</onsuccess>
+    <processid>3b18ac3b-32c0-43e6-816a-afb76a5efa49</processid>
+  </stage>
+  <stage stageid="68efb5e8-c691-49e0-94f7-115483df9d91" name="Close Down" type="SubSheet">
+    <display x="645" y="0" w="90" h="60" />
+    <font family="Tahoma" size="15" style="Bold" color="0000FF" />
+    <onsuccess>419b39b0-d1f5-4771-8757-3f21ffdbdd55</onsuccess>
+    <processid>cf13a1fa-a9be-4527-973b-e2f66f99d14b</processid>
+  </stage>
+  <stage stageid="10a307c8-0cd1-48f2-924c-73f798f35a51" name="Notify" type="SubSheetInfo">
+    <subsheetid>3b18ac3b-32c0-43e6-816a-afb76a5efa49</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="169fbd00-662f-44ed-93ca-01ff2ab87cc2" name="EOD Report" type="SubSheetInfo">
+    <subsheetid>59316c11-3dca-4c1a-84b1-41d038558660</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="4e4f8256-120e-4187-9464-49fa5ece8836" name="Start" type="Start">
+    <subsheetid>59316c11-3dca-4c1a-84b1-41d038558660</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>bd694826-7ab4-4b28-b7c9-bfcfc20de614</onsuccess>
+  </stage>
+  <stage stageid="bd694826-7ab4-4b28-b7c9-bfcfc20de614" name="End" type="End">
+    <subsheetid>59316c11-3dca-4c1a-84b1-41d038558660</subsheetid>
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="36c30473-b855-4440-a10e-3777b8d8c327" name="EOD Report" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="255" y="-105" w="90" h="60" />
+    <font family="Segoe UI" size="15" style="Bold" color="0000FF" />
+    <onsuccess>22b42ab0-feae-42b2-a098-9871956bb826</onsuccess>
+    <processid>59316c11-3dca-4c1a-84b1-41d038558660</processid>
+  </stage>
+  <stage stageid="0f5af99e-d83b-421b-921e-2eca9f5e73ae" name="PID - Process Name - Loader Process" type="Process">
+    <subsheetid>b749d60a-bded-4d36-b099-3627ed699606</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="225" w="90" h="30" />
+    <onsuccess>798a2609-c9b8-49fb-900d-19a17a2a1c74</onsuccess>
+    <processid>1d2769a3-2d23-4dc0-ae5a-c9ce173fb1c9</processid>
+  </stage>
+  <stage stageid="4d133057-18cd-456f-a38a-7ddd0c9fdd99" name="Start ABC" type="SubSheetInfo">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <narrative>Prepares any variables according to the Run Mode, starts the applications and fills the queue.</narrative>
+    <display x="-195" y="195" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="d180f1b4-8733-4487-99e6-3430d06b968e" name="Start" type="Start">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <display x="15" y="210" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>fa38b81e-a38d-4908-ac22-64308c61baf4</onsuccess>
+  </stage>
+  <stage stageid="3a8b13a4-b327-4e47-90cb-afae28139ef0" name="Retry Limit" type="Data">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <loginhibit />
+    <display x="-195" y="450" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>3</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="28ab6850-9436-46b3-9e9a-20ab4a402d64" name="Retry Count" type="Data">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <loginhibit />
+    <display x="-195" y="480" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="fa38b81e-a38d-4908-ac22-64308c61baf4" name="Note3" type="Note">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <loginhibit />
+    <narrative>Step 1- Launch</narrative>
+    <display x="15" y="360" w="120" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>ef545a74-5e54-465f-9b43-24e870f9d0f3</onsuccess>
+  </stage>
+  <stage stageid="19924c6d-7287-44ba-9006-c5b8986fe519" name="Log in App 1" type="Block">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <loginhibit />
+    <display x="-75" y="525" w="270" h="165" />
+    <font family="Tahoma" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="df446ae1-825c-4b7f-b9f7-cc65722f977e" name="Note3" type="Note">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <loginhibit />
+    <narrative>Step 2 - Log in</narrative>
+    <display x="15" y="585" w="120" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>de009457-d935-4dfd-a7cf-260a8ea7c446</onsuccess>
+  </stage>
+  <stage stageid="de009457-d935-4dfd-a7cf-260a8ea7c446" name="End6" type="End">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <display x="15" y="720" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="9489ee44-8f14-42f7-bb97-86839f121cb9" name="App 1 Username" type="Data">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <display x="-195" y="360" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="23944bbe-c583-43df-83c8-baa14eaf5bf5" name="App 1 Password" type="Data">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <display x="-195" y="390" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>password</datatype>
+    <initialvalueenc>
+    </initialvalueenc>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="e546686b-f012-40a9-b638-3559d109b225" name="Lanch App 1 Block" type="Block">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <display x="-75" y="315" w="270" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="1bf11f7f-b32c-4ff8-9a3d-0e423d85e0be" name="Resume" type="Resume">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <loginhibit />
+    <display x="345" y="360" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>aeca80ff-5576-427a-9f53-732921a6a24e</onsuccess>
+  </stage>
+  <stage stageid="aeca80ff-5576-427a-9f53-732921a6a24e" name="System Unavailable Exception" type="Exception">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <loginhibit />
+    <display x="450" y="360" w="120" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <exception type="System Unavailable Exception" detail="&quot;Unable to launch &lt;PUT APPLICATION NAME HERE&gt;&quot;" />
+  </stage>
+  <stage stageid="23ac2749-a170-4468-b657-8cf01090ad12" name="Recover" type="Recover">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <loginhibit />
+    <display x="135" y="360" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>274acc2b-6c7c-4e04-80db-19b815ffaba4</onsuccess>
+  </stage>
+  <stage stageid="ea4fd4e5-0a60-4d38-b51e-faa753cf1b19" name="Note4" type="Note">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <narrative>This action should throw a Login System Exception if it thinks the credentials entered were incorrect</narrative>
+    <display x="-180" y="585" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Bold" color="FF00FF" />
+    <onsuccess>df446ae1-825c-4b7f-b9f7-cc65722f977e</onsuccess>
+  </stage>
+  <stage stageid="274acc2b-6c7c-4e04-80db-19b815ffaba4" name="Exception Data" type="MultipleCalculation">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <display x="255" y="360" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>1bf11f7f-b32c-4ff8-9a3d-0e423d85e0be</onsuccess>
+    <steps>
+      <calculation expression="ExceptionType()" stage="Exception Type" />
+      <calculation expression="ExceptionDetail()" stage="Exception Detail" />
+    </steps>
+  </stage>
+  <stage stageid="88c18495-ad09-4ca9-a9fb-152ddb5f0b28" name="Recover" type="Recover">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <loginhibit />
+    <display x="135" y="660" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>f65c2e96-533a-42d3-bccf-398c38916de8</onsuccess>
+  </stage>
+  <stage stageid="14701528-4ce1-41d4-a85a-d62a196e60c9" name="Resume" type="Resume">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <loginhibit />
+    <display x="135" y="600" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>5d2d4cd4-f93f-473b-b20f-7dcf82982afb</onsuccess>
+  </stage>
+  <stage stageid="e4122ef0-1c4b-4850-8369-112fc505b542" name="Count" type="Calculation">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <loginhibit />
+    <display x="255" y="600" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>14701528-4ce1-41d4-a85a-d62a196e60c9</onsuccess>
+    <calculation expression="[Retry Count]+1" stage="Retry Count" />
+  </stage>
+  <stage stageid="f65c2e96-533a-42d3-bccf-398c38916de8" name="Retry?" type="Decision">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <loginhibit />
+    <display x="255" y="660" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <decision expression="[Retry Count]&lt;[Retry Limit] AND (Lower(ExceptionType())=&quot;system exception&quot; OR Lower(ExceptionType())=&quot;internal&quot;)" />
+    <ontrue>e4122ef0-1c4b-4850-8369-112fc505b542</ontrue>
+    <onfalse>8fefbe63-02a4-446e-a07d-8d42f347bee7</onfalse>
+  </stage>
+  <stage stageid="8fefbe63-02a4-446e-a07d-8d42f347bee7" name="Throw" type="Exception">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <loginhibit />
+    <display x="345" y="660" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <exception localized="yes" type="" detail="" usecurrent="yes" savescreencapture="yes" />
+  </stage>
+  <stage stageid="5d2d4cd4-f93f-473b-b20f-7dcf82982afb" name="Note3" type="Note">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <loginhibit />
+    <narrative>Navigate back ready for step 1d  - maybe restart application (Close and Start pages), maybe additional navigation required</narrative>
+    <display x="135" y="465" w="180" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>ef545a74-5e54-465f-9b43-24e870f9d0f3</onsuccess>
+  </stage>
+  <stage stageid="ef545a74-5e54-465f-9b43-24e870f9d0f3" name="anchor1" type="Anchor">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <display x="15" y="465" w="10" h="10" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>df446ae1-825c-4b7f-b9f7-cc65722f977e</onsuccess>
+  </stage>
+  <stage stageid="a8e075ec-b9eb-4773-b4fb-6dc5f1326d53" name="Note4" type="Note">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <narrative>Login System Exceptions will not be retried</narrative>
+    <display x="255" y="810" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Bold" color="FF00FF" />
+  </stage>
+  <stage stageid="27787a16-7684-4b34-8212-b62869c51d57" name="App1 Credentials" type="Block">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <display x="-285" y="285" w="180" h="135" />
+    <font family="Tahoma" size="10" style="Regular" color="FFCC00" />
+  </stage>
+  <stage stageid="62079196-2761-44e3-970f-e09fc7ed3faf" name="Note4" type="Note">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <narrative>Enterprise License holders should always use Blue Prism Credentials Here</narrative>
+    <display x="150" y="165" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Bold" color="FF00FF" />
+    <onsuccess>5faac317-855a-42ff-96e3-7178be2af7f5</onsuccess>
+  </stage>
+  <stage stageid="5faac317-855a-42ff-96e3-7178be2af7f5" name="Generate Credential Name" type="Calculation">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <display x="150" y="240" w="90" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>245a693b-da5f-4043-91a7-c6d49301f90f</onsuccess>
+    <calculation expression="Replace(GetResourceName(),&quot;_debug&quot;,&quot;&quot;) &amp; &quot; App 1 Name&quot;" stage="App1 Credential Name" />
+  </stage>
+  <stage stageid="6f4312e9-aad4-4d54-83ba-0e21b2fb6010" name="App1 Credential Name" type="Data">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <display x="-195" y="315" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="245a693b-da5f-4043-91a7-c6d49301f90f" name="Get App1 Credential" type="Action">
+    <subsheetid>6a9a6801-ad11-41db-a8e9-b9d93e6d7180</subsheetid>
+    <narrative>Get the specified set of credentials.
+
+An Exception will occur if access to the credentials is not allowed, based on the running Resource, Process and User.</narrative>
+    <display x="150" y="285" w="90" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Credentials Name" narrative="The name of the credentials to get" expr="[App1 Credential Name]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Username" narrative="The user name" stage="App 1 Username" />
+      <output type="password" name="Password" narrative="The password" stage="App 1 Password" />
+    </outputs>
+    <onsuccess>fa38b81e-a38d-4908-ac22-64308c61baf4</onsuccess>
+    <resource object="Blueprism.Automate.clsCredentialsActions" action="Get" />
+  </stage>
+  <stage stageid="0999aaa5-2c2f-4547-9744-56596e6c6d2f" name="Validate Environment" type="SubSheet">
+    <subsheetid>8f814e4a-ce3a-4fd2-8a04-5f2b890ceba7</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="270" />
+    <onsuccess>e96f8382-a5ba-4dc7-a1c7-5e4bb96d3e19</onsuccess>
+    <processid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</processid>
+  </stage>
+  <stage stageid="e96f8382-a5ba-4dc7-a1c7-5e4bb96d3e19" name="Start ABC" type="SubSheet">
+    <subsheetid>8f814e4a-ce3a-4fd2-8a04-5f2b890ceba7</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="345" />
+    <onsuccess>09852af0-9db5-40f9-ba71-5a625f97b94d</onsuccess>
+    <processid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</processid>
+  </stage>
+  <stage stageid="dd30a9f8-6f29-4811-a88f-465fb5b73bdb" name="Get System Variables" type="Block">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-540" y="-150" w="225" h="90" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="bdb27291-636b-4f49-bc84-16b942c4a7bf" name="Machine Name" type="Data">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-510" y="-120" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b01d2a4d-4052-4c95-b47c-a83439d09227" name="User Name" type="Data">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-435" y="-120" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="0fb431c0-4cf8-4694-beb2-0ff1f27988cc" name="Read Json" type="Block">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-210" y="135" w="195" h="210" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="4081af1f-25ea-46ce-8492-b2a7c3160c36" name="Folder &amp; File Validations - Block" type="Block">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-210" y="360" w="315" h="150" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="25de2ff8-35b2-4194-8260-3268b86cbf46" name="Get Machine Name" type="Action">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-90" y="-60" />
+    <outputs>
+      <output type="text" name="GetMachineName" friendlyname="GetMachineName" stage="Machine Name" />
+    </outputs>
+    <onsuccess>5542b35f-890e-4fce-90f0-093b73d8438e</onsuccess>
+    <resource object="Utility - NBK Standards" action="Get Machine Name" />
+  </stage>
+  <stage stageid="5542b35f-890e-4fce-90f0-093b73d8438e" name="Get User Name" type="Action">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-90" y="-15" />
+    <outputs>
+      <output type="text" name="GetUserName" friendlyname="GetUserName" stage="User Name" />
+    </outputs>
+    <onsuccess>3c4f0184-f305-4a97-b0a9-53cbd4aeb799</onsuccess>
+    <resource object="Utility - NBK Standards" action="Get User Name" />
+  </stage>
+  <stage stageid="4114057d-0992-4db3-8d79-17d0ad32b8b3" name="Start" type="Start">
+    <subsheetid>3b18ac3b-32c0-43e6-816a-afb76a5efa49</subsheetid>
+    <loginhibit />
+    <display x="30" y="-105" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Business Exception" stage="Business Exception Type" />
+    </inputs>
+    <onsuccess>06baa3e2-7886-4440-84a6-abd047eeff91</onsuccess>
+  </stage>
+  <stage stageid="56d7b731-c6b9-4145-9f9e-30fc589f576f" name="End" type="End">
+    <subsheetid>3b18ac3b-32c0-43e6-816a-afb76a5efa49</subsheetid>
+    <loginhibit />
+    <display x="300" y="180" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="2e00e2d1-843f-4433-9f02-6cd87c65fcc8" name="Note7" type="Note">
+    <subsheetid>3b18ac3b-32c0-43e6-816a-afb76a5efa49</subsheetid>
+    <narrative>Send Email To Business
+CC  Run Team</narrative>
+    <display x="30" y="120" w="90" h="60" />
+    <onsuccess>d44cdaa1-feb9-403f-bcea-3cd63da36200</onsuccess>
+  </stage>
+  <stage stageid="06baa3e2-7886-4440-84a6-abd047eeff91" name="Business Exception?" type="Decision">
+    <subsheetid>3b18ac3b-32c0-43e6-816a-afb76a5efa49</subsheetid>
+    <display x="30" y="-30" w="90" h="60" />
+    <decision expression="[Business Exception Type] = &quot;Business Exception&quot;" />
+    <ontrue>2e00e2d1-843f-4433-9f02-6cd87c65fcc8</ontrue>
+    <onfalse>c83b30ba-bc78-44b2-9f0d-be87895b8f9e</onfalse>
+  </stage>
+  <stage stageid="c83b30ba-bc78-44b2-9f0d-be87895b8f9e" name="Note7" type="Note">
+    <subsheetid>3b18ac3b-32c0-43e6-816a-afb76a5efa49</subsheetid>
+    <narrative>Send Email To Run Team
+CC  Business</narrative>
+    <display x="300" y="-30" w="90" h="60" />
+    <onsuccess>95f2cad0-cdce-4f41-8b6f-ed635706fae4</onsuccess>
+  </stage>
+  <stage stageid="c26618e9-3462-4537-a95f-65c7015de8bb" name="Send Email" type="SubSheet">
+    <subsheetid>3b18ac3b-32c0-43e6-816a-afb76a5efa49</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="300" y="120" />
+    <onsuccess>56d7b731-c6b9-4145-9f9e-30fc589f576f</onsuccess>
+    <processid>09218e60-b590-48a6-b2dd-ad5f52028f06</processid>
+  </stage>
+  <stage stageid="d44cdaa1-feb9-403f-bcea-3cd63da36200" name="Set Email Params" type="MultipleCalculation">
+    <subsheetid>3b18ac3b-32c0-43e6-816a-afb76a5efa49</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="180" y="120" w="120" h="30" />
+    <onsuccess>c26618e9-3462-4537-a95f-65c7015de8bb</onsuccess>
+    <steps />
+  </stage>
+  <stage stageid="95f2cad0-cdce-4f41-8b6f-ed635706fae4" name="Set Email Params" type="MultipleCalculation">
+    <subsheetid>3b18ac3b-32c0-43e6-816a-afb76a5efa49</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="300" y="45" w="120" h="30" />
+    <onsuccess>c26618e9-3462-4537-a95f-65c7015de8bb</onsuccess>
+    <steps />
+  </stage>
+  <stage stageid="da059ba8-87be-4248-a988-229887c9b30f" name="Send Email" type="SubSheetInfo">
+    <subsheetid>09218e60-b590-48a6-b2dd-ad5f52028f06</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="58902bbd-e324-45af-b566-97da77eb1909" name="Start" type="Start">
+    <subsheetid>09218e60-b590-48a6-b2dd-ad5f52028f06</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>c92232cc-1397-4cdf-bf2a-30f38141e0c9</onsuccess>
+  </stage>
+  <stage stageid="c92232cc-1397-4cdf-bf2a-30f38141e0c9" name="End" type="End">
+    <subsheetid>09218e60-b590-48a6-b2dd-ad5f52028f06</subsheetid>
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="b0afba03-18f8-44fd-9ef8-58fe2cc3efc4" name="Business Exception Type" type="Data">
+    <subsheetid>3b18ac3b-32c0-43e6-816a-afb76a5efa49</subsheetid>
+    <display x="-195" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="0386e550-e0a5-49e6-bf64-46d6c072f982" name="Create Log" type="Action">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-90" y="-180" />
+    <font family="Segoe UI" size="10" style="Regular" color="339966" />
+    <inputs>
+      <input type="text" name="logBaseFolder" friendlyname="logBaseFolder" expr="&quot;C:\temp\&quot;" />
+      <input type="text" name="logLevel" friendlyname="logLevel" expr="&quot;INFO&quot;" />
+      <input type="text" name="logMessage" friendlyname="logMessage" expr="&quot;Process Started&quot;" />
+    </inputs>
+    <onsuccess>91247d32-9c4c-43dd-a379-16dc2abb1f41</onsuccess>
+    <resource object="Utility - NBK Standards" action="Create Custom Log" />
+  </stage>
+  <stage stageid="91247d32-9c4c-43dd-a379-16dc2abb1f41" name="Create Log - Validate Environment" type="Action">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-90" y="-135" />
+    <font family="Segoe UI" size="10" style="Regular" color="339966" />
+    <inputs>
+      <input type="text" name="logBaseFolder" friendlyname="logBaseFolder" expr="&quot;C:\temp\&quot;" />
+      <input type="text" name="logLevel" friendlyname="logLevel" expr="&quot;INFO&quot;" />
+      <input type="text" name="logMessage" friendlyname="logMessage" expr="&quot;Validate Environment&quot;" />
+    </inputs>
+    <onsuccess>25de2ff8-35b2-4194-8260-3268b86cbf46</onsuccess>
+    <resource object="Utility - NBK Standards" action="Create Custom Log" />
+  </stage>
+  <stage stageid="831123a7-7460-4b9c-8828-25fd54e6a325" name="Utility - NBK Standards::CheckFolderAndFile" type="Action">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-90" y="405" />
+    <font family="Segoe UI" size="10" style="Regular" color="339966" />
+    <inputs>
+      <input type="text" name="Folder Path" friendlyname="Folder Path" expr="[Get Config Details - Json Collection.InputPath]" />
+      <input type="text" name="File Path" friendlyname="File Path" expr="&quot;C:\temp\Input\Input.txt&quot;" />
+    </inputs>
+    <outputs>
+      <output type="text" name="message" friendlyname="message" stage="message" />
+    </outputs>
+    <onsuccess>dac84aff-fb98-4334-96a2-06a04d236f26</onsuccess>
+    <resource object="Utility - NBK Standards" action="CheckFolderAndFile" />
+  </stage>
+  <stage stageid="d7ff7ebe-61ac-4b7c-8243-c95f45a62e60" name="Utility - NBK Standards::Read Json Table" type="Action">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-90" y="270" w="90" h="30" />
+    <font family="Segoe UI" size="10" style="Regular" color="339966" />
+    <inputs>
+      <input type="collection" name="TemplateCollection" friendlyname="TemplateCollection" expr="" />
+      <input type="text" name="ENV Json Text" friendlyname="ENV Json Text" expr="[PID - Process Name - Attributes]" />
+      <input type="text" name="File Path JsonText " friendlyname="File Path JsonText " expr="&quot;C:\temp\PID_Attributes.json&quot;" />
+      <input type="text" name="Source" friendlyname="Source" expr="&quot;File&quot;" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="OutputCollection" friendlyname="OutputCollection" stage="Get Element  Details - JsonCollection" />
+      <output type="text" name="message" friendlyname="message" stage="message" />
+    </outputs>
+    <onsuccess>48a8281a-adc0-4d3e-bf61-f7f6d131e314</onsuccess>
+    <resource object="Utility - NBK Standards" action="Read Json Table" />
+  </stage>
+  <stage stageid="22cfb716-da11-487d-8128-393ddd789093" name="PID - Process Name - Attributes" type="Data">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-510" y="30" w="120" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <exposure>Environment</exposure>
+    <alwaysinit />
+  </stage>
+  <stage stageid="b7c61c4c-173b-41d8-9f60-cfffa3a547f4" name="message" type="Data">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <display x="-495" y="15" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="3c4f0184-f305-4a97-b0a9-53cbd4aeb799" name="Utility - NBK Standards::Read Json" type="Action">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-90" y="165" w="90" h="30" />
+    <inputs>
+      <input type="text" name="ENVJsonText" friendlyname="ENVJsonText" expr="[PID - Process Name - Config]" />
+      <input type="text" name="FilePathJsonText" friendlyname="FilePathJsonText" expr="&quot;&quot;" />
+      <input type="text" name="Source" friendlyname="Source" expr="&quot;ENV&quot;" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="OutputCollection" friendlyname="OutputCollection" stage="Get Config Details - Json Collection" />
+      <output type="text" name="message" friendlyname="message" stage="message" />
+    </outputs>
+    <onsuccess>381be8ed-863b-42b5-8113-b8cddd126ce4</onsuccess>
+    <resource object="Utility - NBK Standards" action="Read Json" />
+  </stage>
+  <stage stageid="b56e5849-706c-4168-9d96-bfb0e160f8ba" name="PID - Process Name - Config" type="Data">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-375" y="30" w="120" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <exposure>Environment</exposure>
+    <alwaysinit />
+  </stage>
+  <stage stageid="381be8ed-863b-42b5-8113-b8cddd126ce4" name="Status" type="Decision">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <display x="-90" y="210" />
+    <decision expression="[message]=&quot;Success&quot;" />
+    <ontrue>d7ff7ebe-61ac-4b7c-8243-c95f45a62e60</ontrue>
+    <onfalse>283a6ff8-8617-4a0c-8137-20b2decb49a8</onfalse>
+  </stage>
+  <stage stageid="48a8281a-adc0-4d3e-bf61-f7f6d131e314" name="Status" type="Decision">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <display x="-90" y="330" />
+    <decision expression="[message]=&quot;Success&quot;" />
+    <ontrue>831123a7-7460-4b9c-8828-25fd54e6a325</ontrue>
+    <onfalse>568c80af-b723-4a25-9dc8-e05e40105b16</onfalse>
+  </stage>
+  <stage stageid="baea02ec-c061-4f57-81cc-5babf127acf4" name="Utility - NBK Standards::Create Folder" type="Action">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="75" y="450" />
+    <inputs>
+      <input type="text" name="folderPath" friendlyname="folderPath" expr="[Get Config Details - Json Collection.InputPath]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="message" friendlyname="message" stage="" />
+    </outputs>
+    <onsuccess>73276fe6-2f4f-4b64-a9fd-2d064eb32322</onsuccess>
+    <resource object="Utility - NBK Standards" action="Create Folder" />
+  </stage>
+  <stage stageid="dac84aff-fb98-4334-96a2-06a04d236f26" name="Status" type="Decision">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <display x="-90" y="450" />
+    <decision expression="[message]=&quot;Success&quot;" />
+    <ontrue>b6b7b10a-279f-4869-9bf8-a41e16ed7289</ontrue>
+    <onfalse>ceebdec3-6c12-4121-9498-6c75c6e206a3</onfalse>
+  </stage>
+  <stage stageid="b1a0ea55-968f-4480-bb68-d77789c70e48" name="Get Element  Details - JsonCollection" type="Collection">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <display x="-525" y="75" />
+    <datatype>collection</datatype>
+    <alwaysinit />
+  </stage>
+  <stage stageid="6c8eb068-072f-43fa-825a-8e2e9268e40a" name="Get Config Details - Json Collection" type="Collection">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <display x="-390" y="75" />
+    <datatype>collection</datatype>
+    <alwaysinit />
+  </stage>
+  <stage stageid="283a6ff8-8617-4a0c-8137-20b2decb49a8" name="Create Log - Validate Environment" type="Action">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="45" y="210" />
+    <font family="Segoe UI" size="10" style="Regular" color="339966" />
+    <inputs>
+      <input type="text" name="logBaseFolder" friendlyname="logBaseFolder" expr="&quot;C:\temp\&quot;" />
+      <input type="text" name="logLevel" friendlyname="logLevel" expr="&quot;ERROR&quot;" />
+      <input type="text" name="logMessage" friendlyname="logMessage" expr="[message]" />
+    </inputs>
+    <onsuccess>1c0b6939-8da1-4461-80fb-213f4757328f</onsuccess>
+    <resource object="Utility - NBK Standards" action="Create Custom Log" />
+  </stage>
+  <stage stageid="568c80af-b723-4a25-9dc8-e05e40105b16" name="Create Log - Validate Environment" type="Action">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="45" y="330" />
+    <font family="Segoe UI" size="10" style="Regular" color="339966" />
+    <inputs>
+      <input type="text" name="logBaseFolder" friendlyname="logBaseFolder" expr="&quot;C:\temp\&quot;" />
+      <input type="text" name="logLevel" friendlyname="logLevel" expr="&quot;ERROR&quot;" />
+      <input type="text" name="logMessage" friendlyname="logMessage" expr="[message]" />
+    </inputs>
+    <onsuccess>95d71a2d-5927-49cd-bdc8-d519847dc6ed</onsuccess>
+    <resource object="Utility - NBK Standards" action="Create Custom Log" />
+  </stage>
+  <stage stageid="b6b7b10a-279f-4869-9bf8-a41e16ed7289" name="Create Log - Validate Environment" type="Action">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="0" y="450" />
+    <font family="Segoe UI" size="10" style="Regular" color="339966" />
+    <inputs>
+      <input type="text" name="logBaseFolder" friendlyname="logBaseFolder" expr="&quot;C:\temp\&quot;" />
+      <input type="text" name="logLevel" friendlyname="logLevel" expr="&quot;ERROR&quot;" />
+      <input type="text" name="logMessage" friendlyname="logMessage" expr="[message]" />
+    </inputs>
+    <onsuccess>baea02ec-c061-4f57-81cc-5babf127acf4</onsuccess>
+    <resource object="Utility - NBK Standards" action="Create Custom Log" />
+  </stage>
+  <stage stageid="1e55bd01-64f9-47a5-8de2-eb85a3103bfb" name="Create Custom Log - Block" type="Block">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-210" y="-210" w="195" h="105" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="5ad130e8-f976-417f-a782-878eaa496c60" name="Get System Variables - Block" type="Block">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-210" y="-90" w="195" h="90" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="ad43100c-d074-4afa-8f5e-b3f0a665fe3e" name="Get Credentials - Block" type="Block">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-585" y="120" w="270" h="105" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="59dce75c-289b-4691-a329-5ea01ce06c86" name="Password" type="Data">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <display x="-405" y="150" />
+    <datatype>password</datatype>
+    <initialvalueenc>
+    </initialvalueenc>
+    <alwaysinit />
+  </stage>
+  <stage stageid="9ab42fcc-8e3f-41d3-97ce-ee84c3750d2e" name="Expiry Date" type="Data">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <display x="-525" y="195" />
+    <datatype>date</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="fd792910-d3c5-4e60-8e8c-0d93c6832449" name="Status" type="Data">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <display x="-450" y="195" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="931f8fc6-dd77-44d3-9882-a55535b522eb" name="App Credential Name" type="Data">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <display x="-555" y="150" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="29c7fce1-2f1e-4f63-a4e1-fc11d2868dd4" name="Username" type="Data">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <display x="-480" y="150" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="40096827-6211-417d-afa7-7b57c1db2489" name="Get Json Details - Block" type="Block">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-585" y="-15" w="270" h="120" />
+    <font family="Segoe UI" size="10" style="Regular" color="00FF00" />
+  </stage>
+  <stage stageid="283ad78a-8b8d-4831-95a5-b6900a0c255f" name="Exception Details - Block" type="Block">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-285" y="-15" w="225" h="120" />
+    <font family="Segoe UI" size="10" style="Regular" color="FF6600" />
+  </stage>
+  <stage stageid="a74dfbc9-3bce-4ece-8189-3f1f8434d184" name="Get Credential -  Block" type="Block">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-210" y="525" w="195" h="120" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="b392f0aa-138c-46eb-8c78-f9b81bc60485" name="Outlook Launch - Block" type="Block">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-210" y="15" w="195" h="105" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="8f12f670-003f-4889-949d-cdf7b0a4e389" name="Status" type="Block">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-540" y="-30" w="225" h="90" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="b2ea2a9f-331d-4b52-895f-83e31d4e7a0e" name="Note8" type="Note">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <narrative>using System.Diagnostics;
+using System.IO;
+
+try
+{
+    // Check if Outlook is running
+    bool isRunning = Process.GetProcessesByName("OUTLOOK").Length &gt; 0;
+    IsOutlookRunning = isRunning;
+
+    if(isRunning)
+    {
+        Message = "Outlook is already running";
+    }
+    else
+    {
+        // Path to Outlook executable (adjust if needed)
+        string outlookPath = @"C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE";
+
+        if(File.Exists(outlookPath))
+        {
+            Process.Start(outlookPath);
+            Message = "Outlook was not running and has been launched";
+            IsOutlookRunning = true; // now it will be running
+        }
+        else
+        {
+            Message = "Outlook is not installed or path is incorrect";
+            IsOutlookRunning = false;
+        }
+    }
+}
+catch(Exception ex)
+{
+    IsOutlookRunning = false;
+    Message = "Error checking or launching Outlook: " + ex.Message;
+}
+</narrative>
+    <display x="-165" y="75" />
+    <font family="Segoe UI" size="10" style="Regular" color="FF6600" />
+  </stage>
+  <stage stageid="ceebdec3-6c12-4121-9498-6c75c6e206a3" name="Note10" type="Note">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <narrative>using System;
+
+try
+{
+    DateTime pwdSetDate;
+
+    // Convert input to DateTime
+    if(!DateTime.TryParse(PasswordSetDate, out pwdSetDate))
+    {
+        IsExpired = false;
+        Message = "Invalid password set date";
+    }
+    else
+    {
+        // Calculate expiry date
+        DateTime expiryDate = pwdSetDate.AddDays(ExpiryDays);
+        DateTime today = DateTime.Now.Date;
+
+        if(today &gt; expiryDate)
+        {
+            IsExpired = true;
+            Message = $"Password expired on {expiryDate.ToShortDateString()}";
+        }
+        else
+        {
+            IsExpired = false;
+            int daysLeft = (expiryDate - today).Days;
+            Message = $"Password is valid, {daysLeft} day(s) remaining";
+        }
+    }
+}
+catch(Exception ex)
+{
+    IsExpired = false;
+    Message = "Error checking password expiry: " + ex.Message;
+}
+</narrative>
+    <display x="-90" y="585" />
+    <font family="Segoe UI" size="10" style="Regular" color="FF6600" />
+    <onsuccess>7f062a5b-d1b7-42cb-bd3e-b1ac384fc94b</onsuccess>
+  </stage>
+  <stage stageid="73276fe6-2f4f-4b64-a9fd-2d064eb32322" name="Anchor4" type="Anchor">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="75" y="585" w="10" h="10" />
+    <font family="Segoe UI" size="10" style="Regular" color="FF6600" />
+    <onsuccess>ceebdec3-6c12-4121-9498-6c75c6e206a3</onsuccess>
+  </stage>
+  <stage stageid="56dc7d8a-0ac0-433a-8ef9-db23943f22f6" name="EOD Report - RunMode -Manual?" type="Data">
+    <subsheetid>5fd952f0-1be2-40e8-8afa-485524c5a5cd</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-225" y="165" />
+    <font family="Segoe UI" size="10" style="Regular" color="FF6600" />
+    <datatype>flag</datatype>
+    <initialvalue>True</initialvalue>
+    <exposure>Session</exposure>
+    <alwaysinit />
+  </stage>
+  <stage stageid="77f0d839-d58c-4e8f-acef-0637b0387488" name="Start ABC - Copy" type="SubSheetInfo">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <narrative>Prepares any variables according to the Run Mode, starts the applications and fills the queue.</narrative>
+    <display x="-195" y="195" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="c1a46d51-1191-4335-a651-acce5acad513" name="Start" type="Start">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <display x="15" y="210" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>1fdeb0ff-93f9-4843-992a-6a1ca5d29256</onsuccess>
+  </stage>
+  <stage stageid="1249fb79-5082-48f9-9855-9c0b5e846879" name="Retry Limit" type="Data">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit />
+    <display x="-195" y="450" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>3</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="3ac01826-1515-498a-bea8-f6328fb107cd" name="Retry Count" type="Data">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit />
+    <display x="-195" y="480" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue>0</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="1fdeb0ff-93f9-4843-992a-6a1ca5d29256" name="Note3" type="Note">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit />
+    <narrative>Step 1- Launch</narrative>
+    <display x="15" y="345" w="120" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>ca3134e8-9c34-48e5-813d-47452a336cd0</onsuccess>
+  </stage>
+  <stage stageid="b2e50364-0a41-47a4-b2d2-24c481f14719" name="Log in App 1" type="Block">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit />
+    <display x="-75" y="525" w="270" h="360" />
+    <font family="Tahoma" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="cd11ecdc-af09-4fe6-b223-8cfec38430a4" name="Note3" type="Note">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit />
+    <narrative>Step 2 - Log in</narrative>
+    <display x="15" y="585" w="120" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>6bb3b870-943e-4add-8844-844c3db6cd9f</onsuccess>
+  </stage>
+  <stage stageid="f849a4ec-2946-43e0-9b8b-fdb825b69abf" name="End6" type="End">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <display x="15" y="915" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="67f10f26-d348-49c5-ba9c-3d506782ee7a" name="App 1 Username" type="Data">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <display x="-195" y="360" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">kumar.pichandi05@gmail.com</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="236e4110-d085-4381-a895-0c6e59105653" name="App 1 Password" type="Data">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <display x="-195" y="390" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>password</datatype>
+    <initialvalueenc>0,7,23,88,12,90,21,92,113,53</initialvalueenc>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f6ac7560-fced-4efc-9550-afed8550df09" name="Lanch App 1 Block" type="Block">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <display x="-75" y="315" w="270" h="105" />
+    <font family="Tahoma" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="43e0c025-3354-4662-8804-c1ed6a9fb388" name="Resume" type="Resume">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit />
+    <display x="345" y="360" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>76101aed-69df-4a66-8ce0-7db5999605ca</onsuccess>
+  </stage>
+  <stage stageid="76101aed-69df-4a66-8ce0-7db5999605ca" name="System Unavailable Exception" type="Exception">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit />
+    <display x="450" y="360" w="120" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <exception type="System Unavailable Exception" detail="&quot;Unable to launch &lt;PUT APPLICATION NAME HERE&gt;&quot;" />
+  </stage>
+  <stage stageid="52c5753f-a370-47ef-a79b-16670baf583e" name="Recover" type="Recover">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit />
+    <display x="135" y="360" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>5ee6e1be-6a00-45cc-afe4-b3d1b963d2e7</onsuccess>
+  </stage>
+  <stage stageid="8b63f4b9-b9b9-4534-9f67-1b2a244182f8" name="Note4" type="Note">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <narrative>This action should throw a Login System Exception if it thinks the credentials entered were incorrect</narrative>
+    <display x="-180" y="585" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Bold" color="FF00FF" />
+    <onsuccess>cd11ecdc-af09-4fe6-b223-8cfec38430a4</onsuccess>
+  </stage>
+  <stage stageid="5ee6e1be-6a00-45cc-afe4-b3d1b963d2e7" name="Exception Data" type="MultipleCalculation">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <display x="255" y="360" w="90" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>43e0c025-3354-4662-8804-c1ed6a9fb388</onsuccess>
+    <steps>
+      <calculation expression="ExceptionType()" stage="Exception Type" />
+      <calculation expression="ExceptionDetail()" stage="Exception Detail" />
+    </steps>
+  </stage>
+  <stage stageid="bb6f6e79-ea00-4e35-aaf6-354ddad592a6" name="Recover" type="Recover">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit />
+    <display x="135" y="660" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>5133a765-f681-4b05-a67a-26f5095ce25b</onsuccess>
+  </stage>
+  <stage stageid="da0b4c87-c1fc-4843-9083-16a2df01596d" name="Resume" type="Resume">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit />
+    <display x="135" y="600" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>8a8c4675-b199-4943-b4ea-2df49352b4b1</onsuccess>
+  </stage>
+  <stage stageid="8bae1bf1-d97b-4061-b130-cbf80c95ffb8" name="Count" type="Calculation">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit />
+    <display x="255" y="600" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>da0b4c87-c1fc-4843-9083-16a2df01596d</onsuccess>
+    <calculation expression="[Retry Count]+1" stage="Retry Count" />
+  </stage>
+  <stage stageid="5133a765-f681-4b05-a67a-26f5095ce25b" name="Retry?" type="Decision">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit />
+    <display x="255" y="660" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <decision expression="[Retry Count]&lt;[Retry Limit] AND (Lower(ExceptionType())=&quot;system exception&quot; OR Lower(ExceptionType())=&quot;internal&quot;)" />
+    <ontrue>8bae1bf1-d97b-4061-b130-cbf80c95ffb8</ontrue>
+    <onfalse>5f77dd91-2301-431b-a7ca-cf51b358dd2c</onfalse>
+  </stage>
+  <stage stageid="5f77dd91-2301-431b-a7ca-cf51b358dd2c" name="Throw" type="Exception">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit />
+    <display x="345" y="660" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <exception localized="yes" type="" detail="" usecurrent="yes" savescreencapture="yes" />
+  </stage>
+  <stage stageid="8a8c4675-b199-4943-b4ea-2df49352b4b1" name="Note3" type="Note">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit />
+    <narrative>Navigate back ready for step 1d  - maybe restart application (Close and Start pages), maybe additional navigation required</narrative>
+    <display x="135" y="465" w="180" h="60" />
+    <font family="Tahoma" size="10" style="Regular" color="0000FF" />
+    <onsuccess>b6866de0-af74-4a76-8b90-dc4c57473708</onsuccess>
+  </stage>
+  <stage stageid="b6866de0-af74-4a76-8b90-dc4c57473708" name="anchor1" type="Anchor">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <display x="15" y="465" w="10" h="10" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>cd11ecdc-af09-4fe6-b223-8cfec38430a4</onsuccess>
+  </stage>
+  <stage stageid="fb8afec3-0f7c-4a1a-a8e9-db10b1054cba" name="Note4" type="Note">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <narrative>Login System Exceptions will not be retried</narrative>
+    <display x="420" y="810" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Bold" color="FF00FF" />
+  </stage>
+  <stage stageid="c9a5765d-f0c1-4229-aa5d-05ec733cac5d" name="App1 Credentials" type="Block">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <display x="-285" y="285" w="180" h="135" />
+    <font family="Tahoma" size="10" style="Regular" color="FFCC00" />
+  </stage>
+  <stage stageid="e28f839b-8aa2-46e9-b51a-e3d67532f18d" name="Note4" type="Note">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <narrative>Enterprise License holders should always use Blue Prism Credentials Here</narrative>
+    <display x="150" y="165" w="150" h="90" />
+    <font family="Tahoma" size="10" style="Bold" color="FF00FF" />
+    <onsuccess>dfedae43-1e6f-4477-ad87-4ef28f12d98f</onsuccess>
+  </stage>
+  <stage stageid="dfedae43-1e6f-4477-ad87-4ef28f12d98f" name="Generate Credential Name" type="Calculation">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <display x="150" y="240" w="90" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <onsuccess>50b544d5-43ef-4b22-a93a-911689d995e4</onsuccess>
+    <calculation expression="Replace(GetResourceName(),&quot;_debug&quot;,&quot;&quot;) &amp; &quot; App 1 Name&quot;" stage="App1 Credential Name" />
+  </stage>
+  <stage stageid="45715e8c-90c7-4af1-976b-e269df10cf2d" name="App1 Credential Name" type="Data">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <display x="-195" y="315" w="150" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="50b544d5-43ef-4b22-a93a-911689d995e4" name="Get App1 Credential" type="Action">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <narrative>Get the specified set of credentials.
+
+An Exception will occur if access to the credentials is not allowed, based on the running Resource, Process and User.</narrative>
+    <display x="150" y="285" w="90" h="30" />
+    <font family="Tahoma" size="10" style="Regular" color="000000" />
+    <inputs>
+      <input type="text" name="Credentials Name" narrative="The name of the credentials to get" expr="[App1 Credential Name]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Username" narrative="The user name" stage="App 1 Username" />
+      <output type="password" name="Password" narrative="The password" stage="App 1 Password" />
+    </outputs>
+    <onsuccess>1fdeb0ff-93f9-4843-992a-6a1ca5d29256</onsuccess>
+    <resource object="Blueprism.Automate.clsCredentialsActions" action="Get" />
+  </stage>
+  <stage stageid="ca3134e8-9c34-48e5-813d-47452a336cd0" name="Launch - App Name" type="Action">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="390" />
+    <font family="Segoe UI" size="10" style="Regular" color="FF6600" />
+    <inputs>
+      <input type="text" name="URL" friendlyname="URL" expr="[Get Config Details - Json Collection.BluePrismURL]" />
+    </inputs>
+    <onsuccess>b6866de0-af74-4a76-8b90-dc4c57473708</onsuccess>
+    <breakpoint type="0">
+      <condition>
+      </condition>
+    </breakpoint>
+    <resource object="Utility - UIA WebAutomation" action="Launch" />
+  </stage>
+  <stage stageid="6bb3b870-943e-4add-8844-844c3db6cd9f" name="Utility - UIA WebAutomation::Get Logged In Status" type="Action">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="630" />
+    <font family="Segoe UI" size="10" style="Regular" color="FF6600" />
+    <outputs>
+      <output type="flag" name="Logged In" friendlyname="Logged In" stage="Logged In" />
+    </outputs>
+    <onsuccess>ee7f4da0-d80d-4a04-82f2-402b42c41e3c</onsuccess>
+    <resource object="Utility - UIA WebAutomation" action="Get Logged In Status" />
+  </stage>
+  <stage stageid="767e1e99-bc1b-4d98-b212-26e6be36951f" name="Logged In" type="Data">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <display x="-165" y="720" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ee7f4da0-d80d-4a04-82f2-402b42c41e3c" name="Logged In" type="Decision">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <display x="15" y="675" />
+    <decision expression="[Logged In]=False" />
+    <ontrue>9d4c3fd7-fca4-4bc9-8233-33695a19e86e</ontrue>
+    <onfalse>2ed5793d-4ee4-4e0c-8b05-703c3b89beaa</onfalse>
+  </stage>
+  <stage stageid="9d4c3fd7-fca4-4bc9-8233-33695a19e86e" name="Write User Name" type="Action">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="735" w="90" h="30" />
+    <inputs>
+      <input type="text" name="ElementID" friendlyname="ElementID" expr="[User ElementID]" />
+      <input type="text" name="ElementValue" friendlyname="ElementValue" expr="[App 1 Username]" />
+      <input type="number" name="WaitTime" friendlyname="WaitTime" expr="5" />
+    </inputs>
+    <onsuccess>bbbe0779-5cfe-4e99-bdb2-2df3c7d9cdd4</onsuccess>
+    <resource object="Utility - UIA WebAutomation" action="UIA - Write by AutomationID" />
+  </stage>
+  <stage stageid="bbbe0779-5cfe-4e99-bdb2-2df3c7d9cdd4" name="Write Password" type="Action">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="795" w="90" h="30" />
+    <inputs>
+      <input type="text" name="ElementID" friendlyname="ElementID" expr="[Password ElementID]" />
+      <input type="password" name="ElementPassword" friendlyname="ElementPassword" expr="[App 1 Password]" />
+      <input type="number" name="WaitTime" friendlyname="WaitTime" expr="5" />
+    </inputs>
+    <onsuccess>6441ce53-696f-496e-982e-5266f707c0af</onsuccess>
+    <resource object="Utility - UIA WebAutomation" action="UIA - Write Password by AutomationID" />
+  </stage>
+  <stage stageid="6441ce53-696f-496e-982e-5266f707c0af" name="Click Submit" type="Action">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="855" w="90" h="30" />
+    <inputs>
+      <input type="text" name="ElementID" friendlyname="ElementID" expr="[Click ElementID]" />
+      <input type="text" name="ElementValue" friendlyname="ElementValue" expr="&quot;-&quot;" />
+      <input type="number" name="WaitTime" friendlyname="WaitTime" expr="5" />
+    </inputs>
+    <onsuccess>f849a4ec-2946-43e0-9b8b-fdb825b69abf</onsuccess>
+    <resource object="Utility - UIA WebAutomation" action="UIA - Click by AutomationID" />
+  </stage>
+  <stage stageid="2ed5793d-4ee4-4e0c-8b05-703c3b89beaa" name="Anchor5" type="Anchor">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="90" y="675" w="10" h="10" />
+    <onsuccess>47be87d4-2b88-4a97-bb58-c7b1ae5f51ac</onsuccess>
+  </stage>
+  <stage stageid="47be87d4-2b88-4a97-bb58-c7b1ae5f51ac" name="Anchor6" type="Anchor">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="90" y="915" w="10" h="10" />
+    <onsuccess>f849a4ec-2946-43e0-9b8b-fdb825b69abf</onsuccess>
+  </stage>
+  <stage stageid="d5426bee-7e30-4cf6-b1b5-7ed4dc89be6f" name="User ElementID" type="Data">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-345" y="675" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">edit-name</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ff50453c-2d37-4d8e-a943-29c74dff3c3a" name="Password ElementID" type="Data">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-360" y="720" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">edit-pass</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="48745f6a-5f63-4d10-8d28-0f193184fa7a" name="Click ElementID" type="Data">
+    <subsheetid>84e05fba-a9c2-44fe-ab58-e19f425d1abf</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-375" y="765" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">edit-submit</initialvalue>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="1c0b6939-8da1-4461-80fb-213f4757328f" name="Exception1" type="Exception">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <display x="180" y="210" />
+    <exception localized="yes" type="System Exception" detail="&quot;Exception: &quot; &amp; [message]" />
+  </stage>
+  <stage stageid="95d71a2d-5927-49cd-bdc8-d519847dc6ed" name="Exception2" type="Exception">
+    <subsheetid>9f8b6265-550a-4871-ae6a-4af0d8e467a2</subsheetid>
+    <display x="180" y="330" />
+    <exception localized="yes" type="System Exception" detail="&quot;Exception: &quot; &amp; [message]" />
+  </stage>
+  <stage stageid="243ace45-c6ff-4f15-84c5-aca8592dad4c" name="Note11" type="Note">
+    <narrative>Do Not Modify this Page</narrative>
+    <display x="135" y="-315" w="450" h="90" />
+    <font family="Segoe UI" size="25" style="Bold" color="FF0000" />
+  </stage>
+  <stage stageid="784ef9b2-feca-4623-91ea-56582a2597f8" name="Decision: EOD Report RunMode?" type="Decision">
+    <narrative>If we want to run manually the EOD report we should switch the run mode to Schedule/ Manual</narrative>
+    <display x="0" y="-105" w="120" h="90" />
+    <font family="Segoe UI" size="15" style="Bold" color="FF6600" />
+    <decision expression="[EOD Report - RunMode -Manual?]=&quot;Manual&quot;" />
+    <ontrue>1db94fff-eca8-49a2-9404-2b6ba6688410</ontrue>
+    <onfalse>7cfa842f-7ad3-4458-943f-6d7007300925</onfalse>
+  </stage>
+</process>
