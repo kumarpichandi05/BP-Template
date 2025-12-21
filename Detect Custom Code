@@ -1,0 +1,170 @@
+using System;
+using System.Linq;
+using System.Xml.Linq;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
+
+class Program
+{
+    static void Main()
+    {
+        string inputFolder = @"C:\Users\YHR\OneDrive\Desktop\BP Template\Releases";
+        string csvOutput = Path.Combine(inputFolder, "ProcessObjectLanguage.csv");
+
+        if (!ValidateInputFolder(inputFolder))
+            return;
+
+        var releaseFiles = GetReleaseFiles(inputFolder);
+
+        if (!releaseFiles.Any())
+            return;
+
+        var csvLines = InitializeCsv();
+
+        ProcessReleaseFiles(releaseFiles, csvLines);
+
+        WriteCsv(csvOutput, csvLines);
+    }
+
+    // ================= VALIDATION =================
+
+    static bool ValidateInputFolder(string folderPath)
+    {
+        if (!Directory.Exists(folderPath))
+        {
+            Console.WriteLine($"❌ Input folder does not exist: {folderPath}");
+            return false;
+        }
+        return true;
+    }
+
+    static IEnumerable<string> GetReleaseFiles(string folderPath)
+    {
+        var files = Directory.GetFiles(folderPath, "*.bprelease");
+
+        if (!files.Any())
+            Console.WriteLine("❌ No .bprelease files found.");
+
+        return files;
+    }
+
+    // ================= CSV =================
+
+    static List<string> InitializeCsv()
+    {
+        return new List<string>
+        {
+            "ReleaseFile,ProcessName,ObjectName,Language"
+        };
+    }
+
+    static void WriteCsv(string outputPath, List<string> lines)
+    {
+        File.WriteAllLines(outputPath, lines, Encoding.UTF8);
+        Console.WriteLine($"\n📄 CSV exported successfully to:\n{outputPath}");
+    }
+
+    // ================= PROCESSING =================
+
+    static void ProcessReleaseFiles(IEnumerable<string> releaseFiles, List<string> csvLines)
+    {
+        foreach (var filePath in releaseFiles)
+        {
+            ProcessSingleRelease(filePath, csvLines);
+        }
+    }
+
+    static void ProcessSingleRelease(string filePath, List<string> csvLines)
+    {
+        Console.WriteLine($"🔍 Processing: {Path.GetFileName(filePath)}");
+
+        try
+        {
+            XDocument doc = XDocument.Load(filePath);
+
+            var records = ExtractProcessInfo(doc, Path.GetFileName(filePath));
+
+            if (!records.Any())
+            {
+                Console.WriteLine($"⚠️ No ProcessInfo found.");
+                return;
+            }
+
+            AddRecordsToCsv(csvLines, records);
+
+            Console.WriteLine($"✅ Valid release.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"❌ Invalid release: {ex.Message}");
+        }
+    }
+
+    static IEnumerable<ProcessRecord> ExtractProcessInfo(XDocument doc, string releaseFile)
+    {
+        return doc.Descendants()
+            .Where(e => e.Name.LocalName == "stage" &&
+                        e.Attribute("type")?.Value == "ProcessInfo")
+            .Select(stage => new ProcessRecord
+            {
+                ReleaseFile = releaseFile,
+                ProcessName = GetProcessName(stage),
+                ObjectName = GetObjectName(stage),
+                Language = GetLanguage(stage)
+            })
+            .ToList();
+    }
+
+    // ================= HELPERS =================
+
+    static string GetProcessName(XElement stage)
+    {
+        return stage.Ancestors()
+            .FirstOrDefault(a => a.Name.LocalName == "process")?
+            .Attribute("name")?.Value ?? "UnknownProcess";
+    }
+
+    static string GetObjectName(XElement stage)
+    {
+        return stage.Parent?.Attribute("name")?.Value ?? "UnknownObject";
+    }
+
+    static string GetLanguage(XElement stage)
+    {
+        return stage.Element(stage.Name.Namespace + "language")?
+            .Value.Trim() ?? "";
+    }
+
+    static void AddRecordsToCsv(List<string> csvLines, IEnumerable<ProcessRecord> records)
+    {
+        foreach (var record in records)
+        {
+            csvLines.Add(
+                $"{EscapeCsv(record.ReleaseFile)}," +
+                $"{EscapeCsv(record.ProcessName)}," +
+                $"{EscapeCsv(record.ObjectName)}," +
+                $"{EscapeCsv(record.Language)}"
+            );
+        }
+    }
+
+    static string EscapeCsv(string value)
+    {
+        if (string.IsNullOrEmpty(value)) return "";
+        value = value.Replace("\"", "\"\"");
+        if (value.Contains(",") || value.Contains("\"") || value.Contains("\n"))
+            value = $"\"{value}\"";
+        return value;
+    }
+}
+
+// ================= DATA MODEL =================
+
+class ProcessRecord
+{
+    public string ReleaseFile { get; set; }
+    public string ProcessName { get; set; }
+    public string ObjectName { get; set; }
+    public string Language { get; set; }
+}
