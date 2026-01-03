@@ -1,0 +1,190 @@
+Connecting to Database
+Message="";
+ResultTable = new DataTable();
+
+try
+    {
+        using (OleDbConnection conn = new OleDbConnection(ConnectionString))
+        {
+            using (OleDbCommand cmd = new OleDbCommand(SqlQuery, conn))
+            {
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandTimeout = 300; // 5 minutes
+
+                using (OleDbDataAdapter adapter = new OleDbDataAdapter(cmd))
+                {
+                    conn.Open();
+                    adapter.Fill(ResultTable);
+                }
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+        Message = ex.Message;
+    }
+
+*********************************************END*******************************************************
+Excel Report
+Message = string.Empty;
+
+try
+{
+    DataTable dt = (DataTable)ResultTable;
+
+    using (SpreadsheetDocument document =
+        SpreadsheetDocument.Create(FilePath, SpreadsheetDocumentType.Workbook))
+    {
+        WorkbookPart workbookPart = document.AddWorkbookPart();
+        workbookPart.Workbook = new Workbook();
+
+        WorksheetPart worksheetPart = workbookPart.AddNewPart<WorksheetPart>();
+        SheetData sheetData = new SheetData();
+        worksheetPart.Worksheet = new Worksheet(sheetData);
+
+        Sheets sheets = document.WorkbookPart.Workbook.AppendChild(new Sheets());
+        Sheet sheet = new Sheet()
+        {
+            Id = document.WorkbookPart.GetIdOfPart(worksheetPart),
+            SheetId = 1,
+            Name = SheetName
+        };
+        sheets.Append(sheet);
+
+        // Header row
+        Row headerRow = new Row();
+        foreach (DataColumn column in dt.Columns)
+        {
+            Cell cell = new Cell
+            {
+                DataType = CellValues.String,
+                CellValue = new CellValue(column.ColumnName)
+            };
+            headerRow.Append(cell);
+        }
+        sheetData.Append(headerRow);
+
+        // Data rows
+        foreach (DataRow dr in dt.Rows)
+        {
+            Row newRow = new Row();
+            foreach (object value in dr.ItemArray)
+            {
+                Cell cell = new Cell
+                {
+                    DataType = CellValues.String,
+                    CellValue = new CellValue(value?.ToString())
+                };
+                newRow.Append(cell);
+            }
+            sheetData.Append(newRow);
+        }
+
+        workbookPart.Workbook.Save();
+    }
+}
+catch (Exception ex)
+{
+    Message = ex.Message;
+}
+***********************************************************END*************************************************************
+Generate HTML Report
+Message = string.Empty;
+HtmlContent = string.Empty;
+
+try
+{
+    DataTable dt = (DataTable)ResultTable;
+
+    StringBuilder html = new StringBuilder();
+
+    html.Append("<html>");
+    html.Append("<head>");
+    html.Append("<style>");
+    html.Append("table { border-collapse: collapse; width: 100%; font-family: Arial; }");
+    html.Append("th, td { border: 1px solid #000; padding: 6px; text-align: left; }");
+    html.Append("th { background-color: #f2f2f2; }");
+    html.Append("</style>");
+    html.Append("</head>");
+    html.Append("<body>");
+
+    html.Append("<h2>" + ReportTitle + "</h2>");
+    html.Append("<p>Generated on: " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "</p>");
+
+    html.Append("<table>");
+
+    // Header row
+    html.Append("<tr>");
+    foreach (DataColumn col in dt.Columns)
+    {
+        html.Append("<th>" + col.ColumnName + "</th>");
+    }
+    html.Append("</tr>");
+
+    // Data rows
+    foreach (DataRow row in dt.Rows)
+    {
+        html.Append("<tr>");
+        foreach (object cell in row.ItemArray)
+        {
+            html.Append("<td>" + cell.ToString() + "</td>");
+        }
+        html.Append("</tr>");
+    }
+
+    html.Append("</table>");
+    html.Append("</body>");
+    html.Append("</html>");
+
+    HtmlContent = html.ToString();
+
+    // Write HTML file
+    File.WriteAllText(OutputFilePath, HtmlContent);
+}
+catch (Exception ex)
+{
+    Message = ex.Message;
+}
+************************************************************END***************************************************
+CSV Code
+Message="";
+DataTable dt;
+dt = DataTable;
+try
+{
+    StringBuilder csv = new StringBuilder();
+
+    // Header row
+    for (int i = 0; i < dt.Columns.Count; i++)
+    {
+        csv.Append(dt.Columns[i].ColumnName);
+        if (i < dt.Columns.Count - 1)
+            csv.Append(",");
+    }
+    csv.AppendLine();
+
+    // Data rows
+    foreach (DataRow row in dt.Rows)
+    {
+        for (int i = 0; i < dt.Columns.Count; i++)
+        {
+            string cell = row[i].ToString();
+            // Escape commas & quotes
+            if (cell.Contains(",") || cell.Contains("\""))
+                cell = "\"" + cell.Replace("\"", "\"\"") + "\"";
+
+            csv.Append(cell);
+            if (i < dt.Columns.Count - 1)
+                csv.Append(",");
+        }
+        csv.AppendLine();
+    }
+
+    // Write to file
+    File.WriteAllText(OutputFilePath, csv.ToString(), Encoding.UTF8);
+}
+catch (Exception ex)
+{
+    Message = ex.Message;
+}
+**********************************************************END************************************************
