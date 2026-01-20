@@ -1,0 +1,201 @@
+// --------------------------------------------------
+// Initialize Output Collection (STRING dates)
+// --------------------------------------------------
+OutputReport = new System.Data.DataTable();
+
+OutputReport.Columns.Add("SwiftReference", typeof(string));
+OutputReport.Columns.Add("SwiftIO", typeof(string));
+OutputReport.Columns.Add("SwiftValueDate", typeof(string));      // STRING
+OutputReport.Columns.Add("SwiftCurrency", typeof(string));
+OutputReport.Columns.Add("SwiftAmount", typeof(decimal));
+
+OutputReport.Columns.Add("EquationAmount", typeof(decimal));
+OutputReport.Columns.Add("EquationDate", typeof(string));        // STRING
+OutputReport.Columns.Add("EquationExternalReference", typeof(string));
+OutputReport.Columns.Add("EquationCurrency", typeof(string));
+
+OutputReport.Columns.Add("Status", typeof(string));
+OutputReport.Columns.Add("Difference", typeof(decimal));
+
+// Decimal tolerance
+decimal tolerance = 0.01m;
+
+// --------------------------------------------------
+// Loop through SWIFT records
+// --------------------------------------------------
+foreach (System.Data.DataRow swiftRow in SwiftReport.Rows)
+{
+    string swiftIO = swiftRow["IO"].ToString().Trim();
+    string swiftReference = swiftRow["Reference"].ToString().Trim();
+
+    // -----------------------------
+    // Parse SWIFT Value Date → STRING
+    // -----------------------------
+    System.DateTime swiftDateTemp = System.DateTime.MinValue;
+    System.DateTime.TryParseExact(
+        swiftRow["Value Date"].ToString().Trim(),
+        new string[] { "M/d/yyyy", "MM/dd/yyyy", "d/M/yyyy", "yyyy-MM-dd" },
+        System.Globalization.CultureInfo.InvariantCulture,
+        System.Globalization.DateTimeStyles.None,
+        out swiftDateTemp
+    );
+
+    string swiftValueDateStr =
+        swiftDateTemp != System.DateTime.MinValue
+        ? swiftDateTemp.ToString("yyyy-MM-dd")
+        : "";
+
+    // -----------------------------
+    // Extract Currency
+    // -----------------------------
+    string curAmtText = swiftRow["CurAmt"].ToString().Trim();
+    string swiftCurrency = "";
+
+    System.Text.RegularExpressions.Match curMatch =
+        System.Text.RegularExpressions.Regex.Match(curAmtText, @"[A-Z]{3}");
+    if (curMatch.Success)
+        swiftCurrency = curMatch.Value;
+
+    // -----------------------------
+    // Extract Amount
+    // -----------------------------
+    string amtText =
+        System.Text.RegularExpressions.Regex.Replace(curAmtText, @"[^\d\.\-]", "");
+
+    decimal swiftAmount = 0;
+    decimal.TryParse(
+        amtText,
+        System.Globalization.NumberStyles.Any,
+        System.Globalization.CultureInfo.InvariantCulture,
+        out swiftAmount
+    );
+
+    // -----------------------------
+    // Find matching Equation record
+    // -----------------------------
+    System.Data.DataRow eqRow = null;
+    foreach (System.Data.DataRow row in EquationReport.Rows)
+    {
+        if (string.Equals(
+            row["ExternalReference"] == null ? "" : row["ExternalReference"].ToString().Trim(),
+            swiftReference,
+            System.StringComparison.OrdinalIgnoreCase))
+        {
+            eqRow = row;
+            break;
+        }
+    }
+
+    // -----------------------------
+    // Not Found
+    // -----------------------------
+    if (eqRow == null)
+    {
+        OutputReport.Rows.Add(
+            swiftReference,
+            swiftIO,
+            swiftValueDateStr,
+            swiftCurrency,
+            swiftAmount,
+            0,
+            "",
+            "",
+            "",
+            "Not Found",
+            swiftAmount
+        );
+        continue;
+    }
+
+    // -----------------------------
+    // Parse Equation Date → STRING
+    // -----------------------------
+    System.DateTime equationDateTemp = System.DateTime.MinValue;
+    if (eqRow["CurrentDate"] != System.DBNull.Value)
+    {
+        System.DateTime.TryParseExact(
+            eqRow["CurrentDate"].ToString().Trim(),
+            new string[] { "M/d/yyyy", "MM/dd/yyyy", "yyyy-MM-dd" },
+            System.Globalization.CultureInfo.InvariantCulture,
+            System.Globalization.DateTimeStyles.None,
+            out equationDateTemp
+        );
+    }
+
+    string equationDateStr =
+        equationDateTemp != System.DateTime.MinValue
+        ? equationDateTemp.ToString("yyyy-MM-dd")
+        : "";
+
+    // -----------------------------
+    // Extract Equation Amount
+    // -----------------------------
+    decimal equationAmount = 0;
+
+    if (swiftIO == "I" && eqRow["WeReceive"] != System.DBNull.Value)
+        decimal.TryParse(
+            eqRow["WeReceive"].ToString(),
+            System.Globalization.NumberStyles.Any,
+            System.Globalization.CultureInfo.InvariantCulture,
+            out equationAmount
+        );
+    else if (swiftIO == "O" && eqRow["WePay"] != System.DBNull.Value)
+        decimal.TryParse(
+            eqRow["WePay"].ToString(),
+            System.Globalization.NumberStyles.Any,
+            System.Globalization.CultureInfo.InvariantCulture,
+            out equationAmount
+        );
+
+    decimal difference = swiftAmount - equationAmount;
+
+    // -----------------------------
+    // Validation Flags (STRING dates)
+    // -----------------------------
+    bool referenceMatch =
+        string.Equals(swiftReference, eqRow["ExternalReference"].ToString().Trim(),
+            System.StringComparison.OrdinalIgnoreCase);
+
+    bool currencyMatch =
+        string.Equals(swiftCurrency, eqRow["Currency"].ToString().Trim(),
+            System.StringComparison.OrdinalIgnoreCase);
+
+    bool valueDateMatch =
+        string.Equals(swiftValueDateStr, equationDateStr,
+            System.StringComparison.OrdinalIgnoreCase);
+
+    bool amountMatch = System.Math.Abs(difference) <= tolerance;
+
+    // -----------------------------
+    // Determine Status
+    // -----------------------------
+    string status = "Match";
+
+    if (!referenceMatch)
+        status = "Reference Mismatch";
+    else if (!valueDateMatch)
+        status = "Value Date Mismatch";
+    else if (!currencyMatch)
+        status = "Currency Mismatch";
+    else if (swiftIO == "I" && !amountMatch)
+        status = "WeReceive Mismatch";
+    else if (swiftIO == "O" && !amountMatch)
+        status = "WePay Mismatch";
+
+    // -----------------------------
+    // Add Output Row
+    // -----------------------------
+    OutputReport.Rows.Add(
+        swiftReference,
+        swiftIO,
+        swiftValueDateStr,
+        swiftCurrency,
+        swiftAmount,
+        equationAmount,
+        equationDateStr,
+        eqRow["ExternalReference"].ToString().Trim(),
+        eqRow["Currency"].ToString().Trim(),
+        status,
+        difference
+    );
+}
