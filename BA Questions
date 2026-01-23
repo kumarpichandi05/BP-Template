@@ -1,0 +1,107 @@
+1. Process Overview
+	1.	What is the business objective of this process?
+	2.	What triggers the process to start?
+	•	☐ Scheduled (time-based)
+	•	☐ Email / file arrival
+	•	☐ Manual trigger
+	3.	How often does this process run? (daily / weekly / monthly)
+	4.	Average and peak number of cases per day?
+
+⸻
+
+2. Input Details
+	5.	What are the inputs required to start the process?
+	6.	Input source(s):
+	•	☐ Email
+	•	☐ Excel
+	•	☐ Web portal
+	•	☐ Application report
+	•	☐ Other: __________
+	7.	Are the inputs structured or unstructured?
+	8.	Can you provide sample input files/emails/screenshots?
+
+⸻
+
+3. Application & Access
+	9.	Which applications are used in the process?
+	10.	Application type:
+	•	☐ Web
+	•	☐ Desktop
+	•	☐ Citrix / Remote
+	11.	Does the process require login?
+	12.	Are credentials:
+	•	☐ Shared
+	•	☐ User-specific
+	13.	Do passwords expire or require MFA?
+
+⸻
+
+4. Step-by-Step Process
+	14.	What is the first action performed once inputs are received?
+	15.	Please list the steps in order, including:
+	•	Data entry
+	•	Validation
+	•	Navigation
+	16.	Are there any decision points?
+(Example: “If status = X, do Y”)
+
+⸻
+
+5. Business Rules
+	17.	What rules are followed while processing?
+	18.	Are these rules documented?
+	19.	Do rules change frequently? If yes, how often?
+	20.	Are any steps based on human judgment?
+
+⸻
+
+6. Exceptions & Error Handling
+	21.	What are the common errors or failures?
+	22.	How do users currently handle these exceptions?
+	23.	Which exceptions:
+	•	☐ Should stop the process
+	•	☐ Can be skipped
+	•	☐ Can be retried
+	24.	Can one case fail while others continue?
+
+⸻
+
+7. Volume, Priority & SLA
+	25.	What is considered one unit of work?
+	26.	Are all cases equal priority?
+	27.	Any SLA or turnaround time expectations?
+	28.	Should failed cases be auto-retried or manually reprocessed?
+
+⸻
+
+8. Output & Reporting
+	29.	What is the final output of the process?
+	30.	Where should the output be stored?
+	31.	Who needs to be notified upon:
+	•	☐ Success
+	•	☐ Failure
+	32.	Is a daily/weekly report required?
+
+⸻
+
+9. Non-Working Days & Controls
+	33.	Should the process run on:
+	•	☐ Weekends
+	•	☐ Public holidays
+	34.	Any blackout periods or restricted timings?
+
+⸻
+
+10. Compliance & Audit
+	35.	Is audit logging required?
+	36.	Any regulatory or compliance constraints?
+	37.	How long should logs/data be retained?
+
+⸻
+
+Thank you for your support.
+These details will help ensure the automation is stable, secure, and aligned with business expectations.
+
+Regards,
+[Your Name]
+RPA Business Analyst
