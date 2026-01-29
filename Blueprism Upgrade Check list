@@ -1,0 +1,18 @@
+Item	Status	Team	Ownership
+DSD Published	Completed	Infra	Prashanth
+Firewall Request	Completed	RPA	Sathish
+Blue Prism Software Installation	In Progress	Infra	Darme
+Certificate Installation (App Server / Hub / IIS)	Pending	Infra / Security	—
+Load Balancer Configuration	Pending	Infra / Network	—
+Blue Prism Database Upgrade	Completed	DB / Infra	DB Team & Darme
+Blue Prism License Update	Pending	RPA	—
+Application Server Configuration	Pending	RPA / Infra	—
+Runtime Resource Upgrade	Pending	RPA	—
+Hub Installation / Upgrade (if applicable)	Pending	Infra / RPA	—
+Browser & Extension Validation (Chrome/Edge)	Pending	RPA	—
+Third-party DLL Validation	Pending	RPA	—
+Antivirus Exclusions	Pending	Infra / Security	—
+Backup & Rollback Readiness	Pending	Infra / DB	—
+Post-Upgrade Smoke Testing	Pending	RPA	—
+Business Validation / UAT Sign-off	Pending	Business	—
+Go-Live Approval	Pending	RPA / Business	—
