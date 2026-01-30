@@ -1,0 +1,50 @@
+using System;
+using Microsoft.Office.Interop.Outlook;
+
+int deletedCount = 0;
+
+Application outlookApp = null;
+NameSpace ns = null;
+MAPIFolder targetFolder = null;
+
+try
+{
+    outlookApp = new Application();
+    ns = outlookApp.GetNamespace("MAPI");
+
+    // Resolve folder path (e.g. Inbox\Reports\Daily)
+    string[] folders = FolderPath.Split('\\');
+
+    targetFolder = ns.Folders[folders[0]];
+    for (int i = 1; i < folders.Length; i++)
+    {
+        targetFolder = targetFolder.Folders[folders[i]];
+    }
+
+    DateTime cutoffDate = DateTime.Now.AddDays(-AgingDays);
+
+    string filter =
+        "[Unread] = false AND [ReceivedTime] < '" +
+        cutoffDate.ToString("g") + "'";
+
+    Items items = targetFolder.Items.Restrict(filter);
+
+    foreach (object obj in items)
+    {
+        MailItem mail = obj as MailItem;
+        if (mail != null)
+        {
+            mail.Delete();
+            deletedCount++;
+        }
+    }
+}
+finally
+{
+    // Cleanup
+    if (targetFolder != null) System.Runtime.InteropServices.Marshal.ReleaseComObject(targetFolder);
+    if (ns != null) System.Runtime.InteropServices.Marshal.ReleaseComObject(ns);
+    if (outlookApp != null) System.Runtime.InteropServices.Marshal.ReleaseComObject(outlookApp);
+}
+
+DeletedCount = deletedCount;
