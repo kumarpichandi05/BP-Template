@@ -1,0 +1,51 @@
+                     ┌──────────────────────────┐
+                     │        End Users          │
+                     │  (Browser / Developers)  │
+                     └───────────┬──────────────┘
+                                 │
+               ┌─────────────────┴─────────────────┐
+               │                                   │
+     HTTPS 443 │                                   │ BP App Port
+               v                                   v
+        ┌───────────────┐                 ┌────────────────────┐
+        │ Load Balancer │                 │ Blue Prism          │
+        │  (Web Tier)   │                 │ Interactive Client  │
+        └───────┬───────┘                 └─────────┬──────────┘
+                │                                     │
+        HTTPS 443│                                     │
+                v                                     │
+     ┌──────────────────────┐               ┌──────────────────────┐
+     │ Hub / Decipher       │               │ Blue Prism            │
+     │ Application Servers  │               │ Application Server    │
+     │ (Web + Services)     │               │ (BPAS)                │
+     └───────┬──────────────┘               └─────────┬────────────┘
+             │                                        │
+   AMQP 5671 │                                        │ SQL 1433
+             v                                        v
+     ┌───────────────┐                        ┌───────────────────┐
+     │ Load Balancer │                        │ Blue Prism         │
+     │  (RMQ Tier)   │                        │ Database           │
+     └───────┬───────┘                        └───────────────────┘
+             │
+      AMQP 5671
+             v
+     ┌──────────────────────┐
+     │ RabbitMQ Cluster     │
+     │ (Messaging Layer)   │
+     └──────────────────────┘
+
+     ┌───────────────────────────────────────────────────────────┐
+     │                         Databases                           │
+     │   ┌────────────────────────┐   ┌────────────────────────┐ │
+     │   │ Hub Database            │   │ Decipher Database       │ │
+     │   │ (SQL Server)            │   │ (SQL Server)            │ │
+     │   └────────────────────────┘   └────────────────────────┘ │
+     └───────────────────────────────────────────────────────────┘
+
+
+            ┌────────────────────────────────────────┐
+            │            PAM (Privileged Access)     │
+            │  - RDP / Admin access to all servers   │
+            │  - Credential vault & rotation         │
+            │  - NOT in application traffic path     │
+            └────────────────────────────────────────┘
