@@ -1,0 +1,92 @@
+using System;
+using System.IO;
+using System.Drawing;
+using System.Drawing.Imaging;
+using PdfiumViewer;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string pdfPath = @"C:\Sathish\DotNet\PDF_iText_Testing\input.pdf";
+        string outputFolder = @"C:\Sathish\DotNet\PDF_iText_Testing\output";
+        
+        ConvertPdfToJpeg(pdfPath, outputFolder, maxFileSizeKB: 150);
+        
+        Console.WriteLine("\nPress any key to exit...");
+        Console.ReadKey();
+    }
+
+    public static void ConvertPdfToJpeg(string pdfPath, string outputFolder, int maxFileSizeKB = 150)
+    {
+        Directory.CreateDirectory(outputFolder);
+
+        using (var document = PdfDocument.Load(pdfPath))
+        {
+            for (int i = 0; i < document.PageCount; i++)
+            {
+                string outputPath = Path.Combine(outputFolder, $"page_{i + 1}.jpg");
+                OptimizeAndSaveJpeg(document, i, outputPath, maxFileSizeKB);
+            }
+        }
+    }
+
+    private static void OptimizeAndSaveJpeg(PdfDocument document, int pageIndex, string outputPath, int maxFileSizeKB)
+    {
+        int[] dpiOptions = { 200, 150, 120, 96, 72 }; // Start lower for faster results
+        
+        foreach (int dpi in dpiOptions)
+        {
+            using (var image = document.Render(pageIndex, dpi, dpi, false))
+            {
+                // Binary search for optimal quality
+                int minQuality = 30;
+                int maxQuality = 95;
+                int bestQuality = minQuality;
+                
+                while (minQuality <= maxQuality)
+                {
+                    int quality = (minQuality + maxQuality) / 2;
+                    SaveJpegWithQuality(outputPath, image, quality);
+                    
+                    long fileSizeKB = new FileInfo(outputPath).Length / 1024;
+                    
+                    if (fileSizeKB <= maxFileSizeKB)
+                    {
+                        bestQuality = quality;
+                        minQuality = quality + 1; // Try higher quality
+                    }
+                    else
+                    {
+                        maxQuality = quality - 1; // Reduce quality
+                    }
+                }
+                
+                // Save with best quality found
+                if (bestQuality > 30)
+                {
+                    SaveJpegWithQuality(outputPath, image, bestQuality);
+                    long finalSize = new FileInfo(outputPath).Length / 1024;
+                    Console.WriteLine($"Page {pageIndex + 1}: DPI={dpi}, Quality={bestQuality}%, Size={finalSize}KB");
+                    return;
+                }
+            }
+        }
+        
+        Console.WriteLine($"⚠ Page {pageIndex + 1}: Could not achieve {maxFileSizeKB}KB limit");
+    }
+    
+    private static void SaveJpegWithQuality(string path, Image image, int quality)
+    {
+        using (var encoderParams = new EncoderParameters(1))
+        {
+            encoderParams.Param[0] = new EncoderParameter(
+                System.Drawing.Imaging.Encoder.Quality, (long)quality);
+            
+            var jpegCodec = ImageCodecInfo.GetImageEncoders()
+                .First(c => c.FormatID == ImageFormat.Jpeg.Guid);
+            
+            image.Save(path, jpegCodec, encoderParams);
+        }
+    }
+}
