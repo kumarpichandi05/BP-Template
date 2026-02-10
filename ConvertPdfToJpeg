@@ -1,0 +1,74 @@
+using System;
+using System.IO;
+using System.Drawing;
+using System.Drawing.Imaging;
+using PdfiumViewer;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        try
+        {
+            string pdfPath = @"C:\Sathish\wip.pdf";
+            string outputFolder = @"C:\Sathish";
+            
+            ConvertPdfToJpeg(pdfPath, outputFolder);
+            
+            Console.WriteLine("Conversion completed successfully!");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+            Console.WriteLine($"Stack Trace: {ex.StackTrace}");
+        }
+        
+        //Console.ReadKey();
+    }
+
+    public static void ConvertPdfToJpeg(string pdfPath, string outputFolder, int dpi = 300)
+    {
+        if (!File.Exists(pdfPath))
+            throw new FileNotFoundException("PDF file not found", pdfPath);
+
+        Directory.CreateDirectory(outputFolder);
+
+        using (var document = PdfDocument.Load(pdfPath))
+        {
+            for (int i = 0; i < document.PageCount; i++)
+            {
+                // Render page at specified DPI
+                using (var image = document.Render(i, dpi, dpi, false))
+                {
+                    string outputPath = Path.Combine(outputFolder, $"page_{i + 1}.jpg");
+                    
+                    // Save as JPEG with quality setting
+                    SaveJpeg(outputPath, image, 90);
+                    
+                    Console.WriteLine($"Saved: page_{i + 1}.jpg");
+                }
+            }
+        }
+    }
+    
+    private static void SaveJpeg(string path, Image image, int quality)
+    {
+        var encoderParameters = new EncoderParameters(1);
+        encoderParameters.Param[0] = new EncoderParameter(
+            System.Drawing.Imaging.Encoder.Quality, (long)quality);
+        
+        var codec = GetEncoder(ImageFormat.Jpeg);
+        image.Save(path, codec, encoderParameters);
+    }
+    
+    private static ImageCodecInfo GetEncoder(ImageFormat format)
+    {
+        var codecs = ImageCodecInfo.GetImageEncoders();
+        foreach (var codec in codecs)
+        {
+            if (codec.FormatID == format.Guid)
+                return codec;
+        }
+        return null;
+    }
+}
