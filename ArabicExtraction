@@ -1,0 +1,79 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Text;
+using iText.Kernel.Pdf;
+using iText.Kernel.Pdf.Canvas.Parser;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.OutputEncoding = Encoding.UTF8;
+
+        string pdfPath = @"C:\Path\To\Your\File.pdf";
+        string outputPath = @"C:\Path\To\Output\ExtractedText.txt";
+
+        try
+        {
+            using (PdfReader reader = new PdfReader(pdfPath))
+            using (PdfDocument pdfDoc = new PdfDocument(reader))
+            {
+                StringBuilder fullText = new StringBuilder();
+
+                for (int i = 1; i <= pdfDoc.GetNumberOfPages(); i++)
+                {
+                    string pageText = PdfTextExtractor.GetTextFromPage(pdfDoc.GetPage(i));
+
+                    // Split into lines properly
+                    string[] lines = pageText.Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+
+                    foreach (var line in lines)
+                    {
+                        string fixedLine = FixArabicLine(line);
+                        fullText.AppendLine(fixedLine);
+                    }
+                }
+
+                string finalText = fullText.ToString();
+
+                // Print to console
+                Console.WriteLine("=== Extracted and Fixed Text ===");
+                Console.WriteLine(finalText);
+
+                // Save to UTF-8 file
+                File.WriteAllText(outputPath, finalText, Encoding.UTF8);
+
+                Console.WriteLine($"\nText saved to: {outputPath}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+
+        Console.WriteLine("\nPress any key to exit...");
+        Console.ReadKey();
+    }
+
+    // Detect Arabic in line, reverse if needed
+    static string FixArabicLine(string text)
+    {
+        if (string.IsNullOrWhiteSpace(text))
+            return text;
+
+        // Arabic Unicode ranges
+        bool hasArabic = text.Any(c => (c >= 0x0600 && c <= 0x06FF) || (c >= 0x0750 && c <= 0x077F));
+
+        if (hasArabic)
+        {
+            // Reverse Arabic letters
+            char[] chars = text.ToCharArray();
+            Array.Reverse(chars);
+            return new string(chars);
+        }
+
+        // For English/Latin lines, return as-is
+        return text;
+    }
+}
