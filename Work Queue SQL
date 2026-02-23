@@ -1,0 +1,10 @@
+SELECT 
+    wq.Name AS QueueName,
+    COUNT(wqi.id) AS TotalItems,
+    SUM(CASE WHEN wqi.Status = 'Completed' THEN 1 ELSE 0 END) AS Successful,
+    SUM(CASE WHEN wqi.Status = 'Exception' THEN 1 ELSE 0 END) AS Exceptions
+FROM BPAWorkQueueItem wqi
+JOIN BPAWorkQueue wq ON wqi.QueueID = wq.ID
+WHERE wq.Name = 'Testing Queue'
+AND CAST(wqi.completed AS DATE) = CAST(GETDATE() AS DATE)
+GROUP BY wq.Name
