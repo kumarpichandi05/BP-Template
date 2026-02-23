@@ -1,0 +1,4 @@
+Provider=MSOLEDBSQL;
+Data Source=RITHWIK;
+Initial Catalog=BluePrism;
+Integrated Security=SSPI;
