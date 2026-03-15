@@ -1,0 +1,115 @@
+IBG Connectivity – Operational Access Flow
+	1.	Operations Team User Access
+	•	The Operations team user logs in from their local workstation.
+	2.	Access via PAM
+	•	The user connects to the PAM (Privileged Access Management) system for secure privileged access.
+	3.	Connection to Bot Runtime Machine
+	•	From PAM, the user connects to the Bot Runtime Machine using Dameware remote access.
+	4.	Runtime Machine Environment
+	•	The Runtime Machine contains all required software and automation dependencies installed, such as:
+	•	Blue Prism Runtime
+	•	Required application clients
+	•	Supporting utilities
+	5.	Connection to Blue Prism Platform
+	•	The Runtime Machine connects to:
+	•	Blue Prism Application Server Load Balancer
+	•	Blue Prism Hub Load Balancer
+	6.	Automation Execution
+	•	Bots run on the Runtime Machine and communicate with the Blue Prism environment through the load balancers.
+
+⸻
+
+Short Version (for diagram caption)
+
+User PC → PAM → Dameware → Bot Runtime Machine → Blue Prism App Load Balancer / Hub Load Balancer
+
+⸻
+
+If you want, I can also give you:
+	•	a better architecture diagram for PowerPoint / Visio, or
+	•	a network-level diagram with ports (8199, 443, 5672, etc.) which is useful for firewall documentation.
+
+
+IBG France – Connectivity Questions for France IT Team
+
+1. Runtime Machine Details
+
+Confirm the basic information about the runtime machines.
+	•	What are the hostnames / IP addresses of the runtime machines?
+	•	Are the runtime machines domain joined?
+	•	Which Windows version is installed?
+	•	How many runtime machines will be provided?
+
+⸻
+
+2. PAM to Runtime Machine Access
+
+Since access is through PAM → Dameware → Runtime Machine, confirm:
+	•	Is Dameware already installed on the runtime machines?
+	•	Which version of Dameware is used?
+	•	What ports are required for Dameware connection?
+	•	Should PAM IP addresses be whitelisted in the France firewall?
+
+Example question:
+	•	Please confirm the source IP range of PAM that should be allowed to access the runtime machines.
+
+⸻
+
+3. Firewall Configuration
+
+Ask France IT to confirm firewall rules.
+	•	What ports must be opened from PAM servers → runtime machines?
+	•	Are there any network security restrictions?
+	•	Is there any jump server required before accessing runtime machines?
+
+⸻
+
+4. Runtime Machine Software Requirements
+
+Confirm which software must be installed on the runtime machines.
+
+Typical requirements:
+	•	Blue Prism Runtime Resource
+	•	Required application clients
+	•	Browser (Chrome / Edge)
+	•	.NET Framework
+	•	Any banking application required for IBG process
+
+Questions:
+	•	Will France IT install all required software, or should the automation team install it?
+
+⸻
+
+5. Connectivity from Runtime Machine to Blue Prism
+
+Confirm how runtime machines connect internally.
+	•	What is the Blue Prism Application Server Load Balancer URL?
+	•	What is the Hub Load Balancer URL?
+	•	Which port is used for Blue Prism connection (typically 8199)?
+	•	Is HTTPS required?
+
+⸻
+
+6. Access Credentials
+
+Security access clarification.
+	•	Will service accounts be provided for the runtime machines?
+	•	Will operators log in using domain accounts through PAM?
+	•	Are there password vault or credential management policies?
+
+⸻
+
+7. Security Policies
+
+Important for banking environments.
+	•	Are there endpoint protection tools installed (EDR / antivirus)?
+	•	Are there restrictions on installing automation tools?
+	•	Is USB or file transfer restricted?
+
+⸻
+
+8. Monitoring and Logging
+
+Ask how runtime activity is monitored.
+	•	Are runtime machines integrated with SIEM or monitoring tools?
+	•	Should automation logs be stored locally or centrally?
