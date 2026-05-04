@@ -1,0 +1,52 @@
+1. Upgrade Readiness
+	•	Ensured all prerequisites (firewall, access, infrastructure) were completed before upgrade timelines
+	•	Achieved smooth environment readiness with minimal delays
+
+⸻
+
+2. Stakeholder & Vendor Coordination
+	•	Effectively coordinated with vendors, ISO, and internal teams
+	•	Maintained consistent follow-ups to ensure timely delivery and issue resolution
+
+⸻
+
+3. Upgrade Execution & Migration
+	•	Supported successful upgrade and migration with minimal disruption
+	•	Ensured stability across development, pre-production, and production environments
+
+⸻
+
+4. Security & Compliance
+	•	Coordinated with ISO team for security scans and compliance validation
+	•	Ensured all findings were addressed before production deployment
+
+⸻
+
+5. Environment & Access Management
+	•	Enabled developer readiness through Active Directory setup and access provisioning
+	•	Ensured all environments (Dev, Pre-Prod, Prod) were properly configured
+
+⸻
+
+6. Issue Resolution & Support
+	•	Actively coordinated troubleshooting across teams
+	•	Ensured quick resolution of upgrade-related issues
+
+⸻
+
+7. Documentation & Governance
+	•	Maintained clear documentation for upgrade, migration, and configurations
+	•	Ensured alignment with organizational standards and audit requirements
+
+⸻
+
+8. Communication & Delivery
+	•	Provided timely updates to stakeholders
+	•	Ensured smooth coordination leading to successful upgrade delivery
+
+Step 1: Define Weight Distribution
+
+Based on your Q1 effort:
+	•	Blue Prism Upgrade → 70% weight
+	•	Process Template Development → 20% weight
+	•	BAU Activities → 10% weight
