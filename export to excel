@@ -1,0 +1,155 @@
+Message = "";
+
+try
+{
+    DataTable dt = (DataTable)ResultTable;
+
+    using (SpreadsheetDocument document =
+        SpreadsheetDocument.Create(OutputFilePath, SpreadsheetDocumentType.Workbook))
+    {
+        WorkbookPart workbookPart = document.AddWorkbookPart();
+        workbookPart.Workbook = new Workbook();
+
+        // Styles
+        WorkbookStylesPart stylesPart = workbookPart.AddNewPart<WorkbookStylesPart>();
+
+        stylesPart.Stylesheet = new Stylesheet(
+            new Fonts(
+                new Font()
+            ) { Count = 1 },
+
+            new Fills(
+                new Fill(new PatternFill() { PatternType = PatternValues.None }),
+                new Fill(new PatternFill() { PatternType = PatternValues.Gray125 })
+            ) { Count = 2 },
+
+            new Borders(
+                new Border(),
+                new Border(
+                    new LeftBorder() { Style = BorderStyleValues.Thin },
+                    new RightBorder() { Style = BorderStyleValues.Thin },
+                    new TopBorder() { Style = BorderStyleValues.Thin },
+                    new BottomBorder() { Style = BorderStyleValues.Thin },
+                    new DiagonalBorder()
+                )
+            ) { Count = 2 },
+
+            new CellStyleFormats(
+                new CellFormat()
+            ) { Count = 1 },
+
+            new CellFormats(
+                new CellFormat(),
+                new CellFormat()
+                {
+                    BorderId = 1,
+                    ApplyBorder = true
+                }
+            ) { Count = 2 }
+        );
+
+        stylesPart.Stylesheet.Save();
+
+        // Worksheet
+        WorksheetPart worksheetPart =
+            workbookPart.AddNewPart<WorksheetPart>();
+
+        SheetData sheetData = new SheetData();
+        Columns columns = new Columns();
+
+        Dictionary<int, int> columnWidths =
+            new Dictionary<int, int>();
+
+        // Header Row
+        Row headerRow = new Row();
+
+        for (int i = 0; i < dt.Columns.Count; i++)
+        {
+            string text = dt.Columns[i].ColumnName;
+
+            Cell cell = new Cell()
+            {
+                DataType = CellValues.String,
+                CellValue = new CellValue(text),
+                StyleIndex = 1
+            };
+
+            headerRow.Append(cell);
+
+            columnWidths[i] = text.Length;
+        }
+
+        sheetData.Append(headerRow);
+
+        // Data Rows
+        foreach (DataRow dr in dt.Rows)
+        {
+            Row row = new Row();
+
+            for (int i = 0; i < dt.Columns.Count; i++)
+            {
+                string text = dr[i] == DBNull.Value
+                    ? ""
+                    : Convert.ToString(dr[i]);
+
+                Cell cell = new Cell()
+                {
+                    DataType = CellValues.String,
+                    CellValue = new CellValue(text),
+                    StyleIndex = 1
+                };
+
+                row.Append(cell);
+
+                if (!columnWidths.ContainsKey(i))
+                    columnWidths[i] = text.Length;
+                else
+                    columnWidths[i] =
+                        Math.Max(columnWidths[i], text.Length);
+            }
+
+            sheetData.Append(row);
+        }
+
+        // Auto-fit Columns
+        foreach (KeyValuePair<int, int> col in columnWidths)
+        {
+            columns.Append(
+                new Column()
+                {
+                    Min = (UInt32)(col.Key + 1),
+                    Max = (UInt32)(col.Key + 1),
+                    Width = Math.Min(col.Value + 5, 80),
+                    CustomWidth = true
+                });
+        }
+
+        worksheetPart.Worksheet =
+            new Worksheet(columns, sheetData);
+
+        worksheetPart.Worksheet.Save();
+
+        // Add Sheet
+        Sheets sheets =
+            workbookPart.Workbook.AppendChild(new Sheets());
+
+        Sheet sheet = new Sheet()
+        {
+            Id = workbookPart.GetIdOfPart(worksheetPart),
+            SheetId = 1,
+            Name = string.IsNullOrWhiteSpace(SheetName)
+                ? "Sheet1"
+                : SheetName
+        };
+
+        sheets.Append(sheet);
+
+        workbookPart.Workbook.Save();
+    }
+
+    Message = "Success";
+}
+catch (Exception ex)
+{
+    Message = ex.ToString();
+}
