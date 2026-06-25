@@ -15,37 +15,62 @@ try
 
         stylesPart.Stylesheet = new Stylesheet(
             new Fonts(
-                new Font()
-            ) { Count = 1 },
+                new DocumentFormat.OpenXml.Spreadsheet.Font()
+            )
+            {
+                Count = 1
+            },
 
             new Fills(
-                new Fill(new PatternFill() { PatternType = PatternValues.None }),
-                new Fill(new PatternFill() { PatternType = PatternValues.Gray125 })
-            ) { Count = 2 },
+                new Fill(
+                    new PatternFill()
+                    {
+                        PatternType = PatternValues.None
+                    }),
+                new Fill(
+                    new PatternFill()
+                    {
+                        PatternType = PatternValues.Gray125
+                    })
+            )
+            {
+                Count = 2
+            },
 
             new Borders(
-                new Border(),
-                new Border(
+                new DocumentFormat.OpenXml.Spreadsheet.Border(),
+
+                new DocumentFormat.OpenXml.Spreadsheet.Border(
                     new LeftBorder() { Style = BorderStyleValues.Thin },
                     new RightBorder() { Style = BorderStyleValues.Thin },
                     new TopBorder() { Style = BorderStyleValues.Thin },
                     new BottomBorder() { Style = BorderStyleValues.Thin },
                     new DiagonalBorder()
                 )
-            ) { Count = 2 },
+            )
+            {
+                Count = 2
+            },
 
             new CellStyleFormats(
                 new CellFormat()
-            ) { Count = 1 },
+            )
+            {
+                Count = 1
+            },
 
             new CellFormats(
                 new CellFormat(),
+
                 new CellFormat()
                 {
                     BorderId = 1,
                     ApplyBorder = true
                 }
-            ) { Count = 2 }
+            )
+            {
+                Count = 2
+            }
         );
 
         stylesPart.Stylesheet.Save();
@@ -60,7 +85,7 @@ try
         Dictionary<int, int> columnWidths =
             new Dictionary<int, int>();
 
-        // Header Row
+        // Header
         Row headerRow = new Row();
 
         for (int i = 0; i < dt.Columns.Count; i++)
@@ -88,9 +113,10 @@ try
 
             for (int i = 0; i < dt.Columns.Count; i++)
             {
-                string text = dr[i] == DBNull.Value
-                    ? ""
-                    : Convert.ToString(dr[i]);
+                string text = "";
+
+                if (dr[i] != DBNull.Value)
+                    text = Convert.ToString(dr[i]);
 
                 Cell cell = new Cell()
                 {
@@ -104,14 +130,13 @@ try
                 if (!columnWidths.ContainsKey(i))
                     columnWidths[i] = text.Length;
                 else
-                    columnWidths[i] =
-                        Math.Max(columnWidths[i], text.Length);
+                    columnWidths[i] = Math.Max(columnWidths[i], text.Length);
             }
 
             sheetData.Append(row);
         }
 
-        // Auto-fit Columns
+        // Auto-fit
         foreach (KeyValuePair<int, int> col in columnWidths)
         {
             columns.Append(
@@ -129,7 +154,7 @@ try
 
         worksheetPart.Worksheet.Save();
 
-        // Add Sheet
+        // Workbook Sheets
         Sheets sheets =
             workbookPart.Workbook.AppendChild(new Sheets());
 
@@ -137,7 +162,7 @@ try
         {
             Id = workbookPart.GetIdOfPart(worksheetPart),
             SheetId = 1,
-            Name = string.IsNullOrWhiteSpace(SheetName)
+            Name = string.IsNullOrEmpty(SheetName)
                 ? "Sheet1"
                 : SheetName
         };
