@@ -1,0 +1,11 @@
+The steps are the same as the existing 055 process.
+* The process continues to:
+    * Read the request from Remedy.
+    * Perform the transaction in the BANCS link.
+* Currently, the process handles 5 different request types in the same VM. Another machine is handling only P055A.
+* The business has now requested one additional request type – SMS Refund.
+* Therefore, the only change required is to add the SMS Refund request type to the existing 055 process.
+* We are not proposing a completely new process with different steps.
+* So, F can be treated as the additional request type under the existing 055 process, rather than a separate process with a new set of automation steps.
+* For RPA ticketing purposes, the Run Team has created multiple process names: A, B, C, D, E, and F.
+* ⁠2 VM’s . We can use the following VM IP ending with 6.26
